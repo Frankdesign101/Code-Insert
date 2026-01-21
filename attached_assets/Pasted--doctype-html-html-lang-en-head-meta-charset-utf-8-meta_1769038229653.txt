@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Global Institute for Supply Chain & Sustainability (GICS)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --muted:#9fb0d0;
+      --text:#eef2ff;
+      --accent:#23b26d;
+      --line:rgba(255,255,255,.10);
+      --soft:rgba(255,255,255,.04);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 18% -10%, rgba(35,178,109,.25), transparent 55%),
+                  radial-gradient(900px 600px at 100% 0%, rgba(120,175,255,.18), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      padding:14px 0 8px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo{
+      width:38px;height:38px;border-radius:12px;
+      background: linear-gradient(135deg, var(--accent), #3aa0ff);
+      box-shadow: 0 12px 30px rgba(0,0,0,.35);
+    }
+    .brand strong{display:block;font-size:14px;letter-spacing:.2px}
+    .brand span{display:block;font-size:12px;color:var(--muted)}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{font-size:13px;color:var(--muted);text-decoration:none}
+    nav a:hover{color:var(--text)}
+    .hero{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .panel{
+      background: rgba(15,26,51,.78);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:22px;
+      box-shadow: 0 14px 40px rgba(0,0,0,.35);
+      backdrop-filter: blur(8px);
+    }
+    h1{margin:0 0 10px;font-size:34px;line-height:1.15}
+    h2{margin:0 0 10px;font-size:22px}
+    .lead{color:var(--muted);margin:0 0 16px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+    .badge{
+      font-size:12px;color:var(--text);
+      border:1px solid var(--line);
+      background: var(--soft);
+      padding:6px 10px;border-radius:999px;
+    }
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background: var(--soft);
+      text-decoration:none;
+      font-weight:700;
+      font-size:13px;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, var(--accent), #3aa0ff);
+      border:none;
+      color:#06101a;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .side h3{margin:0 0 10px;font-size:12px;color:var(--muted);font-weight:800;letter-spacing:.45px;text-transform:uppercase}
+    .mini{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
+    .kv{display:grid;grid-template-columns: 1fr;gap:10px}
+    .kv div{
+      padding:10px 12px;border:1px solid var(--line);border-radius:14px;background: rgba(255,255,255,.03);
+      font-size:13px;color:var(--muted);
+    }
+    .kv b{color:var(--text)}
+    section{margin-top:18px}
+    .grid{display:grid;grid-template-columns: repeat(3, 1fr);gap:14px}
+    .grid2{display:grid;grid-template-columns: repeat(2, 1fr);gap:14px}
+    .card{
+      background: rgba(15,26,51,.72);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+    }
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    .list{margin:10px 0 0;padding-left:16px;color:var(--muted);font-size:13px}
+    .priceBox{
+      margin-top:12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:16px;
+      padding:12px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .priceBox b{color:var(--text)}
+    .note{
+      margin-top:10px;
+      font-size:12.5px;
+      color:var(--muted);
+    }
+    .split{display:grid;grid-template-columns: 1fr 1fr;gap:14px}
+    footer{
+      margin:28px 0 10px;
+      color:var(--muted);
+      font-size:12px;
+      border-top:1px solid var(--line);
+      padding-top:16px;
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap
+    }
+    input, select, textarea{
+      padding:12px;border-radius:12px;border:1px solid var(--line);
+      background:rgba(255,255,255,.03);color:var(--text)
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      h1{font-size:30px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <strong>Global Institute for Supply Chain & Sustainability (GICS)</strong>
+          <span>Supply Chain • Operations • Sustainability • Analytics</span>
+        </div>
+      </a>
+      <nav>
+        <a href="#programmes">Programmes</a>
+        <a href="#fees">Fees</a>
+        <a href="#corporate">Corporate</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="panel">
+        <h1>UK-quality, practical training in supply chain, operations, and sustainable performance—delivered globally.</h1>
+        <p class="lead">
+          GICS builds real workplace capability through applied learning, clear assessment, and industry-aligned tools—designed and led by a UK Programme Director in Operations Management.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="#contact">Register interest for Sept 2026</a>
+          <a class="btn" href="#programmes">View programmes</a>
+          <a class="btn" href="#fees">See fees</a>
+        </div>
+
+        <div class="badges">
+          <span class="badge">Live cohort-based learning</span>
+          <span class="badge">Recordings included</span>
+          <span class="badge">Applied capstone projects</span>
+          <span class="badge">Corporate training available</span>
+          <span class="badge">Accreditation: planned / in progress</span>
+        </div>
+
+        <p class="note">
+          *We provide professional training and career readiness support. We do not offer job placement, apprenticeship enrolment, or visa sponsorship.
+        </p>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="panel side">
+        <h3>First cohort</h3>
+        <div class="kv">
+          <div><b>Start:</b> September 2026</div>
+          <div><b>Flagship:</b> Global Certificate in Practical Supply Chain & Sustainable Operations</div>
+          <div><b>Duration:</b> 6–8 weeks • 2 live sessions/week + recordings</div>
+          <div><b>Assessment:</b> assignments + applied capstone project</div>
+          <div><b>Accreditation goal:</b> CPD (planned / in progress)</div>
+        </div>
+
+        <div class="mini">
+          <h3>Academic lead</h3>
+          <div class="kv">
+            <div>
+              <b>Frank Donkor</b><br/>
+              Programme Director, MSc Operations Management (University of Exeter)<br/>
+              Supply chain sustainability • Operations management • Supply chain leadership<br/>
+              Industry–academic collaboration (pharmaceutical sector) • Mixed-methods research
+            </div>
+          </div>
+        </div>
+
+        <div class="mini">
+          <h3>Quick fees (GBP)</h3>
+          <div class="kv">
+            <div><b>Flagship (live cohort):</b> £120–£250 <span style="color:var(--muted)">(Early bird £70–£120)</span></div>
+            <div><b>Premium (with coaching):</b> £300–£450</div>
+            <div><b>Self-paced:</b> £49–£99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRAMMES -->
+    <section id="programmes">
+      <div class="panel">
+        <h2>Programmes</h2>
+        <p class="lead">
+          Start with the flagship certificate, then specialise with short courses. All programmes are practical, assessed, and tool-based.
+        </p>
+
+        <div class="grid">
+          <!-- FLAGSHIP -->
+          <div class="card">
+            <h3>Flagship Certificate</h3>
+            <p><b>Global Certificate in Practical Supply Chain & Sustainable Operations</b></p>
+            <p class="note" style="margin:10px 0 0;">
+              <b>Duration:</b> 6–8 weeks • <b>Delivery:</b> live online + recordings • <b>Assessment:</b> assignments + capstone
+            </p>
+            <ul class="list">
+              <li>End-to-end supply chain foundations</li>
+              <li>Inventory, warehousing & procurement essentials</li>
+              <li>Operations excellence & Lean fundamentals</li>
+              <li>Data-driven KPIs (Excel/Power BI style thinking)</li>
+              <li>Sustainable supply chains (ESG, waste, efficiency)</li>
+              <li>Professional communication & stakeholder reporting</li>
+            </ul>
+          </div>
+
+          <!-- ANALYTICS -->
+          <div class="card">
+            <h3>Short Course</h3>
+            <p><b>Supply Chain Analytics (Excel/Power BI Fundamentals)</b></p>
+            <p class="note" style="margin:10px 0 0;">
+              <b>Duration:</b> 2–3 weeks • <b>Delivery:</b> live online + recordings • <b>Output:</b> KPI dashboard starter pack
+            </p>
+            <ul class="list">
+              <li>KPIs, dashboards & performance routines</li>
+              <li>Forecasting and demand planning basics</li>
+              <li>Inventory metrics (service levels, turnover)</li>
+              <li>Hands-on practice with real datasets</li>
+            </ul>
+          </div>
+
+          <!-- LEAN -->
+          <div class="card">
+            <h3>Short Course</h3>
+            <p><b>Lean Operations & Process Improvement</b></p>
+            <p class="note" style="margin:10px 0 0;">
+              <b>Duration:</b> 2–3 weeks • <b>Delivery:</b> live online + recordings • <b>Output:</b> mini improvement project
+            </p>
+            <ul class="list">
+              <li>Process mapping & waste elimination</li>
+              <li>Root cause analysis (practical tools)</li>
+              <li>Continuous improvement routines</li>
+              <li>Mini project with structured feedback</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid2" style="margin-top:14px;">
+          <!-- SELF-PACED -->
+          <div class="card">
+            <h3>Self-Paced Option</h3>
+            <p><b>Recorded Course (Self-Paced) + Certificate of Completion</b></p>
+            <ul class="list">
+              <li>Flexible learning (ideal across time zones)</li>
+              <li>Templates, readings & short quizzes included</li>
+              <li>Optional add-on: monthly group coaching</li>
+            </ul>
+            <div class="priceBox">
+              <b>Self-paced fee:</b> £49–£99<br/>
+              <span style="color:var(--muted);">Add-on group coaching:</span> £120–£180
+            </div>
+          </div>
+
+          <!-- WHO IT'S FOR -->
+          <div class="card">
+            <h3>Who these programmes are for</h3>
+            <ul class="list">
+              <li>Working professionals in logistics, procurement, operations, and supply chain</li>
+              <li>NGO and public-sector staff managing supply chains</li>
+              <li>Graduates seeking practical, employable skills</li>
+              <li>Corporate teams needing structured capability building</li>
+            </ul>
+            <p class="note">
+              We focus on capability and performance. We do not guarantee jobs or visas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEES -->
+    <section id="fees">
+      <div class="panel">
+        <h2>Fees</h2>
+        <p class="lead">
+          Transparent pricing with early-bird options. Corporate packages available. Fees shown in GBP (you can add GHS equivalents later).
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Flagship (Live Cohort)</h3>
+            <p class="note" style="margin-top:0;">
+              6–8 weeks • 2 live sessions/week + recordings • assignments + capstone
+            </p>
+            <div class="priceBox">
+              <b>Standard:</b> £120–£250<br/>
+              <b>Early bird:</b> £70–£120<br/>
+              <b>Premium (with coaching):</b> £300–£450
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Short Courses</h3>
+            <p class="note" style="margin-top:0;">
+              2–3 weeks • live + recordings • practical outputs
+            </p>
+            <div class="priceBox">
+              <b>Standard:</b> £60–£140 (per short course)<br/>
+              <b>Bundle discount:</b> available when combined with the flagship
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Corporate / Teams</h3>
+            <p class="note" style="margin-top:0;">
+              Customised delivery for organisations, NGOs, and public sector
+            </p>
+            <div class="priceBox">
+              <b>Typical range:</b> £900–£2,500 (per cohort / package)<br/>
+              <b>Includes:</b> needs assessment + custom materials + reporting
+            </div>
+          </div>
+        </div>
+
+        <p class="note">
+          Accreditation note: By September 2026, we aim to have completed relevant accreditations. Until confirmed, we describe accreditation as “planned / in progress”.
+        </p>
+      </div>
+    </section>
+
+    <!-- CORPORATE -->
+    <section id="corporate">
+      <div class="panel">
+        <h2>Corporate training & consulting</h2>
+        <div class="split">
+          <div>
+            <p class="lead" style="margin-top:0;">
+              GICS designs competency-based training for teams in logistics, procurement, operations, and sustainability—focused on measurable workplace impact.
+            </p>
+            <ul class="list">
+              <li>Warehouse & inventory improvement</li>
+              <li>Operations KPI design & performance routines</li>
+              <li>Supply chain sustainability: ESG, waste reduction, efficiency</li>
+              <li>Supply chain resilience & risk basics</li>
+              <li>Custom programmes for NGOs and public-sector supply chains</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Example package</h3>
+            <p class="lead" style="margin:0 0 10px;"><b>Practical Supply Chain Skills for Managers</b> (4 weeks)</p>
+            <ul class="list">
+              <li>Needs assessment + custom content</li>
+              <li>Live training + templates + exercises</li>
+              <li>Post-training KPI plan + action roadmap</li>
+            </ul>
+            <div class="ctaRow">
+              <a class="btn primary" href="#contact">Request a proposal</a>
+              <a class="btn" href="#contact">Book a call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="panel">
+        <h2>About</h2>
+        <p class="lead" style="margin-top:0;">
+          Global Institute for Supply Chain & Sustainability (GICS) is a global professional training provider focused on practical capability building in
+          supply chain management, operations excellence, sustainability, and analytics. Our programmes are designed to be applied immediately in real operational environments.
+        </p>
+
+        <div class="grid" style="margin-top:14px;">
+          <div class="card">
+            <h3>What makes us different</h3>
+            <p>
+              Applied learning, competency-based assessment, and industry-aligned tools—built with UK postgraduate rigour, not theory-only instruction.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Who we serve</h3>
+            <p>
+              Working professionals, corporate teams, NGOs/public-sector supply chains, and early-career talent globally—especially in emerging markets.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Quality & credibility</h3>
+            <p>
+              Led by a UK Programme Director in Operations Management with expertise in supply chain sustainability, leadership, and industry collaboration.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <h3>Founder & Academic Lead</h3>
+          <p>
+            <b>Frank Donkor</b> is Programme Director for the MSc Operations Management at the University of Exeter and specialises in supply chain sustainability,
+            operations management, leadership in supply chains, degree apprenticeships, and industry–academic collaboration in the pharmaceutical sector in both developed and developing countries.
+            Frank uses both quantitative and qualitative research methods to inform research and professional programme design.
+          </p>
+          <p class="note">
+            We provide professional training and career readiness support. We do not offer job placement, apprenticeship enrolment, or visa sponsorship.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="panel">
+        <h2>Contact / Register interest (September 2026)</h2>
+        <p class="lead" style="margin-top:0;">
+          Register your interest for the September 2026 cohort, request a corporate proposal, or ask a question.
+        </p>
+
+        <form onsubmit="event.preventDefault(); alert('Thanks! Replace this with your form endpoint (Google Form / Formspree).');"
+              style="display:grid;gap:10px;max-width:620px;">
+          <div class="grid2">
+            <input required placeholder="Full name" />
+            <input required type="email" placeholder="Email address" />
+          </div>
+          <div class="grid2">
+            <input placeholder="Country / City" />
+            <select>
+              <option>I'm interested in: Flagship Certificate (6–8 weeks)</option>
+              <option>I'm interested in: Supply Chain Analytics (2–3 weeks)</option>
+              <option>I'm interested in: Lean Operations (2–3 weeks)</option>
+              <option>I'm interested in: Self-paced (recorded) option</option>
+              <option>I'm interested in: Corporate training / proposal</option>
+            </select>
+          </div>
+          <textarea placeholder="Tell us your goals (optional)" rows="4"></textarea>
+          <button class="btn primary" type="submit" style="width:max-content;cursor:pointer;">Submit</button>
+        </form>
+
+        <p class="note" style="margin-top:14px;">
+          Email: <b>[your@email.com]</b> • WhatsApp: <b>[+44 / +233 number]</b> • LinkedIn: <b>[your LinkedIn text]</b>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Global Institute for Supply Chain & Sustainability (GICS). All rights reserved.</div>
+      <div>Global delivery • Competency-based learning • UK-quality standards</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
