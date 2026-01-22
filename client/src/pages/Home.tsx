@@ -133,7 +133,7 @@ export default function Home() {
             <div className="space-y-3">
               {[
                 { label: "Start", value: "September 2026" },
-                { label: "Flagship", value: "Practical Supply Chain Certificate" },
+                { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
                 { label: "Duration", value: "6–8 weeks • Live Sessions" },
                 { label: "Assessment", value: "Capstone project" }
               ].map((item) => (
