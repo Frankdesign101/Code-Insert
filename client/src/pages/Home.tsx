@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { CheckCircle2, Target, Users, BookOpen, Award } from "lucide-react";
 
 export default function Home() {
   const progs = [
@@ -9,12 +10,33 @@ export default function Home() {
       subtitle: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)",
       duration: "6–8 weeks • Live online (with recordings)",
       details: [
-        "Interactive sessions",
-        "Applied assignments",
-        "Integrated capstone project",
-        "CPD-accredited (planned / in progress)"
+        "Duration: 6–8 weeks",
+        "Delivery: Live online (with recordings available)",
+        "Format: Cohort-based learning",
+        "Certification: CPD-accredited (planned / in progress)"
       ],
-      overview: "The Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO) is a cohort-based professional development programme designed to build practical, workplace-ready capability in supply chain management, operations excellence, and sustainability. Delivered live online, the programme combines expert-led teaching with real-world case discussions, hands-on assignments, and a capstone project focused on solving an applied operational or supply chain challenge. Participants gain tools and frameworks they can immediately apply within their organisations or professional contexts."
+      overview: "The Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO) is a professional development programme designed to build practical, workplace-ready capability in supply chain management, operations excellence, and sustainability. Delivered through live online sessions, the programme combines expert-led teaching, applied assignments, and a capstone project focused on real operational or supply chain challenges.",
+      whoItIsFor: [
+        "Working professionals in supply chain, logistics, procurement, and operations",
+        "NGO and public-sector staff involved in supply chain and operations delivery",
+        "Early-career professionals and graduates seeking applied, employable skills",
+        "Professionals interested in sustainable and responsible practices",
+        "Corporate teams requiring structured capability development"
+      ],
+      learningOutcomes: [
+        "Analyse end-to-end supply chain processes and identify performance gaps",
+        "Apply operations improvement and Lean principles to practical scenarios",
+        "Use data and KPIs to support operational and managerial decision-making",
+        "Integrate sustainability and ESG considerations into supply chain activities",
+        "Communicate operational insights clearly and professionally to stakeholders"
+      ],
+      structure: [
+        "Live online teaching sessions (typically two sessions per week)",
+        "Interactive discussions and case-based learning",
+        "Structured weekly applied assignments",
+        "Final applied capstone project addressing real issues"
+      ],
+      assessment: "Learning is assessed through applied individual or group assignments, participation in discussions, and a final capstone project. The capstone requires participants to analyse a real or simulated challenge and propose practical, sustainability-informed solutions."
     },
     {
       title: "Supply Chain Analytics",
@@ -41,7 +63,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="max-w-[1160px] mx-auto px-6 py-8 space-y-10">
+    <div className="max-w-[1160px] mx-auto px-6 py-8 space-y-12">
       {/* Header */}
       <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-white/10">
         <a className="flex items-center gap-4 no-underline group" href="#" data-testid="link-home">
@@ -144,27 +166,118 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {progs.map((prog) => (
-            <Card key={prog.title} className={`bg-white/5 border-white/10 rounded-2xl overflow-hidden hover:border-[hsl(var(--accent))]/50 transition-colors ${prog.title === "Flagship Certificate" ? "md:col-span-3" : ""}`}>
-              <CardHeader className="bg-white/5">
-                <CardTitle className="text-sm font-black uppercase tracking-widest text-muted-foreground">{prog.title}</CardTitle>
-                <p className="text-xl font-bold text-foreground mt-2">{prog.subtitle}</p>
+            <Card 
+              key={prog.title} 
+              className={`bg-white/5 border-white/10 rounded-3xl overflow-hidden hover:border-[hsl(var(--accent))]/50 transition-all duration-300 ${prog.title === "Flagship Certificate" ? "md:col-span-3" : "flex flex-col"}`}
+            >
+              <CardHeader className="bg-white/5 p-8">
+                <div className="flex justify-between items-start gap-4">
+                  <div>
+                    <CardTitle className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-3">{prog.title}</CardTitle>
+                    <p className="text-2xl font-bold text-foreground leading-tight">{prog.subtitle}</p>
+                  </div>
+                  {prog.title === "Flagship Certificate" && (
+                    <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-4 py-1">POPULAR</Badge>
+                  )}
+                </div>
               </CardHeader>
-              <CardContent className="pt-6 space-y-6">
+              
+              <CardContent className="p-8 space-y-10">
                 {prog.overview && (
-                  <p className="text-sm text-muted-foreground leading-relaxed italic">{prog.overview}</p>
+                  <div className="space-y-4">
+                    <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                      <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Programme Overview
+                    </h4>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {prog.overview}
+                    </p>
+                  </div>
                 )}
-                <div className="space-y-4">
-                  <p className="text-xs font-black text-[hsl(var(--accent))] uppercase tracking-wide">{prog.duration}</p>
-                  <ul className={`grid grid-cols-1 ${prog.title === "Flagship Certificate" ? "md:grid-cols-2" : ""} gap-x-8 gap-y-3 text-sm text-muted-foreground list-none`}>
-                    {prog.details.map(detail => (
-                      <li key={detail} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))]" />
-                        <span className="font-medium">{detail}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                <div className={`${prog.title === "Flagship Certificate" ? "grid grid-cols-1 md:grid-cols-2 gap-12" : "space-y-8"}`}>
+                  {/* Left Column for Flagship / Single Column for others */}
+                  <div className="space-y-8">
+                    {prog.learningOutcomes && (
+                      <div className="space-y-4">
+                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                          <Target className="w-4 h-4 text-[hsl(var(--accent))]" /> What You Will Learn
+                        </h4>
+                        <ul className="space-y-3">
+                          {prog.learningOutcomes.map(item => (
+                            <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                              <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                              <span className="font-medium">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {prog.whoItIsFor && (
+                      <div className="space-y-4">
+                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                          <Users className="w-4 h-4 text-[hsl(var(--accent))]" /> Who This Is For
+                        </h4>
+                        <ul className="space-y-3">
+                          {prog.whoItIsFor.map(item => (
+                            <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                              <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))] shrink-0 mt-1.5" />
+                              <span className="font-medium">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {!prog.learningOutcomes && (
+                      <div className="space-y-4">
+                        <p className="text-xs font-black text-[hsl(var(--accent))] uppercase tracking-[0.1em]">{prog.duration}</p>
+                        <ul className="space-y-3">
+                          {prog.details.map(detail => (
+                            <li key={detail} className="flex items-start gap-3 text-sm text-muted-foreground">
+                              <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                              <span className="font-medium">{detail}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Right Column for Flagship */}
+                  {prog.title === "Flagship Certificate" && (
+                    <div className="space-y-8">
+                      <div className="space-y-4">
+                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                          <Award className="w-4 h-4 text-[hsl(var(--accent))]" /> Certification & Assessment
+                        </h4>
+                        <div className="p-5 bg-white/5 border border-white/10 rounded-2xl space-y-4">
+                          <p className="text-sm text-muted-foreground leading-relaxed">{prog.assessment}</p>
+                          <div className="pt-4 border-t border-white/5">
+                            <p className="text-xs font-bold text-foreground">CPD-accredited (planned / in progress)</p>
+                            <p className="text-[11px] text-muted-foreground mt-1">Participants receive a Certificate of Completion.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                          <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Programme Structure
+                        </h4>
+                        <ul className="space-y-3">
+                          {prog.structure?.map(item => (
+                            <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                              <div className="w-1.5 h-1.5 rounded-full bg-white/20 shrink-0 mt-1.5" />
+                              <span className="font-medium">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <p className="text-[11px] text-muted-foreground italic">Session recordings provided for all participants.</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -173,9 +286,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="pt-10 pb-16 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
-        <p className="text-muted-foreground font-medium">© 2026 Global Institute for Supply Chain & Sustainability (GICS).</p>
-        <div className="flex gap-8 font-bold text-foreground">
+      <footer className="pt-12 pb-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-sm">
+        <div className="space-y-2 text-center md:text-left">
+          <p className="text-foreground font-bold text-base">GICS</p>
+          <p className="text-muted-foreground font-medium">© 2026 Global Institute for Supply Chain & Sustainability.</p>
+        </div>
+        <div className="flex gap-10 font-black uppercase tracking-widest text-[10px] text-muted-foreground">
           <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors">Privacy</a>
           <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors">Terms</a>
           <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors">Contact</a>
