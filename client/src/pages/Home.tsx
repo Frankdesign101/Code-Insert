@@ -173,7 +173,7 @@ export default function Home() {
               {[
                 { label: "Start", value: "September 2026" },
                 { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
-                { label: "Duration", value: "6–8 weeks • Live Sessions" },
+                { label: "Duration", value: "6–8 weeks • Live and/or recorded sessions" },
                 { label: "Assessment", value: "Capstone project" }
               ].map((item) => (
                 <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
