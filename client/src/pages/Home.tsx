@@ -16,7 +16,7 @@ export default function Home() {
         "Systems thinking in supply chains"
       ],
       capstone: "Selection of context and definition of a clear challenge (Forms Section 1 of report).",
-      references: "Supply Chain Management (Ch 1–3), Logistics & SC Management (Ch 1–3)"
+      references: "Chopra & Meindl (Ch 1-3), Martin Christopher (Ch 1-3)"
     },
     {
       id: "module-2",
@@ -29,7 +29,7 @@ export default function Home() {
         "Root cause analysis"
       ],
       capstone: "Mapping one core process and identifying root causes (Forms Section 2 of report).",
-      references: "Operations Management (Ch 1–4, 15), Operations Management (Ch 4–6, 16)"
+      references: "Slack & Brandon-Jones (Ch 1-4, 15), Reid & Sanders (Ch 4-6, 16)"
     },
     {
       id: "module-3",
@@ -42,7 +42,7 @@ export default function Home() {
         "Interpreting performance data"
       ],
       capstone: "Selection and justification of 3–5 KPIs (Forms Section 3 of report).",
-      references: "Operations Management (Ch 10–13), Supply Chain Management (Ch 4–6)"
+      references: "Slack & Brandon-Jones (Ch 10-13), Chopra & Meindl (Ch 4-6)"
     },
     {
       id: "module-4",
@@ -55,7 +55,7 @@ export default function Home() {
         "Balancing sustainability with cost/service"
       ],
       capstone: "Identification of risks and proposal of improvements (Forms Section 4 of report).",
-      references: "Supply Chain Management (Ch 10), CISL Frameworks"
+      references: "Chopra & Meindl (Ch 10), Cambridge Institute for Sustainability Leadership (CISL) Frameworks"
     },
     {
       id: "module-5",
@@ -67,7 +67,7 @@ export default function Home() {
         "Professional reporting and executive communication"
       ],
       capstone: "Final recommendations and executive summary (Forms Section 5 of report).",
-      references: "Operations Management (Ch 1, 2, 18)"
+      references: "Slack & Brandon-Jones (Ch 1, 2, 18)"
     }
   ];
 
@@ -264,7 +264,7 @@ export default function Home() {
                                 <p className="text-xs text-foreground font-medium leading-relaxed">{module.capstone}</p>
                               </div>
                               <div className="space-y-1">
-                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Key References</p>
+                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Key Textbook References</p>
                                 <p className="text-[10px] text-muted-foreground italic leading-tight">{module.references}</p>
                               </div>
                             </div>

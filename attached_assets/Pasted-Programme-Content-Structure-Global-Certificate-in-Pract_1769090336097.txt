@@ -1,0 +1,201 @@
+Programme Content & Structure
+Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
+
+Duration: 6–8 weeks
+Delivery: Live online (with recordings)
+Assessment: Embedded applied assignments + integrated capstone project
+Certification: CPD-accredited (planned / in progress)
+
+Programme Design Philosophy
+
+The programme is structured around five integrated modules, delivered sequentially over 6–8 weeks.
+Each week combines live teaching, guided reading from established operations and supply chain textbooks, and a focused applied assignment.
+
+Weekly assignments progressively build one coherent capstone project based on a single organisation and a single operational or supply chain challenge.
+
+Module 1 (Week 1): Supply Chain Foundations & Systems Thinking
+Focus
+
+Understanding the supply chain as an end-to-end system and clearly defining an operational or supply chain problem.
+
+Key Topics
+
+End-to-end supply chain structure (plan–source–make–deliver–return)
+
+Supply chain objectives and trade-offs (cost, service, resilience, sustainability)
+
+Systems thinking in supply chains
+
+Capstone Integration (Week 1 Assignment)
+
+Selection of one organisation or supply chain context
+
+Definition of a clear supply chain or operations challenge
+
+➡️ Forms Section 1 of the final capstone report.
+
+Key Textbook References
+
+Supply Chain Management: Strategy, Planning, and Operation — Sunil Chopra & Peter Meindl
+
+Chapters 1–2: Understanding the Supply Chain
+
+Chapter 3: Supply Chain Performance and Strategic Fit
+
+Logistics & Supply Chain Management — Martin Christopher
+
+Chapters 1–3: Supply Chains, Value, and Competitive Advantage
+
+Module 2 (Week 2): Operations Excellence & Process Improvement
+Focus
+
+Analysing operational processes to identify inefficiencies and improvement opportunities.
+
+Key Topics
+
+Process mapping and flow analysis
+
+Bottlenecks and waste
+
+Lean principles and continuous improvement
+
+Root cause analysis
+
+Capstone Integration (Week 2 Assignment)
+
+Mapping one core process
+
+Identification of inefficiencies and root causes
+
+➡️ Forms Section 2 of the final capstone report.
+
+Key Textbook References
+
+Operations Management — Nigel Slack & Alistair Brandon-Jones
+
+Chapters 1–4: Operations Strategy and Process Design
+
+Chapter 15: Lean Operations and Improvement
+
+Operations Management — R. Dan Reid & Nada R. Sanders
+
+Chapters 4–6: Process Strategy and Analysis
+
+Chapter 16: Managing Quality and Continuous Improvement
+
+Module 3 (Week 3): Performance Measurement, KPIs & Control
+Focus
+
+Using performance metrics and data to support operational and supply chain decisions.
+
+Key Topics
+
+Designing effective KPIs
+
+Planning and control systems
+
+Inventory and service-level measures
+
+Interpreting performance data
+
+Capstone Integration (Week 3 Assignment)
+
+Selection and justification of 3–5 KPIs
+
+Explanation of how KPIs support decision-making
+
+➡️ Forms Section 3 of the final capstone report.
+
+Key Textbook References
+
+Operations Management — Nigel Slack & Alistair Brandon-Jones
+
+Chapters 10–12: Planning and Control
+
+Chapter 13: Inventory Management
+
+Supply Chain Management: Strategy, Planning, and Operation — Sunil Chopra & Peter Meindl
+
+Chapters 4–6: Demand Forecasting, Planning, and Inventory
+
+Module 4 (Week 4): Sustainable Supply Chains & ESG in Operations
+Focus
+
+Embedding sustainability into operational and supply chain decision-making.
+
+Key Topics
+
+Environmental and social impacts across supply chains
+
+Sustainable sourcing and supplier management
+
+Waste reduction, efficiency, and emissions
+
+Balancing sustainability with cost and service performance
+
+Capstone Integration (Week 4 Assignment)
+
+Identification of sustainability risks and opportunities
+
+Proposal of realistic sustainability-informed improvements
+
+➡️ Forms Section 4 of the final capstone report.
+
+Key Textbook & Framework References
+
+Supply Chain Management: Strategy, Planning, and Operation — Sunil Chopra & Peter Meindl
+
+Chapter 10 (edition dependent): Sustainability and Supply Chain Design
+
+Cambridge Institute for Sustainability Leadership
+
+Applied sustainable supply chain frameworks introduced during teaching
+
+Module 5 (Weeks 5–6): Integration, Leadership & Professional Practice
+Focus
+
+Synthesising analysis into actionable recommendations and communicating professionally.
+
+Key Topics
+
+Integrating operations, KPIs, and sustainability insights
+
+Prioritisation and trade-off management
+
+High-level implementation planning
+
+Professional reporting and executive communication
+
+Capstone Integration (Weeks 5–6 Assignments)
+
+Development of prioritised recommendations
+
+High-level implementation plan
+
+Executive summary and final report submission
+
+➡️ Forms Section 5 of the final capstone report.
+
+Key Textbook References
+
+Operations Management — Nigel Slack & Alistair Brandon-Jones
+
+Chapters 1–2: Operations Strategy and Performance Objectives
+
+Chapter 18: Operations Improvement and Organisational Learning
+
+Optional Extension (Weeks 7–8)
+
+Capstone presentations
+
+Structured feedback sessions
+
+CPD learning log completion
+
+Final Capstone Output
+
+Length: 2,500–3,000 words (excluding appendices)
+
+Format: One integrated professional report
+
+Assessment approach: Competency-based, applied, and workplace-focused
