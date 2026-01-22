@@ -377,9 +377,12 @@ export default function Home() {
                 </div>
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
-                  <p className="text-sm font-bold text-foreground">£70 – £250</p>
-                  <p className="text-[10px] text-muted-foreground">Premium: £300 – £450</p>
-                  <p className="text-[9px] text-muted-foreground mt-1 italic leading-tight">Fees are set by registration window (early, standard, late).</p>
+                  <div className="space-y-1 mt-1">
+                    <p className="text-sm font-bold text-foreground">Early Bird: £70 – £120</p>
+                    <p className="text-sm font-bold text-foreground">Standard: £120 – £250</p>
+                    <p className="text-sm font-bold text-foreground">Premium: £300 – £450</p>
+                  </div>
+                  <p className="text-[9px] text-muted-foreground mt-2 italic leading-tight">Fees are set by registration window (early, standard, late).</p>
                 </div>
               </div>
             </CardContent>
@@ -431,9 +434,11 @@ export default function Home() {
                 </div>
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
-                  <p className="text-sm font-bold text-foreground">£49 – £99</p>
-                  <p className="text-[10px] text-muted-foreground">Coaching: +£120 – £180</p>
-                  <p className="text-[9px] text-muted-foreground mt-1 italic leading-tight">Fees are set by registration window (early, standard, late).</p>
+                  <div className="space-y-1 mt-1">
+                    <p className="text-sm font-bold text-foreground">Course Fee: £49 – £99</p>
+                    <p className="text-sm font-bold text-foreground">Group Coaching: +£120 – £180</p>
+                  </div>
+                  <p className="text-[9px] text-muted-foreground mt-2 italic leading-tight">Fees are set by registration window (early, standard, late).</p>
                 </div>
               </div>
             </CardContent>
