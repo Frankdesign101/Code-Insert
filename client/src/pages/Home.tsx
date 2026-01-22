@@ -314,6 +314,114 @@ export default function Home() {
         </Card>
       </section>
 
+      {/* Time Commitment Section */}
+      <section id="commitment" className="space-y-8">
+        <div>
+          <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Time Commitment</h2>
+          <p className="text-muted-foreground font-medium mt-2">Flexible learning designed for working professionals.</p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Live Cohort */}
+          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden border-l-4 border-l-[hsl(var(--accent))]">
+            <CardHeader className="p-8 bg-white/5">
+              <div className="flex items-center gap-3 text-[hsl(var(--accent))] mb-2">
+                <Timer className="w-5 h-5" />
+                <span className="text-xs font-black uppercase tracking-widest">Recommended</span>
+              </div>
+              <CardTitle className="text-2xl font-bold">Live Cohort Option</CardTitle>
+            </CardHeader>
+            <CardContent className="p-8 space-y-6">
+              <div className="flex gap-8">
+                <div className="space-y-1">
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Weekly</p>
+                  <p className="text-xl font-black text-foreground">6–8 Hours</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Total</p>
+                  <p className="text-xl font-black text-foreground">45–55 Hours</p>
+                </div>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  "Live interactive online sessions",
+                  "Guided reading from core textbooks",
+                  "Applied weekly assignments",
+                  "Reflection and CPD learning log"
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                    <span className="font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-muted-foreground italic pt-4 border-t border-white/5">
+                Session recordings are provided if you are unable to attend in real time.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Self-Paced */}
+          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden">
+            <CardHeader className="p-8 bg-white/5">
+              <div className="flex items-center gap-3 text-muted-foreground mb-2">
+                <BookOpen className="w-5 h-5" />
+                <span className="text-xs font-black uppercase tracking-widest">Independent</span>
+              </div>
+              <CardTitle className="text-2xl font-bold">Self-Paced Option</CardTitle>
+            </CardHeader>
+            <CardContent className="p-8 space-y-6">
+              <div className="flex gap-8">
+                <div className="space-y-1">
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Weekly</p>
+                  <p className="text-xl font-black text-foreground">4–6 Hours</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Total</p>
+                  <p className="text-xl font-black text-foreground">30–40 Hours</p>
+                </div>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  "Access to recorded lectures",
+                  "Guided self-study and reading",
+                  "Applied assignments completed independently",
+                  "Optional group coaching sessions"
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <CheckCircle2 className="w-4 h-4 text-muted-foreground/50 shrink-0 mt-0.5" />
+                    <span className="font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-muted-foreground italic pt-4 border-t border-white/5">
+                Offers greater flexibility with less live interaction than the cohort.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Selection Guide */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-6 bg-[hsl(var(--accent))]/5 border border-[hsl(var(--accent))]/20 rounded-2xl space-y-3">
+            <h4 className="font-bold text-foreground flex items-center gap-2">
+              <ChevronRight className="w-4 h-4 text-[hsl(var(--accent))]" /> Choose Live Cohort if:
+            </h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">You value interaction, discussion, and structured pacing to keep you on track.</p>
+          </div>
+          <div className="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3">
+            <h4 className="font-bold text-foreground flex items-center gap-2">
+              <ChevronRight className="w-4 h-4 text-muted-foreground" /> Choose Self-Paced if:
+            </h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">You need maximum flexibility and prefer independent study at your own speed.</p>
+          </div>
+        </div>
+
+        <p className="text-xs text-muted-foreground text-center">
+          <span className="font-black text-foreground">Important Note:</span> Timetable and learning hours are indicative and may vary slightly by cohort.
+        </p>
+      </section>
+
       {/* Why Choose GICS? */}
       <section id="about" className="space-y-8">
         <div>
