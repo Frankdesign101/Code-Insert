@@ -3,6 +3,43 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
+  const progs = [
+    {
+      title: "Flagship Certificate",
+      subtitle: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)",
+      duration: "6–8 weeks • Live online (with recordings)",
+      details: [
+        "Interactive sessions",
+        "Applied assignments",
+        "Integrated capstone project",
+        "CPD-accredited (planned / in progress)"
+      ],
+      overview: "The Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO) is a cohort-based professional development programme designed to build practical, workplace-ready capability in supply chain management, operations excellence, and sustainability. Delivered live online, the programme combines expert-led teaching with real-world case discussions, hands-on assignments, and a capstone project focused on solving an applied operational or supply chain challenge. Participants gain tools and frameworks they can immediately apply within their organisations or professional contexts."
+    },
+    {
+      title: "Supply Chain Analytics",
+      subtitle: "Excel & Power BI Core",
+      duration: "2–3 weeks • Tool-based",
+      details: [
+        "KPI Dashboard builds",
+        "Forecasting basics",
+        "Inventory metrics",
+        "Real dataset practice"
+      ]
+    },
+    {
+      title: "Lean Operations",
+      subtitle: "Process Improvement",
+      duration: "2–3 weeks • Applied",
+      details: [
+        "Process mapping",
+        "Waste elimination",
+        "Root cause analysis",
+        "Mini project output"
+      ]
+    }
+  ];
+
   return (
     <div className="max-w-[1160px] mx-auto px-6 py-8 space-y-10">
       {/* Header */}
@@ -108,56 +145,27 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Flagship Certificate",
-              subtitle: "Practical Supply Chain Operations",
-              duration: "6–8 weeks • Live online",
-              details: [
-                "End-to-end foundations",
-                "Inventory & Procurement",
-                "Lean fundamentals",
-                "Sustainability (ESG)"
-              ]
-            },
-            {
-              title: "Supply Chain Analytics",
-              subtitle: "Excel & Power BI Core",
-              duration: "2–3 weeks • Tool-based",
-              details: [
-                "KPI Dashboard builds",
-                "Forecasting basics",
-                "Inventory metrics",
-                "Real dataset practice"
-              ]
-            },
-            {
-              title: "Lean Operations",
-              subtitle: "Process Improvement",
-              duration: "2–3 weeks • Applied",
-              details: [
-                "Process mapping",
-                "Waste elimination",
-                "Root cause analysis",
-                "Mini project output"
-              ]
-            }
-          ].map((prog) => (
-            <Card key={prog.title} className="bg-white/5 border-white/10 rounded-2xl overflow-hidden hover:border-[hsl(var(--accent))]/50 transition-colors">
+          {progs.map((prog) => (
+            <Card key={prog.title} className={`bg-white/5 border-white/10 rounded-2xl overflow-hidden hover:border-[hsl(var(--accent))]/50 transition-colors ${prog.title === "Flagship Certificate" ? "md:col-span-3" : ""}`}>
               <CardHeader className="bg-white/5">
                 <CardTitle className="text-sm font-black uppercase tracking-widest text-muted-foreground">{prog.title}</CardTitle>
-                <p className="text-lg font-bold text-foreground mt-2">{prog.subtitle}</p>
+                <p className="text-xl font-bold text-foreground mt-2">{prog.subtitle}</p>
               </CardHeader>
-              <CardContent className="pt-6 space-y-4">
-                <p className="text-xs font-black text-[hsl(var(--accent))] uppercase tracking-wide">{prog.duration}</p>
-                <ul className="text-sm text-muted-foreground space-y-3 list-none">
-                  {prog.details.map(detail => (
-                    <li key={detail} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))]" />
-                      <span className="font-medium">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
+              <CardContent className="pt-6 space-y-6">
+                {prog.overview && (
+                  <p className="text-sm text-muted-foreground leading-relaxed italic">{prog.overview}</p>
+                )}
+                <div className="space-y-4">
+                  <p className="text-xs font-black text-[hsl(var(--accent))] uppercase tracking-wide">{prog.duration}</p>
+                  <ul className={`grid grid-cols-1 ${prog.title === "Flagship Certificate" ? "md:grid-cols-2" : ""} gap-x-8 gap-y-3 text-sm text-muted-foreground list-none`}>
+                    {prog.details.map(detail => (
+                      <li key={detail} className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))]" />
+                        <span className="font-medium">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </CardContent>
             </Card>
           ))}
