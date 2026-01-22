@@ -1,9 +1,76 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Target, Users, BookOpen, Award, PoundSterling, Building2, Timer } from "lucide-react";
+import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Home() {
+  const modules = [
+    {
+      id: "module-1",
+      title: "Module 1: Supply Chain Foundations & Systems Thinking",
+      focus: "Understanding the supply chain as an end-to-end system and clearly defining an operational or supply chain problem.",
+      topics: [
+        "End-to-end supply chain structure (plan–source–make–deliver–return)",
+        "Supply chain objectives and trade-offs (cost, service, resilience, sustainability)",
+        "Systems thinking in supply chains"
+      ],
+      capstone: "Selection of context and definition of a clear challenge (Forms Section 1 of report).",
+      references: "Supply Chain Management (Ch 1–3), Logistics & SC Management (Ch 1–3)"
+    },
+    {
+      id: "module-2",
+      title: "Module 2: Operations Excellence & Process Improvement",
+      focus: "Analysing operational processes to identify inefficiencies and improvement opportunities.",
+      topics: [
+        "Process mapping and flow analysis",
+        "Bottlenecks and waste",
+        "Lean principles and continuous improvement",
+        "Root cause analysis"
+      ],
+      capstone: "Mapping one core process and identifying root causes (Forms Section 2 of report).",
+      references: "Operations Management (Ch 1–4, 15), Operations Management (Ch 4–6, 16)"
+    },
+    {
+      id: "module-3",
+      title: "Module 3: Performance Measurement, KPIs & Control",
+      focus: "Using performance metrics and data to support operational and supply chain decisions.",
+      topics: [
+        "Designing effective KPIs",
+        "Planning and control systems",
+        "Inventory and service-level measures",
+        "Interpreting performance data"
+      ],
+      capstone: "Selection and justification of 3–5 KPIs (Forms Section 3 of report).",
+      references: "Operations Management (Ch 10–13), Supply Chain Management (Ch 4–6)"
+    },
+    {
+      id: "module-4",
+      title: "Module 4: Sustainable Supply Chains & ESG in Operations",
+      focus: "Embedding sustainability into operational and supply chain decision-making.",
+      topics: [
+        "Environmental and social impacts",
+        "Sustainable sourcing and supplier management",
+        "Waste reduction, efficiency, and emissions",
+        "Balancing sustainability with cost/service"
+      ],
+      capstone: "Identification of risks and proposal of improvements (Forms Section 4 of report).",
+      references: "Supply Chain Management (Ch 10), CISL Frameworks"
+    },
+    {
+      id: "module-5",
+      title: "Module 5: Integration, Leadership & Professional Practice",
+      focus: "Synthesising analysis into actionable recommendations and communicating professionally.",
+      topics: [
+        "Prioritisation and trade-off management",
+        "High-level implementation planning",
+        "Professional reporting and executive communication"
+      ],
+      capstone: "Final recommendations and executive summary (Forms Section 5 of report).",
+      references: "Operations Management (Ch 1, 2, 18)"
+    }
+  ];
+
   const progs = [
     {
       title: "Flagship Certificate",
@@ -15,50 +82,22 @@ export default function Home() {
         "Format: Cohort-based learning",
         "Certification: CPD-accredited (planned / in progress)"
       ],
-      overview: "The Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO) is a professional development programme designed to build practical, workplace-ready capability in supply chain management, operations excellence, and sustainability. Delivered through live online sessions, the programme combines expert-led teaching, applied assignments, and a capstone project focused on real operational or supply chain challenges.",
+      overview: "The Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO) is a professional development programme designed to build practical, workplace-ready capability in supply chain management, operations excellence, and sustainability.",
       whoItIsFor: [
         "Working professionals in supply chain, logistics, procurement, and operations",
-        "NGO and public-sector staff involved in supply chain and operations delivery",
-        "Early-career professionals and graduates seeking applied, employable skills",
-        "Professionals interested in sustainable and responsible practices",
-        "Corporate teams requiring structured capability development"
+        "NGO and public-sector staff involved in delivery",
+        "Early-career professionals and graduates",
+        "Corporate teams requiring structured development"
       ],
       learningOutcomes: [
-        "Analyse end-to-end supply chain processes and identify performance gaps",
-        "Apply operations improvement and Lean principles to practical scenarios",
-        "Use data and KPIs to support operational and managerial decision-making",
-        "Integrate sustainability and ESG considerations into supply chain activities",
-        "Communicate operational insights clearly and professionally to stakeholders"
+        "Analyse end-to-end supply chain processes",
+        "Apply Lean principles to practical scenarios",
+        "Use data and KPIs for decision-making",
+        "Integrate sustainability/ESG considerations",
+        "Communicate operational insights professionally"
       ],
-      structure: [
-        "Live online teaching sessions (typically two sessions per week)",
-        "Interactive discussions and case-based learning",
-        "Structured weekly applied assignments",
-        "Final applied capstone project addressing real issues"
-      ],
-      assessment: "Learning is assessed through applied individual or group assignments, participation in discussions, and a final capstone project. The capstone requires participants to analyse a real or simulated challenge and propose practical, sustainability-informed solutions."
-    },
-    {
-      title: "Supply Chain Analytics",
-      subtitle: "Excel & Power BI Core",
-      duration: "2–3 weeks • Tool-based",
-      details: [
-        "KPI Dashboard builds",
-        "Forecasting basics",
-        "Inventory metrics",
-        "Real dataset practice"
-      ]
-    },
-    {
-      title: "Lean Operations",
-      subtitle: "Process Improvement",
-      duration: "2–3 weeks • Applied",
-      details: [
-        "Process mapping",
-        "Waste elimination",
-        "Root cause analysis",
-        "Mini project output"
-      ]
+      structureOverview: "Structured around five integrated modules delivered over 6–8 weeks. Each week combines live teaching, guided reading, and a focused applied assignment.",
+      finalOutput: "2,500–3,000 words integrated professional report."
     }
   ];
 
@@ -133,7 +172,7 @@ export default function Home() {
             <div className="space-y-3">
               {[
                 { label: "Start", value: "September 2026" },
-                { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
+                { label: "Flagship", value: "Global Certificate (GC-PSSO)" },
                 { label: "Duration", value: "6–8 weeks • Live Sessions" },
                 { label: "Assessment", value: "Capstone project" }
               ].map((item) => (
@@ -157,132 +196,122 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Programmes */}
+      {/* Flagship Content & Structure */}
       <section id="programmes" className="space-y-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Programmes</h2>
-            <p className="text-muted-foreground font-medium mt-2">Applied, tool-based training for real-world impact.</p>
+            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Programme Content & Structure</h2>
+            <p className="text-muted-foreground font-medium mt-2">GC-PSSO Detailed Curriculum</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {progs.map((prog) => (
-            <Card 
-              key={prog.title} 
-              className={`bg-white/5 border-white/10 rounded-3xl overflow-hidden hover:border-[hsl(var(--accent))]/50 transition-all duration-300 ${prog.title === "Flagship Certificate" ? "md:col-span-3" : "flex flex-col"}`}
-            >
-              <CardHeader className="bg-white/5 p-8">
-                <div className="flex justify-between items-start gap-4">
-                  <div>
-                    <CardTitle className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-3">{prog.title}</CardTitle>
-                    <p className="text-2xl font-bold text-foreground leading-tight">{prog.subtitle}</p>
-                  </div>
-                  {prog.title === "Flagship Certificate" && (
-                    <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-4 py-1">POPULAR</Badge>
-                  )}
+        <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden shadow-2xl">
+          <CardHeader className="p-8 bg-white/5 border-b border-white/10">
+            <div className="flex flex-col md:flex-row justify-between gap-6">
+              <div className="space-y-4 flex-1">
+                <CardTitle className="text-2xl font-bold text-foreground leading-tight">
+                  Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
+                </CardTitle>
+                <p className="text-muted-foreground leading-relaxed max-w-3xl">
+                  {progs[0].overview} Delivered through live sessions, the programme combines expert-led teaching, applied assignments, and a capstone project.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 shrink-0">
+                <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-4 py-2 text-sm justify-center">CPD-ACCREDITED*</Badge>
+                <div className="text-right">
+                  <p className="text-[10px] font-black uppercase text-muted-foreground">Final Capstone Output</p>
+                  <p className="text-sm font-bold text-foreground">{progs[0].finalOutput}</p>
                 </div>
-              </CardHeader>
-              
-              <CardContent className="p-8 space-y-10">
-                {prog.overview && (
-                  <div className="space-y-4">
-                    <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                      <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Programme Overview
-                    </h4>
-                    <p className="text-base text-muted-foreground leading-relaxed">
-                      {prog.overview}
-                    </p>
-                  </div>
-                )}
-
-                <div className={`${prog.title === "Flagship Certificate" ? "grid grid-cols-1 md:grid-cols-2 gap-12" : "space-y-8"}`}>
-                  {/* Left Column for Flagship / Single Column for others */}
-                  <div className="space-y-8">
-                    {prog.learningOutcomes && (
-                      <div className="space-y-4">
-                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                          <Target className="w-4 h-4 text-[hsl(var(--accent))]" /> What You Will Learn
-                        </h4>
-                        <ul className="space-y-3">
-                          {prog.learningOutcomes.map(item => (
-                            <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
-                              <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                              <span className="font-medium">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {prog.whoItIsFor && (
-                      <div className="space-y-4">
-                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                          <Users className="w-4 h-4 text-[hsl(var(--accent))]" /> Who This Is For
-                        </h4>
-                        <ul className="space-y-3">
-                          {prog.whoItIsFor.map(item => (
-                            <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
-                              <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))] shrink-0 mt-1.5" />
-                              <span className="font-medium">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {!prog.learningOutcomes && (
-                      <div className="space-y-4">
-                        <p className="text-xs font-black text-[hsl(var(--accent))] uppercase tracking-[0.1em]">{prog.duration}</p>
-                        <ul className="space-y-3">
-                          {prog.details.map(detail => (
-                            <li key={detail} className="flex items-start gap-3 text-sm text-muted-foreground">
-                              <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                              <span className="font-medium">{detail}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Right Column for Flagship */}
-                  {prog.title === "Flagship Certificate" && (
-                    <div className="space-y-8">
-                      <div className="space-y-4">
-                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                          <Award className="w-4 h-4 text-[hsl(var(--accent))]" /> Certification & Assessment
-                        </h4>
-                        <div className="p-5 bg-white/5 border border-white/10 rounded-2xl space-y-4">
-                          <p className="text-sm text-muted-foreground leading-relaxed">{prog.assessment}</p>
-                          <div className="pt-4 border-t border-white/5">
-                            <p className="text-xs font-bold text-foreground">CPD-accredited (planned / in progress)</p>
-                            <p className="text-[11px] text-muted-foreground mt-1">Participants receive a Certificate of Completion.</p>
+              </div>
+            </div>
+          </CardHeader>
+          
+          <CardContent className="p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-8 space-y-8">
+                <div className="space-y-4">
+                  <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Curriculum Modules
+                  </h4>
+                  <Accordion type="single" collapsible className="w-full space-y-4">
+                    {modules.map((module) => (
+                      <AccordionItem key={module.id} value={module.id} className="border border-white/10 rounded-2xl bg-white/5 px-6 overflow-hidden">
+                        <AccordionTrigger className="hover:no-underline py-5 group">
+                          <span className="text-left font-bold text-foreground group-hover:text-[hsl(var(--accent))] transition-colors">
+                            {module.title}
+                          </span>
+                        </AccordionTrigger>
+                        <AccordionContent className="pb-6 space-y-6">
+                          <div className="space-y-2">
+                            <p className="text-xs font-black uppercase text-muted-foreground tracking-widest">Focus</p>
+                            <p className="text-sm text-foreground leading-relaxed">{module.focus}</p>
                           </div>
-                        </div>
-                      </div>
-
-                      <div className="space-y-4">
-                        <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                          <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Programme Structure
-                        </h4>
-                        <ul className="space-y-3">
-                          {prog.structure?.map(item => (
-                            <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
-                              <div className="w-1.5 h-1.5 rounded-full bg-white/20 shrink-0 mt-1.5" />
-                              <span className="font-medium">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        <p className="text-[11px] text-muted-foreground italic">Session recordings provided for all participants.</p>
-                      </div>
-                    </div>
-                  )}
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="space-y-3">
+                              <p className="text-xs font-black uppercase text-muted-foreground tracking-widest">Key Topics</p>
+                              <ul className="space-y-2">
+                                {module.topics.map((topic, i) => (
+                                  <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
+                                    <div className="w-1 h-1 rounded-full bg-[hsl(var(--accent))] mt-1.5 shrink-0" />
+                                    {topic}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div className="space-y-4">
+                              <div className="p-4 bg-[hsl(var(--accent))]/5 border border-[hsl(var(--accent))]/20 rounded-xl space-y-2">
+                                <p className="text-[10px] font-black uppercase text-[hsl(var(--accent))] tracking-widest">Capstone Integration</p>
+                                <p className="text-xs text-foreground font-medium leading-relaxed">{module.capstone}</p>
+                              </div>
+                              <div className="space-y-1">
+                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Key References</p>
+                                <p className="text-[10px] text-muted-foreground italic leading-tight">{module.references}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+              </div>
+
+              <div className="lg:col-span-4 space-y-10">
+                <div className="space-y-4">
+                  <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                    <Target className="w-4 h-4 text-[hsl(var(--accent))]" /> Design Philosophy
+                  </h4>
+                  <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10 italic">
+                    Weekly assignments progressively build one coherent capstone project based on a single organisation and operational challenge.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                    <Users className="w-4 h-4 text-[hsl(var(--accent))]" /> Who It's For
+                  </h4>
+                  <ul className="space-y-3">
+                    {progs[0].whoItIsFor.map(item => (
+                      <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                        <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
+                        <span className="font-medium">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
+                    <Award className="w-4 h-4 text-[hsl(var(--accent))]" /> Assessment Approach
+                  </h4>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Competency-based and workplace-focused. Final project demonstrates practical understanding, analytical thinking, and professional judgement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       {/* Why Choose GICS? */}
@@ -350,7 +379,6 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Flagship Fees */}
           <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 space-y-6">
             <div className="space-y-2">
               <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Flagship Programme</h3>
@@ -376,7 +404,6 @@ export default function Home() {
             </div>
           </Card>
 
-          {/* Self-Paced Fees */}
           <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 space-y-6">
             <div className="space-y-2">
               <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Self-Paced Option</h3>
@@ -397,7 +424,6 @@ export default function Home() {
             </div>
           </Card>
 
-          {/* Corporate Fees */}
           <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 space-y-6 relative group border-dashed">
             <div className="space-y-2">
               <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate / Team</h3>
