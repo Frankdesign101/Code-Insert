@@ -285,6 +285,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Choose GICS? */}
+      <section id="about" className="space-y-8">
+        <div>
+          <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Why Choose GICS?</h2>
+          <p className="text-muted-foreground font-medium mt-2">UK-quality design with a focus on real-world impact.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "UK-Quality Leadership",
+              desc: "Programme design led by experienced and senior UK lecturers with deep academic and industry roots.",
+              icon: <Award className="w-5 h-5" />
+            },
+            {
+              title: "Practical over Theory",
+              desc: "Strong focus on practical application and workplace readiness, moving beyond traditional theory alone.",
+              icon: <Target className="w-5 h-5" />
+            },
+            {
+              title: "Competency Assessment",
+              desc: "Assessments informed by professional and postgraduate standards to ensure real competency.",
+              icon: <CheckCircle2 className="w-5 h-5" />
+            },
+            {
+              title: "Global Perspective",
+              desc: "Delivery with sensitivity to both developed and emerging market contexts for global relevance.",
+              icon: <Users className="w-5 h-5" />
+            },
+            {
+              title: "Bespoke & Flexible",
+              desc: "Bespoke learning designed at your own pace with flexible fees to suit various needs.",
+              icon: <Timer className="w-5 h-5" />
+            }
+          ].map((item, i) => (
+            <Card key={i} className="bg-white/5 border-white/10 rounded-2xl p-6 space-y-4 hover:bg-white/10 transition-colors">
+              <div className="w-10 h-10 rounded-xl bg-[hsl(var(--accent))]/10 flex items-center justify-center text-[hsl(var(--accent))]">
+                {item.icon}
+              </div>
+              <div>
+                <h4 className="font-bold text-foreground text-lg">{item.title}</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed mt-2">{item.desc}</p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </section>
+
       {/* Fees Section */}
       <section id="fees" className="space-y-8">
         <div>
