@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight } from "lucide-react";
+import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight, Info } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Home() {
@@ -314,112 +314,141 @@ export default function Home() {
         </Card>
       </section>
 
-      {/* Time Commitment Section */}
-      <section id="commitment" className="space-y-8">
-        <div>
-          <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Time Commitment</h2>
-          <p className="text-muted-foreground font-medium mt-2">Flexible learning designed for working professionals.</p>
+      {/* Delivery Options & Fees Section */}
+      <section id="fees" className="space-y-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div className="flex-1">
+            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Delivery Options & Fees</h2>
+            <p className="text-muted-foreground font-medium mt-2">Choose the format that best suits your learning style and flexibility needs.</p>
+          </div>
+          <Card className="flex-1 max-w-md p-5 bg-white/5 border border-white/10 rounded-2xl">
+            <h4 className="text-xs font-black uppercase tracking-widest text-foreground mb-3 flex items-center gap-2">
+              <Info className="w-4 h-4 text-[hsl(var(--accent))]" /> Important Note
+            </h4>
+            <p className="text-xs text-muted-foreground leading-relaxed font-medium">
+              Both options follow the same curriculum and learning outcomes. Fees are set by registration window (early, standard, late).
+            </p>
+          </Card>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Live Cohort */}
-          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden border-l-4 border-l-[hsl(var(--accent))]">
-            <CardHeader className="p-8 bg-white/5">
-              <div className="flex items-center gap-3 text-[hsl(var(--accent))] mb-2">
-                <Timer className="w-5 h-5" />
-                <span className="text-xs font-black uppercase tracking-widest">Recommended</span>
+          {/* Option 1: Live Cohort */}
+          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden border-t-4 border-t-[hsl(var(--accent))] flex flex-col">
+            <CardHeader className="p-8 pb-4">
+              <div className="flex justify-between items-start">
+                <div className="space-y-1">
+                  <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-3 py-1 mb-2">RECOMMENDED</Badge>
+                  <CardTitle className="text-2xl font-bold">Option 1: Live Cohort</CardTitle>
+                </div>
               </div>
-              <CardTitle className="text-2xl font-bold">Live Cohort Option</CardTitle>
+              <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                <p className="text-[10px] font-black uppercase text-muted-foreground mb-1 tracking-widest">Who it's for</p>
+                <p className="text-sm text-foreground font-medium">Professionals who value interaction, structured pacing, and facilitated discussion.</p>
+              </div>
             </CardHeader>
-            <CardContent className="p-8 space-y-6">
-              <div className="flex gap-8">
+
+            <CardContent className="p-8 pt-4 space-y-8 flex-1">
+              <div className="space-y-4">
+                <h4 className="text-xs font-black uppercase tracking-widest text-[hsl(var(--accent))] flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4" /> What's Included
+                </h4>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+                  {[
+                    "Live interactive online sessions",
+                    "Guided weekly reading",
+                    "Applied weekly assignments",
+                    "Facilitated cohort discussions",
+                    "Structured tutor feedback",
+                    "CPD learning log guidance"
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
+                      <div className="w-1 h-1 rounded-full bg-[hsl(var(--accent))] mt-1.5 shrink-0" />
+                      <span className="font-medium">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl">
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Weekly</p>
-                  <p className="text-xl font-black text-foreground">6–8 Hours</p>
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Time Commitment</p>
+                  <p className="text-sm font-bold text-foreground">6–8 hours / week</p>
+                  <p className="text-[10px] text-muted-foreground">Total: ~45–55 hours</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Total</p>
-                  <p className="text-xl font-black text-foreground">45–55 Hours</p>
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
+                  <p className="text-sm font-bold text-foreground">£70 – £250</p>
+                  <p className="text-[10px] text-muted-foreground">Premium: £300 – £450</p>
                 </div>
               </div>
-              <ul className="space-y-3">
-                {[
-                  "Live interactive online sessions",
-                  "Guided reading from core textbooks",
-                  "Applied weekly assignments",
-                  "Reflection and CPD learning log"
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
-                    <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
-                    <span className="font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-xs text-muted-foreground italic pt-4 border-t border-white/5">
-                Session recordings are provided if you are unable to attend in real time.
-              </p>
             </CardContent>
           </Card>
 
-          {/* Self-Paced */}
-          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden">
-            <CardHeader className="p-8 bg-white/5">
-              <div className="flex items-center gap-3 text-muted-foreground mb-2">
-                <BookOpen className="w-5 h-5" />
-                <span className="text-xs font-black uppercase tracking-widest">Independent</span>
+          {/* Option 2: Self-Paced */}
+          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden flex flex-col">
+            <CardHeader className="p-8 pb-4">
+              <div className="space-y-1">
+                <Badge className="bg-white/10 text-foreground font-black px-3 py-1 mb-2">MAX FLEXIBILITY</Badge>
+                <CardTitle className="text-2xl font-bold">Option 2: Self-Paced</CardTitle>
               </div>
-              <CardTitle className="text-2xl font-bold">Self-Paced Option</CardTitle>
+              <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                <p className="text-[10px] font-black uppercase text-muted-foreground mb-1 tracking-widest">Who it's for</p>
+                <p className="text-sm text-foreground font-medium">Participants who require maximum flexibility and prefer independent, self-directed learning.</p>
+              </div>
             </CardHeader>
-            <CardContent className="p-8 space-y-6">
-              <div className="flex gap-8">
+
+            <CardContent className="p-8 pt-4 space-y-8 flex-1">
+              <div className="space-y-4">
+                <h4 className="text-xs font-black uppercase tracking-widest text-foreground flex items-center gap-2 opacity-60">
+                  <CheckCircle2 className="w-4 h-4" /> What's Included
+                </h4>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+                  {[
+                    "Recorded lectures access",
+                    "Guided self-study & reading",
+                    "Independent assignments",
+                    "Capstone guidance",
+                    "Certificate of Completion",
+                    "Flexible learning approach"
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
+                      <div className="w-1 h-1 rounded-full bg-white/30 mt-1.5 shrink-0" />
+                      <span className="font-medium">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-[10px] text-muted-foreground leading-relaxed italic border-l-2 border-white/10 pl-3">
+                  This option emphasises flexibility. Live interactive teaching sessions are not included. Optional group coaching offered separately.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl">
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Weekly</p>
-                  <p className="text-xl font-black text-foreground">4–6 Hours</p>
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Time Commitment</p>
+                  <p className="text-sm font-bold text-foreground">4–6 hours / week</p>
+                  <p className="text-[10px] text-muted-foreground">Total: ~30–40 hours</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Total</p>
-                  <p className="text-xl font-black text-foreground">30–40 Hours</p>
+                  <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
+                  <p className="text-sm font-bold text-foreground">£49 – £99</p>
+                  <p className="text-[10px] text-muted-foreground">Coaching: +£120 – £180</p>
                 </div>
               </div>
-              <ul className="space-y-3">
-                {[
-                  "Access to recorded lectures",
-                  "Guided self-study and reading",
-                  "Applied assignments completed independently",
-                  "Optional group coaching sessions"
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
-                    <CheckCircle2 className="w-4 h-4 text-muted-foreground/50 shrink-0 mt-0.5" />
-                    <span className="font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-xs text-muted-foreground italic pt-4 border-t border-white/5">
-                Offers greater flexibility with less live interaction than the cohort.
-              </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Selection Guide */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 bg-[hsl(var(--accent))]/5 border border-[hsl(var(--accent))]/20 rounded-2xl space-y-3">
-            <h4 className="font-bold text-foreground flex items-center gap-2">
-              <ChevronRight className="w-4 h-4 text-[hsl(var(--accent))]" /> Choose Live Cohort if:
-            </h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">You value interaction, discussion, and structured pacing to keep you on track.</p>
+        {/* Corporate Fees */}
+        <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 border-dashed flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="space-y-2 text-center md:text-left">
+            <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate / Team Training</h3>
+            <p className="text-xl font-bold text-foreground leading-tight">Customised delivery for organisations.</p>
+            <p className="text-sm text-muted-foreground">Typical range: £900 – £2,500 per cohort</p>
           </div>
-          <div className="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3">
-            <h4 className="font-bold text-foreground flex items-center gap-2">
-              <ChevronRight className="w-4 h-4 text-muted-foreground" /> Choose Self-Paced if:
-            </h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">You need maximum flexibility and prefer independent study at your own speed.</p>
-          </div>
-        </div>
-
-        <p className="text-xs text-muted-foreground text-center">
-          <span className="font-black text-foreground">Important Note:</span> Timetable and learning hours are indicative and may vary slightly by cohort.
-        </p>
+          <Button className="bg-foreground text-background font-black uppercase text-xs px-10 py-6 hover:brightness-110 shrink-0">
+            Request Proposal
+          </Button>
+        </Card>
       </section>
 
       {/* Why Choose GICS? */}
@@ -466,88 +495,6 @@ export default function Home() {
               </div>
             </Card>
           ))}
-        </div>
-      </section>
-
-      {/* Fees Section */}
-      <section id="fees" className="space-y-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <div className="flex-1">
-            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Fees (GBP)</h2>
-            <p className="text-muted-foreground font-medium mt-2">Transparent pricing for professional development.</p>
-          </div>
-          <div className="flex-1 max-w-md p-4 bg-white/5 border border-white/10 rounded-2xl">
-            <h4 className="text-xs font-black uppercase tracking-widest text-foreground mb-2 flex items-center gap-2">
-              <BookOpen className="w-3 h-3 text-[hsl(var(--accent))]" /> How does pricing work?
-            </h4>
-            <p className="text-xs text-muted-foreground leading-relaxed italic">
-              Programme fees are set by registration window (early, standard, late). The curriculum, learning outcomes, and certification remain the same for all participants.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 space-y-6">
-            <div className="space-y-2">
-              <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Flagship Programme</h3>
-              <p className="text-lg font-bold text-foreground leading-tight">Live Cohort</p>
-            </div>
-            <div className="space-y-4">
-              <div className="flex justify-between items-end">
-                <span className="text-sm text-muted-foreground font-medium">Standard Fee</span>
-                <span className="text-xl font-black text-foreground">£120 – £250</span>
-              </div>
-              <div className="flex justify-between items-end p-3 bg-[hsl(var(--accent))]/10 border border-[hsl(var(--accent))]/20 rounded-xl">
-                <div>
-                  <span className="text-xs font-black text-[hsl(var(--accent))] uppercase">Early Bird</span>
-                  <p className="text-[10px] text-muted-foreground">Limited places</p>
-                </div>
-                <span className="text-lg font-black text-foreground">£70 – £120</span>
-              </div>
-              <div className="flex justify-between items-end">
-                <span className="text-sm text-muted-foreground font-medium">Premium Option</span>
-                <span className="text-lg font-bold text-foreground">£300 – £450</span>
-              </div>
-              <p className="text-[10px] text-muted-foreground italic leading-tight">*Premium includes additional coaching and feedback.</p>
-            </div>
-          </Card>
-
-          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 space-y-6">
-            <div className="space-y-2">
-              <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Self-Paced Option</h3>
-              <p className="text-lg font-bold text-foreground leading-tight">Recorded Course</p>
-            </div>
-            <div className="space-y-6">
-              <div className="flex justify-between items-end">
-                <span className="text-sm text-muted-foreground font-medium">Course Fee</span>
-                <span className="text-xl font-black text-foreground">£49 – £99</span>
-              </div>
-              <div className="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
-                <h4 className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Optional Add-on</h4>
-                <div className="flex justify-between items-end">
-                  <span className="text-xs font-bold text-foreground">Group Coaching</span>
-                  <span className="text-base font-black text-foreground">£120 – £180</span>
-                </div>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 space-y-6 relative group border-dashed">
-            <div className="space-y-2">
-              <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate / Team</h3>
-              <p className="text-lg font-bold text-foreground leading-tight">Customised Delivery</p>
-            </div>
-            <div className="space-y-6">
-              <div className="space-y-1">
-                <span className="text-sm text-muted-foreground font-medium">Typical Range</span>
-                <p className="text-xl font-black text-foreground">£900 – £2,500</p>
-                <p className="text-xs text-muted-foreground">per cohort</p>
-              </div>
-              <Button className="w-full bg-foreground text-background font-black uppercase text-xs py-6 hover:brightness-110">
-                Request Proposal
-              </Button>
-            </div>
-          </Card>
         </div>
       </section>
 
