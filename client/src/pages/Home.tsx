@@ -334,9 +334,19 @@ export default function Home() {
 
       {/* Fees Section */}
       <section id="fees" className="space-y-8">
-        <div>
-          <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Fees (GBP)</h2>
-          <p className="text-muted-foreground font-medium mt-2">Transparent pricing for professional development.</p>
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div className="flex-1">
+            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Fees (GBP)</h2>
+            <p className="text-muted-foreground font-medium mt-2">Transparent pricing for professional development.</p>
+          </div>
+          <div className="flex-1 max-w-md p-4 bg-white/5 border border-white/10 rounded-2xl">
+            <h4 className="text-xs font-black uppercase tracking-widest text-foreground mb-2 flex items-center gap-2">
+              <BookOpen className="w-3 h-3 text-[hsl(var(--accent))]" /> How does pricing work?
+            </h4>
+            <p className="text-xs text-muted-foreground leading-relaxed italic">
+              Programme fees are set by registration window (early, standard, late). The curriculum, learning outcomes, and certification remain the same for all participants.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
