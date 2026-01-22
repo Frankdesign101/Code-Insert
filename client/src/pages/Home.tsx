@@ -89,7 +89,7 @@ export default function Home() {
           <section className="pt-6 border-t border-white/10">
             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">Academic lead</h3>
             <div className="p-4 bg-white/5 border border-white/10 rounded-xl">
-              <b className="text-foreground text-base block mb-2">Dr. Frank Donkor</b>
+              <b className="text-foreground text-base block mb-2">Dr Frank Donkor</b>
               <p className="text-xs text-muted-foreground leading-relaxed font-medium">
                 Programme Director, MSc Operations Management (University of Exeter). Expert in supply chain sustainability and operations leadership.
               </p>
