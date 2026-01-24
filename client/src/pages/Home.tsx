@@ -269,25 +269,15 @@ export default function Home() {
               <div className="lg:col-span-4 space-y-10">
                 <div className="space-y-4">
                   <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                    <Target className="w-4 h-4 text-[hsl(var(--accent))]" /> Integrated Capstone
+                    <Target className="w-4 h-4 text-[hsl(var(--accent))]" /> Design Philosophy
                   </h4>
                   <div className="space-y-4">
-                    <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10 italic">
-                      Weekly assignments progressively build one professional report based on a real operational challenge in your chosen organisation.
+                    <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">
+                      The programme is structured around five integrated modules, delivered sequentially over 6–8 weeks. Each week combines live teaching, guided reading from established textbooks, and a focused applied assignment.
                     </p>
-                    <div className="space-y-3">
-                      {[
-                        "Focus on one organisation context",
-                        "Address one operational challenge",
-                        "2,500–3,000 words final submission",
-                        "Demonstrates applied competence"
-                      ].map(item => (
-                        <div key={item} className="flex items-center gap-2 text-xs text-muted-foreground">
-                          <CheckCircle2 className="w-3 h-3 text-[hsl(var(--accent))]" />
-                          <span>{item}</span>
-                        </div>
-                      ))}
-                    </div>
+                    <p className="text-xs text-muted-foreground leading-relaxed italic bg-[hsl(var(--accent))]/5 p-4 rounded-xl border border-[hsl(var(--accent))]/20">
+                      Weekly assignments progressively build one coherent capstone project based on a single organisation and a single operational or supply chain challenge.
+                    </p>
                   </div>
                 </div>
 
