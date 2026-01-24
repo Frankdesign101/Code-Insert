@@ -1,103 +1,82 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight, Info } from "lucide-react";
+import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight, Info, Presentation } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Home() {
   const modules = [
     {
-      id: "module-1",
-      title: "Module 1: Supply Chain Foundations & Systems Thinking",
-      focus: "Understanding the supply chain as an end-to-end system and clearly defining an operational or supply chain problem.",
+      id: "week-1",
+      title: "Week 1: Global Supply Chain Foundations & Systems Thinking",
+      focus: "Understanding supply chain ecosystems and interdependencies across industries.",
       topics: [
-        "End-to-end supply chain structure (plan–source–make–deliver–return)",
-        "Supply chain objectives and trade-offs (cost, service, resilience, sustainability)",
-        "Systems thinking in supply chains"
+        "Global trends, disruptions, and enabling technologies",
+        "Case studies: FMCG, healthcare, retail, agribusiness",
+        "Supply chain performance and strategic fit"
       ],
-      capstone: "Selection of context and definition of a clear challenge (Forms Section 1 of report).",
+      capstone: "Select one organisation and define a real supply chain or operations challenge.",
       references: "Chopra & Meindl (Ch 1-3), Martin Christopher (Ch 1-3)"
     },
     {
-      id: "module-2",
-      title: "Module 2: Operations Excellence & Process Improvement",
-      focus: "Analysing operational processes to identify inefficiencies and improvement opportunities.",
+      id: "week-2",
+      title: "Week 2: Inventory, Warehousing & Procurement Essentials",
+      focus: "Core building blocks of supply chain execution and control.",
       topics: [
-        "Process mapping and flow analysis",
-        "Bottlenecks and waste",
-        "Lean principles and continuous improvement",
-        "Root cause analysis"
+        "Inventory control systems and stock management",
+        "Warehouse planning, layout, and operational performance",
+        "Supplier evaluation, sourcing decisions, and negotiation"
       ],
-      capstone: "Mapping one core process and identifying root causes (Forms Section 2 of report).",
-      references: "Slack & Brandon-Jones (Ch 1-4, 15), Reid & Sanders (Ch 4-6, 16)"
+      capstone: "Analyse how inventory, warehousing, or sourcing contributes to the chosen challenge.",
+      references: "Slack & Brandon-Jones (Ch 4, 13), Chopra & Meindl (Ch 6, 15)"
     },
     {
-      id: "module-3",
-      title: "Module 3: Performance Measurement, KPIs & Control",
-      focus: "Using performance metrics and data to support operational and supply chain decisions.",
+      id: "week-3",
+      title: "Week 3: Operations Excellence & Lean Fundamentals",
+      focus: "Practical skills in process improvement and operational efficiency.",
       topics: [
-        "Designing effective KPIs",
-        "Planning and control systems",
-        "Inventory and service-level measures",
-        "Interpreting performance data"
+        "Process analysis and Value Stream Mapping",
+        "The 7 wastes and operational bottlenecks",
+        "Practical continuous improvement tools"
       ],
-      capstone: "Selection and justification of 3–5 KPIs (Forms Section 3 of report).",
-      references: "Slack & Brandon-Jones (Ch 10-13), Chopra & Meindl (Ch 4-6)"
+      capstone: "Map one process and identify improvement opportunities.",
+      references: "Slack & Brandon-Jones (Ch 15), Reid & Sanders (Ch 4-6, 16)"
     },
     {
-      id: "module-4",
-      title: "Module 4: Sustainable Supply Chains & ESG in Operations",
-      focus: "Embedding sustainability into operational and supply chain decision-making.",
+      id: "week-4",
+      title: "Week 4: Data Analytics for Operations & Supply Chain Performance",
+      focus: "Building confidence in data-driven decision-making and KPIs.",
       topics: [
-        "Environmental and social impacts",
-        "Sustainable sourcing and supplier management",
-        "Waste reduction, efficiency, and emissions",
-        "Balancing sustainability with cost/service"
+        "Excel for operational analysis and demand forecasting",
+        "Designing KPI dashboards for performance",
+        "Introduction to Power BI for visual reporting"
       ],
-      capstone: "Identification of risks and proposal of improvements (Forms Section 4 of report).",
-      references: "Chopra & Meindl (Ch 10), Cambridge Institute for Sustainability Leadership (CISL) Frameworks"
+      capstone: "Develop a KPI framework aligned to the capstone challenge.",
+      references: "Slack & Brandon-Jones (Ch 2, 10-12), Chopra & Meindl (Ch 4-5)"
     },
     {
-      id: "module-5",
-      title: "Module 5: Integration, Leadership & Professional Practice",
-      focus: "Synthesising analysis into actionable recommendations and communicating professionally.",
+      id: "week-5",
+      title: "Week 5: Sustainable & Green Supply Chains",
+      focus: "Embedding sustainability and ESG into operational strategy.",
       topics: [
-        "Prioritisation and trade-off management",
-        "High-level implementation planning",
-        "Professional reporting and executive communication"
+        "ESG, circular economy principles, and green logistics",
+        "Climate-smart operations and responsible sourcing",
+        "Sustainability trade-offs and case studies"
       ],
-      capstone: "Final recommendations and executive summary (Forms Section 5 of report).",
-      references: "Slack & Brandon-Jones (Ch 1, 2, 18)"
-    }
-  ];
-
-  const progs = [
+      capstone: "Identify sustainability risks/opportunities and propose realistic interventions.",
+      references: "Chopra & Meindl (Ch 10), CISL Sustainable Supply Chain Frameworks"
+    },
     {
-      title: "Flagship Certificate",
-      subtitle: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)",
-      duration: "6–8 weeks • Live online (with recordings)",
-      details: [
-        "Duration: 6–8 weeks",
-        "Delivery: Live online (with recordings available)",
-        "Format: Cohort-based learning",
-        "Certification: CPD-accredited (planned / in progress)"
+      id: "week-6",
+      title: "Week 6: Professional Practice & Global Supply Chain Careers",
+      focus: "Communicating operational insights and strengthening professional readiness.",
+      topics: [
+        "Professional reporting and stakeholder communication",
+        "CV and LinkedIn optimisation for supply chain careers",
+        "Interview preparation and applied career strategy"
       ],
-      overview: "The Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO) is a professional development programme designed to build practical, workplace-ready capability in supply chain management, operations excellence, and sustainability.",
-      whoItIsFor: [
-        "Working professionals in supply chain, logistics, procurement, and operations",
-        "NGO and public-sector staff involved in delivery",
-        "Early-career professionals and graduates",
-        "Corporate teams requiring structured development"
-      ],
-      learningOutcomes: [
-        "Analyse end-to-end supply chain processes",
-        "Apply Lean principles to practical scenarios",
-        "Use data and KPIs for decision-making",
-        "Integrate sustainability/ESG considerations",
-        "Communicate operational insights professionally"
-      ],
-      structureOverview: "Structured around five integrated modules delivered over 6–8 weeks. Each week combines live teaching, guided reading, and a focused applied assignment.",
-      finalOutput: "2,500–3,000 words integrated professional report."
+      capstone: "Finalise recommendations and submit the integrated capstone report.",
+      references: "Slack & Brandon-Jones (Ch 1, 18), Reporting templates & guidance"
     }
   ];
 
@@ -174,7 +153,7 @@ export default function Home() {
                 { label: "Start", value: "September 2026" },
                 { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
                 { label: "Duration", value: "6–8 weeks • Live and/or recorded sessions" },
-                { label: "Assessment", value: "Capstone project" }
+                { label: "Assessment", value: "Integrated Capstone Project" }
               ].map((item) => (
                 <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
                   <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">{item.label}</span>
@@ -201,7 +180,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Programme Content & Structure</h2>
-            <p className="text-muted-foreground font-medium mt-2">GC-PSSO Detailed Curriculum</p>
+            <p className="text-muted-foreground font-medium mt-2">GC-PSSO 6-Week Detailed Curriculum</p>
           </div>
         </div>
 
@@ -213,14 +192,14 @@ export default function Home() {
                   Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
                 </CardTitle>
                 <p className="text-muted-foreground leading-relaxed max-w-3xl">
-                  {progs[0].overview} Delivered through live sessions, the programme combines expert-led teaching, applied assignments, and a capstone project.
+                  A professional development programme designed to build practical, workplace-ready capability through weekly modules, applied assignments, and an integrated capstone project.
                 </p>
               </div>
               <div className="flex flex-col gap-3 shrink-0">
-                <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-4 py-2 text-sm justify-center">CPD-ACCREDITED*</Badge>
+                <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-4 py-2 text-sm justify-center">6–8 WEEKS</Badge>
                 <div className="text-right">
-                  <p className="text-[10px] font-black uppercase text-muted-foreground">Final Capstone Output</p>
-                  <p className="text-sm font-bold text-foreground">{progs[0].finalOutput}</p>
+                  <p className="text-[10px] font-black uppercase text-muted-foreground">Capstone Output</p>
+                  <p className="text-sm font-bold text-foreground">2,500–3,000 Word Report</p>
                 </div>
               </div>
             </div>
@@ -231,7 +210,7 @@ export default function Home() {
               <div className="lg:col-span-8 space-y-8">
                 <div className="space-y-4">
                   <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                    <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Curriculum Modules
+                    <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> 6-Week Curriculum
                   </h4>
                   <Accordion type="single" collapsible className="w-full space-y-4">
                     {modules.map((module) => (
@@ -260,11 +239,11 @@ export default function Home() {
                             </div>
                             <div className="space-y-4">
                               <div className="p-4 bg-[hsl(var(--accent))]/5 border border-[hsl(var(--accent))]/20 rounded-xl space-y-2">
-                                <p className="text-[10px] font-black uppercase text-[hsl(var(--accent))] tracking-widest">Capstone Integration</p>
+                                <p className="text-[10px] font-black uppercase text-[hsl(var(--accent))] tracking-widest">Capstone Activity</p>
                                 <p className="text-xs text-foreground font-medium leading-relaxed">{module.capstone}</p>
                               </div>
                               <div className="space-y-1">
-                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Key Textbook References</p>
+                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Core Reading References</p>
                                 <p className="text-[10px] text-muted-foreground italic leading-tight">{module.references}</p>
                               </div>
                             </div>
@@ -274,16 +253,42 @@ export default function Home() {
                     ))}
                   </Accordion>
                 </div>
+
+                {/* Weeks 7-8 Extension */}
+                <div className="p-6 bg-white/5 border border-white/10 rounded-3xl space-y-4">
+                  <div className="flex items-center gap-3">
+                    <Presentation className="w-5 h-5 text-[hsl(var(--accent))]" />
+                    <h4 className="text-lg font-bold text-foreground">Optional Weeks 7–8: Capstone Extension</h4>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Participants may join an extended enrichment period to present and refine their projects, including peer learning, improvement coaching, and final CPD reflection.
+                  </p>
+                </div>
               </div>
 
               <div className="lg:col-span-4 space-y-10">
                 <div className="space-y-4">
                   <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                    <Target className="w-4 h-4 text-[hsl(var(--accent))]" /> Design Philosophy
+                    <Target className="w-4 h-4 text-[hsl(var(--accent))]" /> Integrated Capstone
                   </h4>
-                  <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10 italic">
-                    Weekly assignments progressively build one coherent capstone project based on a single organisation and operational challenge.
-                  </p>
+                  <div className="space-y-4">
+                    <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10 italic">
+                      Weekly assignments progressively build one professional report based on a real operational challenge in your chosen organisation.
+                    </p>
+                    <div className="space-y-3">
+                      {[
+                        "Focus on one organisation context",
+                        "Address one operational challenge",
+                        "2,500–3,000 words final submission",
+                        "Demonstrates applied competence"
+                      ].map(item => (
+                        <div key={item} className="flex items-center gap-2 text-xs text-muted-foreground">
+                          <CheckCircle2 className="w-3 h-3 text-[hsl(var(--accent))]" />
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
 
                 <div className="space-y-4">
@@ -291,22 +296,18 @@ export default function Home() {
                     <Users className="w-4 h-4 text-[hsl(var(--accent))]" /> Who It's For
                   </h4>
                   <ul className="space-y-3">
-                    {progs[0].whoItIsFor.map(item => (
+                    {[
+                      "Supply Chain & Logistics Professionals",
+                      "NGO & Public Sector Delivery Staff",
+                      "Early-Career Professionals & Graduates",
+                      "Corporate Teams & Managers"
+                    ].map(item => (
                       <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
                         <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
                         <span className="font-medium">{item}</span>
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                    <Award className="w-4 h-4 text-[hsl(var(--accent))]" /> Assessment Approach
-                  </h4>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Competency-based and workplace-focused. Final project demonstrates practical understanding, analytical thinking, and professional judgement.
-                  </p>
                 </div>
               </div>
             </div>
@@ -319,14 +320,14 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="flex-1">
             <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Delivery Options & Fees</h2>
-            <p className="text-muted-foreground font-medium mt-2">Choose the format that best suits your learning style and flexibility needs.</p>
+            <p className="text-muted-foreground font-medium mt-2">Flexible formats tailored to your learning style.</p>
           </div>
           <Card className="flex-1 max-w-md p-5 bg-white/5 border border-white/10 rounded-2xl">
             <h4 className="text-xs font-black uppercase tracking-widest text-foreground mb-3 flex items-center gap-2">
-              <Info className="w-4 h-4 text-[hsl(var(--accent))]" /> Important Note
+              <Info className="w-4 h-4 text-[hsl(var(--accent))]" /> Selection Note
             </h4>
             <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-              Both options follow the same curriculum and learning outcomes. Fees are set by registration window (early, standard, late).
+              Both options follow the same curriculum. Select the format that matches your availability and learning style.
             </p>
           </Card>
         </div>
@@ -343,7 +344,7 @@ export default function Home() {
               </div>
               <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10">
                 <p className="text-[10px] font-black uppercase text-muted-foreground mb-1 tracking-widest">Who it's for</p>
-                <p className="text-sm text-foreground font-medium">Professionals who value interaction, structured pacing, and facilitated discussion.</p>
+                <p className="text-sm text-foreground font-medium">Professionals valuing interaction and structured pacing.</p>
               </div>
             </CardHeader>
 
@@ -354,11 +355,11 @@ export default function Home() {
                 </h4>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
                   {[
-                    "Live interactive online sessions",
+                    "Live interactive sessions",
                     "Guided weekly reading",
                     "Applied weekly assignments",
                     "Facilitated cohort discussions",
-                    "Structured tutor feedback",
+                    "Structured assignment feedback",
                     "CPD learning log guidance"
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
@@ -377,12 +378,12 @@ export default function Home() {
                 </div>
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
-                  <div className="space-y-1 mt-1">
+                  <div className="space-y-1">
                     <p className="text-sm font-bold text-foreground">Early Bird: £70 – £120</p>
                     <p className="text-sm font-bold text-foreground">Standard: £120 – £250</p>
-                    <p className="text-sm font-bold text-foreground">Premium: £300 – £450</p>
+                    <p className="text-xs text-muted-foreground">Premium: £300 – £450</p>
                   </div>
-                  <p className="text-[9px] text-muted-foreground mt-2 italic leading-tight">Fees are set by registration window (early, standard, late).</p>
+                  <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
               </div>
             </CardContent>
@@ -397,7 +398,7 @@ export default function Home() {
               </div>
               <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10">
                 <p className="text-[10px] font-black uppercase text-muted-foreground mb-1 tracking-widest">Who it's for</p>
-                <p className="text-sm text-foreground font-medium">Participants who require maximum flexibility and prefer independent, self-directed learning.</p>
+                <p className="text-sm text-foreground font-medium">Participants needing maximum flexibility and independent study.</p>
               </div>
             </CardHeader>
 
@@ -411,9 +412,9 @@ export default function Home() {
                     "Recorded lectures access",
                     "Guided self-study & reading",
                     "Independent assignments",
-                    "Capstone guidance",
+                    "Capstone report guidance",
                     "Certificate of Completion",
-                    "Flexible learning approach"
+                    "Independent learning approach"
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
                       <div className="w-1 h-1 rounded-full bg-white/30 mt-1.5 shrink-0" />
@@ -421,8 +422,8 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-[10px] text-muted-foreground leading-relaxed italic border-l-2 border-white/10 pl-3">
-                  This option emphasises flexibility. Live interactive teaching sessions are not included. Optional group coaching offered separately.
+                <p className="text-[10px] text-muted-foreground leading-relaxed italic border-l-2 border-white/10 pl-3 mt-4">
+                  Emphasises flexibility. Live interactive sessions not included. Optional coaching offered separately.
                 </p>
               </div>
 
@@ -434,23 +435,25 @@ export default function Home() {
                 </div>
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
-                  <div className="space-y-1 mt-1">
+                  <div className="space-y-1">
                     <p className="text-sm font-bold text-foreground">Course Fee: £49 – £99</p>
-                    <p className="text-sm font-bold text-foreground">Group Coaching: +£120 – £180</p>
+                    <p className="text-xs text-muted-foreground">Coaching add-on: £120 – £180</p>
                   </div>
-                  <p className="text-[9px] text-muted-foreground mt-2 italic leading-tight">Fees are set by registration window (early, standard, late).</p>
+                  <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
+      </section>
 
-        {/* Corporate Fees */}
-        <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-8 border-dashed flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="space-y-2 text-center md:text-left">
-            <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate / Team Training</h3>
-            <p className="text-xl font-bold text-foreground leading-tight">Customised delivery for organisations.</p>
-            <p className="text-sm text-muted-foreground">Typical range: £900 – £2,500 per cohort</p>
+      {/* Corporate Section */}
+      <section id="corporate" className="space-y-8">
+        <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-10 border-dashed flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="space-y-4 text-center md:text-left max-w-xl">
+            <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate & Team Training</h3>
+            <p className="text-2xl font-bold text-foreground leading-tight">Customised delivery for organisations seeking structured team development.</p>
+            <p className="text-sm text-muted-foreground">Bespoke pricing based on cohort size and requirements (typically £900 – £2,500).</p>
           </div>
           <Button className="bg-foreground text-background font-black uppercase text-xs px-10 py-6 hover:brightness-110 shrink-0">
             Request Proposal
@@ -468,27 +471,27 @@ export default function Home() {
           {[
             {
               title: "UK-Quality Leadership",
-              desc: "Programme design led by experienced and senior UK lecturers with deep academic and industry roots.",
+              desc: "Programme design led by senior UK lecturers with deep industry roots.",
               icon: <Award className="w-5 h-5" />
             },
             {
-              title: "Practical over Theory",
-              desc: "Strong focus on practical application and workplace readiness, moving beyond traditional theory alone.",
+              title: "Practical Over Theory",
+              desc: "Focus on workplace readiness, moving beyond traditional theory alone.",
               icon: <Target className="w-5 h-5" />
             },
             {
-              title: "Competency Assessment",
-              desc: "Assessments informed by professional and postgraduate standards to ensure real competency.",
+              title: "Integrated Capstone",
+              desc: "Assessments based on professional standards to ensure real workplace competency.",
               icon: <CheckCircle2 className="w-5 h-5" />
             },
             {
               title: "Global Perspective",
-              desc: "Delivery with sensitivity to both developed and emerging market contexts for global relevance.",
+              desc: "Sensitivity to both developed and emerging market contexts.",
               icon: <Users className="w-5 h-5" />
             },
             {
-              title: "Bespoke & Flexible",
-              desc: "Bespoke learning designed at your own pace with flexible fees to suit various needs.",
+              title: "Flexible Learning",
+              desc: "Delivery at your own pace with options to suit various professional needs.",
               icon: <Timer className="w-5 h-5" />
             }
           ].map((item, i) => (

@@ -1,0 +1,187 @@
+Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
+
+Duration: 6–8 weeks
+Delivery: Live online (recordings available)
+Format: Weekly modules + applied assignments + integrated capstone project
+Start Date: September 2026
+
+Week 1 – Global Supply Chain Foundations & Systems Thinking
+
+This module provides an end-to-end understanding of supply chains as interconnected ecosystems operating across industries and global markets.
+
+Key topics include:
+
+Understanding supply chain ecosystems and interdependencies
+
+Global trends, disruptions, and enabling technologies
+
+Case studies across sectors (FMCG, healthcare, retail, agribusiness)
+
+✅ Capstone Activity: Select one organisation and define a real supply chain or operations challenge.
+
+Core Reading References
+
+Chopra, S. & Meindl, P. (2019) Supply Chain Management: Strategy, Planning, and Operation (7th ed.). Pearson.
+
+Chapters 1–2: Understanding the Supply Chain
+
+Chapter 3: Supply Chain Performance and Strategic Fit
+
+Christopher, M. (2016) Logistics & Supply Chain Management (5th ed.). Pearson.
+
+Chapters 1–3: Supply Chain Ecosystems and Competitive Advantage
+
+Week 2 – Inventory, Warehousing & Procurement Essentials
+
+A practical introduction to the core building blocks of supply chain execution and control.
+
+Key topics include:
+
+Inventory control systems and stock management
+
+Warehouse planning, layout, and operational performance
+
+Supplier evaluation, sourcing decisions, and negotiation fundamentals
+
+✅ Capstone Activity: Analyse how inventory, warehousing, or sourcing contributes to the chosen challenge.
+
+Core Reading References
+
+Slack, N. & Brandon-Jones, A. (2022) Operations Management (10th ed.). Pearson.
+
+Chapter 13: Inventory Management
+
+Chapter 4: Process Design and Layout (Warehousing Applications)
+
+Chopra, S. & Meindl, P. (2019) Supply Chain Management (7th ed.). Pearson.
+
+Chapter 6: Inventory and Supply Chain Coordination
+
+Chapter 15: Sourcing and Procurement Decisions
+
+Week 3 – Operations Excellence & Lean Fundamentals
+
+Participants develop practical skills in process improvement and operational efficiency.
+
+Key topics include:
+
+Process analysis and Value Stream Mapping
+
+The 7 wastes and operational bottlenecks
+
+Practical continuous improvement tools for workplace application
+
+✅ Capstone Activity: Map one process and identify improvement opportunities.
+
+Core Reading References
+
+Slack, N. & Brandon-Jones, A. (2022) Operations Management (10th ed.). Pearson.
+
+Chapter 15: Lean Operations and Improvement
+
+Reid, R.D. & Sanders, N.R. (2020) Operations Management: An Integrated Approach (7th ed.). Wiley.
+
+Chapters 4–6: Process Strategy and Analysis
+
+Chapter 16: Managing Quality and Continuous Improvement
+
+Week 4 – Data Analytics for Operations & Supply Chain Performance
+
+Building confidence in data-driven decision-making and operational KPIs.
+
+Key topics include:
+
+Excel for operational analysis and demand forecasting
+
+Designing KPI dashboards for supply chain performance
+
+Introduction to Power BI for visual reporting (foundational level)
+
+✅ Capstone Activity: Develop a KPI framework aligned to the capstone challenge.
+
+Core Reading References
+
+Slack, N. & Brandon-Jones, A. (2022) Operations Management (10th ed.). Pearson.
+
+Chapters 10–12: Planning and Control Systems
+
+Chapter 2: Performance Objectives and Measurement
+
+Chopra, S. & Meindl, P. (2019) Supply Chain Management (7th ed.). Pearson.
+
+Chapter 5: Demand Forecasting in Supply Chains
+
+Chapter 4: Supply Chain Drivers and Metrics
+
+Week 5 – Sustainable & Green Supply Chains
+
+Embedding sustainability and ESG into operational and supply chain strategy.
+
+Key topics include:
+
+ESG, circular economy principles, and green logistics
+
+Climate-smart operations and responsible sourcing
+
+Sustainability case studies and practical trade-offs
+
+✅ Capstone Activity: Identify sustainability risks/opportunities and propose realistic interventions.
+
+Core Reading References
+
+Chopra, S. & Meindl, P. (2019) Supply Chain Management (7th ed.). Pearson.
+
+Chapter 10 (edition dependent): Sustainability and Supply Chain Design
+
+Cambridge Institute for Sustainability Leadership (CISL) (2023)
+Sustainable Supply Chain and Operations Frameworks. Executive Education Materials.
+
+Applied ESG and circular economy frameworks (introduced during teaching)
+
+Week 6 – Professional Practice & Global Supply Chain Careers
+
+Preparing participants to communicate operational insights and strengthen professional readiness.
+
+Key topics include:
+
+Professional reporting, presentation, and stakeholder communication
+
+CV and LinkedIn optimisation for supply chain careers
+
+Interview preparation and applied career strategy
+
+✅ Capstone Activity: Finalise recommendations and submit the integrated capstone report.
+
+Core Reading References
+
+Slack, N. & Brandon-Jones, A. (2022) Operations Management (10th ed.). Pearson.
+
+Chapter 1: The Strategic Role of Operations
+
+Chapter 18: Operations Improvement and Organisational Learning
+
+Instructor-developed professional reporting templates and executive communication guidance.
+
+Optional Weeks 7–8 – Capstone Completion & Presentation (Extension)
+
+Participants may join an extended enrichment period to present and refine their applied project.
+
+Includes:
+
+Capstone presentations and peer learning
+
+Facilitated feedback and improvement coaching
+
+Final CPD reflection and learning log completion
+
+Integrated Capstone Project (Embedded Across the Programme)
+
+Participants complete one applied project based on:
+
+One organisation or supply chain context
+
+One operational challenge
+
+Weekly assignments that progressively build a professional final report
+
+Final Output: A structured capstone submission (2,500–3,000 words) demonstrating applied competence in supply chain, operations improvement, analytics, and sustainability.
