@@ -164,11 +164,35 @@ export default function Home() {
           </section>
 
           <section className="pt-6 border-t border-white/10">
-            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">Academic lead</h3>
-            <div className="p-4 bg-white/5 border border-white/10 rounded-xl">
-              <b className="text-foreground text-base block mb-2">Dr Frank Donkor</b>
-              <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-                Programme Director, MSc Operations Management (University of Exeter). Expert in supply chain sustainability and operations leadership.
+            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">Programme Lead Profile</h3>
+            <div className="p-4 bg-white/5 border border-white/10 rounded-xl space-y-4">
+              <div>
+                <b className="text-foreground text-base block mb-1">Dr Frank Donkor</b>
+                <p className="text-xs text-muted-foreground leading-relaxed font-medium">
+                  Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Fellow of The Higher Education Academy (UK) and an EduExe Fellow.
+                </p>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Specialisms</p>
+                <ul className="space-y-1.5">
+                  {[
+                    "Supply chain sustainability & ESG",
+                    "Operations management & performance",
+                    "Leadership in global supply chains",
+                    "Pharmaceutical industry collaboration",
+                    "Professional skills development"
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-[10px] text-muted-foreground font-medium">
+                      <div className="w-1 h-1 rounded-full bg-[hsl(var(--accent))]" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <p className="text-[10px] text-muted-foreground leading-relaxed italic border-t border-white/5 pt-3">
+                Foundation reflects UK executive education standards, remaining directly applicable to emerging-market supply chains.
               </p>
             </div>
           </section>
