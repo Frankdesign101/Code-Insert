@@ -523,15 +523,22 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="pt-12 pb-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-sm">
-        <div className="space-y-2 text-center md:text-left">
-          <p className="text-foreground font-bold text-base">GICS</p>
-          <p className="text-muted-foreground font-medium">© 2026 Global Institute for Supply Chain & Sustainability.</p>
+      <footer className="pt-12 pb-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-start gap-8 text-sm">
+        <div className="space-y-4 text-left">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(200,85%,65%)] shadow-lg" />
+            <p className="text-foreground font-bold text-lg">GICS</p>
+          </div>
+          <div className="space-y-1 text-muted-foreground font-medium text-xs leading-relaxed">
+            <p>© 2026 Global Supply Chain & Sustainability Academy Ltd. All rights reserved.</p>
+            <p>Registered in England and Wales. Company No. 16986058.</p>
+            <p>Trading as Global Institute for Supply Chain & Sustainability (GICS).</p>
+          </div>
         </div>
-        <div className="flex gap-10 font-black uppercase tracking-widest text-[10px] text-muted-foreground">
-          <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors">Privacy</a>
-          <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors">Terms</a>
-          <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors">Contact</a>
+        <div className="flex gap-10 font-black uppercase tracking-widest text-[10px] text-muted-foreground pt-2">
+          <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-privacy">Privacy</a>
+          <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-terms">Terms</a>
+          <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-contact">Contact</a>
         </div>
       </footer>
     </div>
