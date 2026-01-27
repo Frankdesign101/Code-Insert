@@ -393,7 +393,8 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Launch Fee: £200 – £250</p>
+                    <p className="text-sm font-bold text-foreground">Early Bird: £180</p>
+                    <p className="text-sm font-bold text-foreground">Standard: £250</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -448,7 +449,8 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Launch Fee: £120 – £150</p>
+                    <p className="text-sm font-bold text-foreground">Standard: £150</p>
+                    <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +£75</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
