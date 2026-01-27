@@ -203,7 +203,7 @@ export default function Home() {
       <section id="programmes" className="space-y-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Programme Content & Structure</h2>
+            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Flagship Programme Content & Structure</h2>
             <p className="text-muted-foreground font-medium mt-2">GC-PSSO 6-Week Detailed Curriculum</p>
           </div>
         </div>
