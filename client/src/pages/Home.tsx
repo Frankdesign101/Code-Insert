@@ -333,7 +333,7 @@ export default function Home() {
       <section id="fees" className="space-y-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="flex-1">
-            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Delivery Options & Fees</h2>
+            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Indicative Launch Fees</h2>
             <p className="text-muted-foreground font-medium mt-2">Flexible formats tailored to your learning style.</p>
           </div>
           <Card className="flex-1 max-w-md p-5 bg-white/5 border border-white/10 rounded-2xl">
@@ -393,9 +393,7 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Early Bird: £70 – £120</p>
-                    <p className="text-sm font-bold text-foreground">Standard: £120 – £250</p>
-                    <p className="text-xs text-muted-foreground">Premium: £300 – £450</p>
+                    <p className="text-sm font-bold text-foreground">Launch Fee: £200 – £250</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -450,8 +448,7 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Course Fee: £49 – £99</p>
-                    <p className="text-xs text-muted-foreground">Coaching add-on: £120 – £180</p>
+                    <p className="text-sm font-bold text-foreground">Launch Fee: £120 – £150</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
