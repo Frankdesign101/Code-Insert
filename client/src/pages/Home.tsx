@@ -87,7 +87,13 @@ export default function Home() {
         <a className="flex items-center gap-4 no-underline group" href="#" data-testid="link-home">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(200,85%,65%)] shadow-xl group-hover:scale-105 transition-transform" />
           <div>
+            <img
+             src="/GICS Logo single.png"
+             alt="GICS Logo"
+             className="h-24 mx-auto"
+            />
             <strong className="block text-base tracking-tight font-bold text-foreground">Global Institute for Supply Chain & Sustainability (GICS)</strong>
+            <p className="mt-2 text-sm text-muted-foreground italic">Advancing Professional Capability and Industry Outcomes Through Education.</p>
             <span className="block text-xs text-muted-foreground font-medium uppercase tracking-wider">Supply Chain • Operations • Sustainability</span>
           </div>
         </a>
@@ -169,7 +175,7 @@ export default function Home() {
               <div>
                 <b className="text-foreground text-base block mb-1">Dr Frank Donkor</b>
                 <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-                  Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Fellow of The Higher Education Academy (UK) and an EduExe Fellow.
+                  Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Fellow of The Higher Education Academy (UK) and an EduExe Fellow. Dr Frank Donkor is also a module tutor on the MBA programme at the University of Exeter Business School.
                 </p>
               </div>
               
