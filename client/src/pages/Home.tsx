@@ -89,7 +89,7 @@ export default function Home() {
           <div>
             <img
              src="/GICS Logo single bac croped.png"
-             alt="GICS Logo"
+             alt="GICS Logo single bac croped.png"
              className="h-24 mx-auto"
             />
             <strong className="block text-base tracking-tight font-bold text-foreground">Global Institute for Supply Chain & Sustainability (GICS)</strong>
