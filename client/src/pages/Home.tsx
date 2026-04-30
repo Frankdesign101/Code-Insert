@@ -88,8 +88,8 @@ export default function Home() {
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(200,85%,65%)] shadow-xl group-hover:scale-105 transition-transform" />
           <div>
             <img
-             src="/GICS Logo single bac croped.png"
-             alt="GICS Logo"
+             src="/gics-logo final final.png"
+             alt="GICS logo"
              className="h-24 mx-auto"
             />
             <strong className="block text-base tracking-tight font-bold text-foreground">Global Institute for Supply Chain & Sustainability (GICS)</strong>
