@@ -85,12 +85,11 @@ export default function Home() {
       {/* Header */}
       <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-white/10">
         <a className="flex items-center gap-4 no-underline group" href="#" data-testid="link-home">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(200,85%,65%)] shadow-xl group-hover:scale-105 transition-transform" />
           <div>
             <img
-             src="/gics logo final final 1.png"
+             src="/gics logo final final.png"
              alt="GICS logo"
-             className="h-24 mx-auto"
+             className="h-16 w-auto"
             />
             <strong className="block text-base tracking-tight font-bold text-foreground">Global Institute for Supply Chain & Sustainability (GICS)</strong>
             <p className="mt-2 text-sm text-muted-foreground italic">Advancing Professional Capability and Industry Outcomes Through Education.</p>
