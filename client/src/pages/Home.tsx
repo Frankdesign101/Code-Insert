@@ -88,7 +88,7 @@ export default function Home() {
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(200,85%,65%)] shadow-xl group-hover:scale-105 transition-transform" />
           <div>
             <img
-             src="/gics logo final final.png"
+             src="/gics logo final final 1.png"
              alt="GICS logo"
              className="h-24 mx-auto"
             />
