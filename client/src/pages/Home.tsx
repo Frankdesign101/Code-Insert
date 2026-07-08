@@ -87,7 +87,7 @@ export default function Home() {
         <a className="flex items-center gap-4 no-underline group" href="#" data-testid="link-home">
           <div>
             <img
-             src="/gics logo final final.png"
+             src="/5.jpg"
              alt="GICS logo"
              className="h-16 w-auto"
             />
