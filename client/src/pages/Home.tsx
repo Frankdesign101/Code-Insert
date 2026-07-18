@@ -9,74 +9,68 @@ export default function Home() {
     {
       id: "week-1",
       title: "Week 1: Global Supply Chain Foundations & Systems Thinking",
-      focus: "Understanding end-to-end supply chain systems, strategic fit, operational performance and interdependencies across industries.",
+      focus: "Understand how end-to-end supply chain decisions shape organisational performance.",
       topics: [
-        "End-to-end flows, actors, system boundaries and enabling technologies",
-        "Strategic fit and operational performance objectives: quality, speed, dependability, flexibility and cost",
-        "Disruptions, resilience, interdependencies and trade-offs across sectors"
+        "Supply chain flows and system boundaries",
+        "Strategic fit and performance objectives",
+        "Disruption, resilience and trade-offs"
       ],
-      capstone: "Select one organisation or the GICS simulated case, define the focal system or process, and frame one bounded supply chain or operations challenge.",
-      references: "Suggested guided reading: introductory supply chain strategy and systems-thinking sections, supported by the GICS Week 1 learning note."
+      capstone: "Define one organisation or simulated case, its focal system and one bounded supply chain or operations challenge."
     },
     {
       id: "week-2",
       title: "Week 2: Inventory, Warehousing & Procurement Essentials",
-      focus: "Using core execution and control principles to diagnose inventory, warehouse or sourcing contributions to operational performance.",
+      focus: "Diagnose how core supply chain functions support service, flow and operational control.",
       topics: [
-        "Inventory purpose, costs, classification, stock availability and basic reorder thinking",
-        "Warehouse flow, layout, accuracy, safety and productivity",
-        "Supplier evaluation, sourcing decisions, risk and negotiation fundamentals"
+        "Inventory and stock-control fundamentals",
+        "Warehouse flow, accuracy and productivity",
+        "Supplier evaluation, sourcing and risk"
       ],
-      capstone: "Analyse how inventory, warehousing or sourcing contributes to the chosen challenge, using evidence and an appropriate diagnostic table or figure.",
-      references: "Suggested guided reading: relevant inventory, warehousing and sourcing sections from the recommended texts, supported by the GICS Week 2 learning note."
+      capstone: "Analyse the inventory, warehousing or sourcing issue most relevant to the chosen challenge."
     },
     {
       id: "week-3",
       title: "Week 3: Operations Management, Process Excellence & Lean Fundamentals",
-      focus: "Developing practical operations-management, process-analysis and continuous-improvement capability.",
+      focus: "Improve operational performance through practical process analysis and Lean thinking.",
       topics: [
-        "Operations strategy, process types, performance objectives, capacity and utilisation",
-        "Process mapping, workflow, bottlenecks, quality, errors and rework",
-        "Lean waste, root-cause analysis and realistic continuous-improvement actions"
+        "Operations strategy and performance",
+        "Capacity, quality and process flow",
+        "Lean and root-cause improvement"
       ],
-      capstone: "Map one focal process, analyse capacity, flow, waste, quality or bottlenecks, identify root causes, and propose focused improvement opportunities.",
-      references: "Suggested guided reading: relevant operations strategy, process, capacity, quality, Lean and improvement sections, supported by the GICS Week 3 learning note."
+      capstone: "Map a focal process, diagnose its main constraint or quality issue and propose realistic improvements."
     },
     {
       id: "week-4",
       title: "Week 4: Data Analytics for Operations & Supply Chain Performance",
-      focus: "Building confidence in spreadsheet analysis, forecasting, KPI design and visual performance communication.",
+      focus: "Use accessible analytics and KPIs to support better operational decisions.",
       topics: [
-        "Excel for data quality, descriptive analysis and introductory demand forecasting",
-        "Operational KPIs for productivity, capacity, quality, inventory, service and sustainability",
-        "Excel charts and dashboards, with Power BI Desktop as an optional extension"
+        "Excel analysis and introductory forecasting",
+        "Operational and supply chain KPIs",
+        "Charts and dashboards; optional Power BI"
       ],
-      capstone: "Develop 3–5 decision-relevant KPIs and include one or more appropriate Excel-based analytical outputs; relevance and interpretation matter more than quantity.",
-      references: "Suggested guided reading: relevant planning, control, forecasting and performance-measurement sections, supported by the GICS Week 4 analytics workbook."
+      capstone: "Develop 3–5 relevant KPIs and create at least one appropriate Excel-based analytical output."
     },
     {
       id: "week-5",
       title: "Week 5: Sustainable & Green Supply Chains",
-      focus: "Embedding sustainability, circularity and responsible sourcing into operational decisions while recognising feasibility and trade-offs.",
+      focus: "Embed sustainability into practical supply chain and operational decisions.",
       topics: [
-        "ESG, circular economy, operational waste, energy and resource efficiency",
-        "Green logistics, climate-smart operations, responsible sourcing and workforce considerations",
-        "Sustainability hotspots, trade-offs, practical indicators and credible claims"
+        "ESG, circularity and resource efficiency",
+        "Green logistics and responsible sourcing",
+        "Sustainability hotspots and trade-offs"
       ],
-      capstone: "Identify sustainability risks and opportunities connected to the challenge, then propose realistic interventions and explain operational trade-offs.",
-      references: "Suggested guided reading: relevant sustainable supply chain and operations sections, CISL-aligned public frameworks, and the GICS Week 5 learning note."
+      capstone: "Identify material sustainability risks or opportunities and propose feasible interventions."
     },
     {
       id: "week-6",
       title: "Week 6: Professional Practice & Global Supply Chain Careers",
-      focus: "Converting analysis into implementable recommendations, communicating professionally and strengthening reflective career readiness.",
+      focus: "Turn analysis into implementable recommendations and credible professional evidence.",
       topics: [
-        "Recommendation prioritisation, implementation planning and benefits realisation",
-        "Stakeholder communication, executive writing and reflective professional practice",
-        "CV, LinkedIn and interview evidence for supply chain, operations and sustainability careers"
+        "Implementation and benefits realisation",
+        "Executive and stakeholder communication",
+        "Supply chain, operations and sustainability careers"
       ],
-      capstone: "Integrate findings, finalise recommendations and the implementation plan, complete the executive summary and professional reflection, and submit the capstone report.",
-      references: "Suggested guided reading: relevant professional-practice sections, supported by GICS reporting templates, career workbook and capstone guidance."
+      capstone: "Finalise the recommendations, implementation plan, executive summary and professional reflection."
     }
   ];
 
@@ -244,6 +238,9 @@ export default function Home() {
                   <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> 6-Week Curriculum
                   </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Build practical capability across supply chain, operations, analytics and sustainability—then apply your learning to one integrated workplace project.
+                  </p>
                   <Accordion type="single" collapsible className="w-full space-y-4">
                     {modules.map((module) => (
                       <AccordionItem key={module.id} value={module.id} className="border border-white/10 rounded-2xl bg-white/5 px-6 overflow-hidden">
@@ -271,12 +268,8 @@ export default function Home() {
                             </div>
                             <div className="space-y-4">
                               <div className="p-4 bg-[hsl(var(--accent))]/5 border border-[hsl(var(--accent))]/20 rounded-xl space-y-2">
-                                <p className="text-[10px] font-black uppercase text-[hsl(var(--accent))] tracking-widest">Capstone Activity</p>
+                                <p className="text-[10px] font-black uppercase text-[hsl(var(--accent))] tracking-widest">Applied Project Activity</p>
                                 <p className="text-xs text-foreground font-medium leading-relaxed">{module.capstone}</p>
-                              </div>
-                              <div className="space-y-1">
-                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Suggested Guided Reading</p>
-                                <p className="text-[10px] text-muted-foreground italic leading-tight">{module.references}</p>
                               </div>
                             </div>
                           </div>
@@ -284,6 +277,9 @@ export default function Home() {
                       </AccordionItem>
                     ))}
                   </Accordion>
+                  <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">
+                    Each week includes original GICS learning notes, practical templates, applied exercises and optional guided reading. No textbook purchase is required.
+                  </p>
                 </div>
 
                 {/* Weeks 7-8 Extension */}
@@ -533,7 +529,7 @@ export default function Home() {
       <footer className="pt-12 pb-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-start gap-8 text-sm">
         <div className="space-y-4 text-left">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[hsl(var(--accent))] to-[hsl(200,85%,65%)] shadow-lg" />
+            <img src="/gics-crest.png" alt="GICS crest" className="w-10 h-10 object-contain" />
             <p className="text-foreground font-bold text-lg">GICS</p>
           </div>
           <div className="space-y-1 text-muted-foreground font-medium text-xs leading-relaxed">
