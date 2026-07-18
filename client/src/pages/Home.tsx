@@ -82,7 +82,7 @@ export default function Home() {
           <img
             src="/gics-crest.png"
             alt="GICS institutional crest"
-            className="h-20 w-20 md:h-24 md:w-24 object-contain shrink-0"
+            className="h-24 w-24 md:h-28 md:w-28 object-contain shrink-0"
           />
           <div>
             <strong className="block text-3xl md:text-4xl tracking-tight font-black text-foreground leading-none">GICS</strong>
@@ -315,10 +315,11 @@ export default function Home() {
                   </h4>
                   <ul className="space-y-3">
                     {[
-                      "Supply Chain & Logistics Professionals",
-                      "NGO & Public Sector Delivery Staff",
+                      "Supply Chain, Logistics & Operations Professionals",
+                      "Sustainability, ESG & Responsible Sourcing Professionals",
+                      "NGO & Public-Sector Delivery Professionals",
                       "Early-Career Professionals & Graduates",
-                      "Corporate Teams & Managers"
+                      "Corporate Managers & Cross-Functional Teams"
                     ].map(item => (
                       <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
                         <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] shrink-0 mt-0.5" />
