@@ -9,74 +9,74 @@ export default function Home() {
     {
       id: "week-1",
       title: "Week 1: Global Supply Chain Foundations & Systems Thinking",
-      focus: "Understanding supply chain ecosystems and interdependencies across industries.",
+      focus: "Understanding end-to-end supply chain systems, strategic fit, operational performance and interdependencies across industries.",
       topics: [
-        "Global trends, disruptions, and enabling technologies",
-        "Case studies: FMCG, healthcare, retail, agribusiness",
-        "Supply chain performance and strategic fit"
+        "End-to-end flows, actors, system boundaries and enabling technologies",
+        "Strategic fit and operational performance objectives: quality, speed, dependability, flexibility and cost",
+        "Disruptions, resilience, interdependencies and trade-offs across sectors"
       ],
-      capstone: "Select one organisation and define a real supply chain or operations challenge.",
-      references: "Chopra & Meindl (Ch 1-3), Martin Christopher (Ch 1-3)"
+      capstone: "Select one organisation or the GICS simulated case, define the focal system or process, and frame one bounded supply chain or operations challenge.",
+      references: "Suggested guided reading: introductory supply chain strategy and systems-thinking sections, supported by the GICS Week 1 learning note."
     },
     {
       id: "week-2",
       title: "Week 2: Inventory, Warehousing & Procurement Essentials",
-      focus: "Core building blocks of supply chain execution and control.",
+      focus: "Using core execution and control principles to diagnose inventory, warehouse or sourcing contributions to operational performance.",
       topics: [
-        "Inventory control systems and stock management",
-        "Warehouse planning, layout, and operational performance",
-        "Supplier evaluation, sourcing decisions, and negotiation"
+        "Inventory purpose, costs, classification, stock availability and basic reorder thinking",
+        "Warehouse flow, layout, accuracy, safety and productivity",
+        "Supplier evaluation, sourcing decisions, risk and negotiation fundamentals"
       ],
-      capstone: "Analyse how inventory, warehousing, or sourcing contributes to the chosen challenge.",
-      references: "Slack & Brandon-Jones (Ch 4, 13), Chopra & Meindl (Ch 6, 15)"
+      capstone: "Analyse how inventory, warehousing or sourcing contributes to the chosen challenge, using evidence and an appropriate diagnostic table or figure.",
+      references: "Suggested guided reading: relevant inventory, warehousing and sourcing sections from the recommended texts, supported by the GICS Week 2 learning note."
     },
     {
       id: "week-3",
-      title: "Week 3: Operations Excellence & Lean Fundamentals",
-      focus: "Practical skills in process improvement and operational efficiency.",
+      title: "Week 3: Operations Management, Process Excellence & Lean Fundamentals",
+      focus: "Developing practical operations-management, process-analysis and continuous-improvement capability.",
       topics: [
-        "Process analysis and Value Stream Mapping",
-        "The 7 wastes and operational bottlenecks",
-        "Practical continuous improvement tools"
+        "Operations strategy, process types, performance objectives, capacity and utilisation",
+        "Process mapping, workflow, bottlenecks, quality, errors and rework",
+        "Lean waste, root-cause analysis and realistic continuous-improvement actions"
       ],
-      capstone: "Map one process and identify improvement opportunities.",
-      references: "Slack & Brandon-Jones (Ch 15), Reid & Sanders (Ch 4-6, 16)"
+      capstone: "Map one focal process, analyse capacity, flow, waste, quality or bottlenecks, identify root causes, and propose focused improvement opportunities.",
+      references: "Suggested guided reading: relevant operations strategy, process, capacity, quality, Lean and improvement sections, supported by the GICS Week 3 learning note."
     },
     {
       id: "week-4",
       title: "Week 4: Data Analytics for Operations & Supply Chain Performance",
-      focus: "Building confidence in data-driven decision-making and KPIs.",
+      focus: "Building confidence in spreadsheet analysis, forecasting, KPI design and visual performance communication.",
       topics: [
-        "Excel for operational analysis and demand forecasting",
-        "Designing KPI dashboards for performance",
-        "Introduction to Power BI for visual reporting"
+        "Excel for data quality, descriptive analysis and introductory demand forecasting",
+        "Operational KPIs for productivity, capacity, quality, inventory, service and sustainability",
+        "Excel charts and dashboards, with Power BI Desktop as an optional extension"
       ],
-      capstone: "Develop a KPI framework aligned to the capstone challenge.",
-      references: "Slack & Brandon-Jones (Ch 2, 10-12), Chopra & Meindl (Ch 4-5)"
+      capstone: "Develop 3–5 decision-relevant KPIs and include one or more appropriate Excel-based analytical outputs; relevance and interpretation matter more than quantity.",
+      references: "Suggested guided reading: relevant planning, control, forecasting and performance-measurement sections, supported by the GICS Week 4 analytics workbook."
     },
     {
       id: "week-5",
       title: "Week 5: Sustainable & Green Supply Chains",
-      focus: "Embedding sustainability and ESG into operational strategy.",
+      focus: "Embedding sustainability, circularity and responsible sourcing into operational decisions while recognising feasibility and trade-offs.",
       topics: [
-        "ESG, circular economy principles, and green logistics",
-        "Climate-smart operations and responsible sourcing",
-        "Sustainability trade-offs and case studies"
+        "ESG, circular economy, operational waste, energy and resource efficiency",
+        "Green logistics, climate-smart operations, responsible sourcing and workforce considerations",
+        "Sustainability hotspots, trade-offs, practical indicators and credible claims"
       ],
-      capstone: "Identify sustainability risks/opportunities and propose realistic interventions.",
-      references: "Chopra & Meindl (Ch 10), CISL Sustainable Supply Chain Frameworks"
+      capstone: "Identify sustainability risks and opportunities connected to the challenge, then propose realistic interventions and explain operational trade-offs.",
+      references: "Suggested guided reading: relevant sustainable supply chain and operations sections, CISL-aligned public frameworks, and the GICS Week 5 learning note."
     },
     {
       id: "week-6",
       title: "Week 6: Professional Practice & Global Supply Chain Careers",
-      focus: "Communicating operational insights and strengthening professional readiness.",
+      focus: "Converting analysis into implementable recommendations, communicating professionally and strengthening reflective career readiness.",
       topics: [
-        "Professional reporting and stakeholder communication",
-        "CV and LinkedIn optimisation for supply chain careers",
-        "Interview preparation and applied career strategy"
+        "Recommendation prioritisation, implementation planning and benefits realisation",
+        "Stakeholder communication, executive writing and reflective professional practice",
+        "CV, LinkedIn and interview evidence for supply chain, operations and sustainability careers"
       ],
-      capstone: "Finalise recommendations and submit the integrated capstone report.",
-      references: "Slack & Brandon-Jones (Ch 1, 18), Reporting templates & guidance"
+      capstone: "Integrate findings, finalise recommendations and the implementation plan, complete the executive summary and professional reflection, and submit the capstone report.",
+      references: "Suggested guided reading: relevant professional-practice sections, supported by GICS reporting templates, career workbook and capstone guidance."
     }
   ];
 
