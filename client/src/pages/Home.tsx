@@ -84,14 +84,17 @@ export default function Home() {
     <div className="max-w-[1160px] mx-auto px-6 py-8 space-y-12">
       {/* Header */}
       <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-white/10">
-        <a className="flex items-center gap-4 no-underline group" href="#" data-testid="link-home">
+        <a className="flex items-center gap-4 no-underline group" href="#" data-testid="link-home" aria-label="GICS home">
+          <img
+            src="/gics-crest.png"
+            alt="GICS institutional crest"
+            className="h-20 w-20 md:h-24 md:w-24 object-contain shrink-0"
+          />
           <div>
-            <img
-             src="/5.jpg"
-             alt="GICS logo"
-             className="h-16 w-auto"
-            />
-            <strong className="block text-base tracking-tight font-bold text-foreground">Global Institute for Supply Chain & Sustainability (GICS)</strong>
+            <strong className="block text-3xl md:text-4xl tracking-tight font-black text-foreground leading-none">GICS</strong>
+            <span className="block mt-1 text-sm md:text-base tracking-tight font-bold text-foreground">
+              Global Institute for Supply Chain & Sustainability
+            </span>
             <p className="mt-2 text-sm text-muted-foreground italic">Advancing Professional Capability and Industry Outcomes Through Education.</p>
             <span className="block text-xs text-muted-foreground font-medium uppercase tracking-wider">Supply Chain • Operations • Sustainability</span>
           </div>
