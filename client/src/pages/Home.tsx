@@ -272,7 +272,7 @@ export default function Home() {
                                 <p className="text-xs text-foreground font-medium leading-relaxed">{module.capstone}</p>
                               </div>
                               <div className="space-y-1">
-                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Core Reading References</p>
+                                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Suggested Guided Reading</p>
                                 <p className="text-[10px] text-muted-foreground italic leading-tight">{module.references}</p>
                               </div>
                             </div>
@@ -302,7 +302,7 @@ export default function Home() {
                   </h4>
                   <div className="space-y-4">
                     <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">
-                      The programme is structured around six integrated weekly modules, delivered sequentially over 6–8 weeks. Each week combines live teaching, guided reading from established textbooks, and a focused applied assignment.
+                      The programme is structured around six integrated weekly modules, delivered sequentially over 6–8 weeks. Each week combines live or recorded teaching, original GICS learning notes, optional guided reading, practical exercises and a focused capstone-building activity.
                     </p>
                     <p className="text-xs text-muted-foreground leading-relaxed italic bg-[hsl(var(--accent))]/5 p-4 rounded-xl border border-[hsl(var(--accent))]/20">
                       Weekly assignments progressively build one coherent capstone project based on a single organisation and a single operational or supply chain challenge.
