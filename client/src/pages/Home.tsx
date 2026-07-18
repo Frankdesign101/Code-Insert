@@ -120,11 +120,11 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black border-none h-12 px-8 rounded-xl shadow-lg hover:brightness-110 hover:translate-y-[-2px] transition-all" data-testid="button-register">
-              Register for Sept 2026
+            <Button asChild className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black border-none h-12 px-8 rounded-xl shadow-lg hover:brightness-110 hover:translate-y-[-2px] transition-all" data-testid="button-register">
+              <a href="/register">Register for Sept 2026</a>
             </Button>
-            <Button variant="outline" className="h-12 px-8 rounded-xl bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10 hover:translate-y-[-2px] transition-all" data-testid="button-view-programmes">
-              View programmes
+            <Button asChild variant="outline" className="h-12 px-8 rounded-xl bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10 hover:translate-y-[-2px] transition-all" data-testid="button-view-programmes">
+              <a href="#programmes">View programmes</a>
             </Button>
           </div>
 
@@ -473,8 +473,8 @@ export default function Home() {
             <p className="text-2xl font-bold text-foreground leading-tight">Customised delivery for organisations seeking structured team development.</p>
             <p className="text-sm text-muted-foreground">Bespoke pricing based on cohort size and requirements (typically £900 – £2,500).</p>
           </div>
-          <Button className="bg-foreground text-background font-black uppercase text-xs px-10 py-6 hover:brightness-110 shrink-0">
-            Request Proposal
+          <Button asChild className="bg-foreground text-background font-black uppercase text-xs px-10 py-6 hover:brightness-110 shrink-0">
+            <a href="/corporate-enquiry">Request Proposal</a>
           </Button>
         </Card>
       </section>
