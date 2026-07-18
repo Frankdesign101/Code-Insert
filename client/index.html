@@ -23,6 +23,46 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Hidden form definitions allow Netlify to discover forms rendered by React. -->
+    <form name="student-registration" data-netlify="true" hidden>
+      <input name="fullName" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="country" />
+      <input name="educationLevel" />
+      <input name="employmentStatus" />
+      <input name="currentRole" />
+      <input name="industry" />
+      <input name="experienceYears" />
+      <input name="linkedIn" />
+      <input name="englishConfidence" />
+      <input name="numeracyConfidence" />
+      <input name="excelExperience" />
+      <input name="learningOption" />
+      <input name="referralSource" />
+      <textarea name="motivation"></textarea>
+      <textarea name="goals"></textarea>
+      <input name="declaration" />
+      <input name="marketingConsent" />
+    </form>
+    <form name="corporate-proposal" data-netlify="true" hidden>
+      <input name="contactName" />
+      <input name="workEmail" />
+      <input name="phone" />
+      <input name="jobTitle" />
+      <input name="organisation" />
+      <input name="country" />
+      <input name="organisationType" />
+      <input name="teamSize" />
+      <textarea name="trainingNeeds"></textarea>
+      <input name="subjectArea" />
+      <input name="deliveryFormat" />
+      <input name="proposedDates" />
+      <input name="budget" />
+      <textarea name="desiredOutcomes"></textarea>
+      <input name="declaration" />
+      <input name="marketingConsent" />
+    </form>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
