@@ -109,7 +109,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="hero-grid">
-        <div className="glass-panel space-y-8 flex flex-col justify-center">
+        <div className="glass-panel space-y-6 flex flex-col self-start">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-5xl font-black leading-tight text-foreground tracking-tight">
               UK-quality, practical training delivered globally.
