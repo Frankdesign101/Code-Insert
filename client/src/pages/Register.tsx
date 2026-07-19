@@ -110,7 +110,7 @@ export default function Register() {
 
         <section className="space-y-4 border-t border-white/10 pt-6">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            GICS will use the information provided to assess your registration, plan learner support and contact you about this programme. Submitting this form does not create an enrolment contract or payment obligation. Please do not include confidential, sensitive or unnecessary personal information.
+            GICS will use the information provided to assess your registration, plan learner support and contact you about this programme. Submitting this form does not create an enrolment contract or payment obligation. Please do not include confidential, sensitive or unnecessary personal information. Read our <Link href="/privacy" className="font-bold text-foreground underline underline-offset-2">Privacy Notice</Link> and <Link href="/terms-refunds" className="font-bold text-foreground underline underline-offset-2">Terms &amp; Refunds</Link>.
           </p>
           <label className="flex items-start gap-3 text-sm text-foreground">
             <input type="checkbox" name="declaration" required className="mt-1 accent-[hsl(var(--accent))]" />

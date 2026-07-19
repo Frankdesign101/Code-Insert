@@ -31,6 +31,7 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   --radius: 1rem;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -64,11 +65,15 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border;
   }
   body {
     @apply font-sans antialiased text-foreground;
+    min-height: 100vh;
     background: radial-gradient(1200px 700px at 18% -10%, hsla(151, 75%, 55%, 0.15), transparent 60%),
                 radial-gradient(900px 600px at 100% 0%, hsla(200, 85%, 65%, 0.12), transparent 55%),
                 hsl(var(--bg));
@@ -90,4 +95,8 @@
   .glass-panel {
     @apply bg-[hsla(222,47%,14%,0.85)] border border-white/10 rounded-[20px] p-6 shadow-2xl backdrop-blur-xl;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
