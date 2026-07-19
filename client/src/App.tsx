@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import Register from "@/pages/Register";
 import CorporateEnquiry from "@/pages/CorporateEnquiry";
 import TermsRefunds from "@/pages/TermsRefunds";
+import Privacy from "@/pages/Privacy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/register" component={Register}/>
       <Route path="/corporate-enquiry" component={CorporateEnquiry}/>
       <Route path="/terms-refunds" component={TermsRefunds}/>
+      <Route path="/privacy" component={Privacy}/>
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
