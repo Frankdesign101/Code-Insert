@@ -147,7 +147,7 @@ export default function Home() {
         </div>
 
         {/* Hero Sidebar */}
-        <div className="glass-panel flex flex-col gap-8 bg-[hsla(222,47%,16%,0.9)]">
+        <div className="glass-panel self-start bg-[hsla(222,47%,16%,0.9)]">
           <section>
             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">First cohort</h3>
             <div className="space-y-3">
@@ -164,42 +164,43 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-          <section className="pt-6 border-t border-white/10">
-            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">Programme Lead Profile</h3>
-            <div className="p-4 bg-white/5 border border-white/10 rounded-xl space-y-4">
-              <div>
-                <b className="text-foreground text-base block mb-1">Dr Frank Donkor</b>
-                <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-                  Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Dr Frank Donkor is also a module tutor on the MBA programme at the University of Exeter Business School. Fellow of The Higher Education Academy (UK) and an EduExe Fellow. 
-                </p>
-              </div>
-              
-              <div className="space-y-2">
-                <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Specialisms</p>
-                <ul className="space-y-1.5">
-                  {[
-                    "Supply chain sustainability & ESG",
-                    "Operations management & performance",
-                    "Leadership in global supply chains",
-                    "Pharmaceutical industry collaboration",
-                    "Professional skills development"
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[10px] text-muted-foreground font-medium">
-                      <div className="w-1 h-1 rounded-full bg-[hsl(var(--accent))]" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <p className="text-[10px] text-muted-foreground leading-relaxed italic border-t border-white/5 pt-3">
-                Foundation reflects UK executive education standards, remaining directly applicable to emerging-market supply chains.
-              </p>
-            </div>
-          </section>
         </div>
       </div>
+
+      {/* Programme Lead */}
+      <section className="glass-panel">
+        <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-8 items-start">
+          <div className="space-y-3">
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Programme Lead Profile</p>
+            <div>
+              <h2 className="text-2xl font-black text-foreground">Dr Frank Donkor</h2>
+              <p className="text-sm text-muted-foreground leading-relaxed font-medium mt-2">
+                Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Module tutor on the University of Exeter Business School MBA programme, Fellow of The Higher Education Academy (UK), and an EduExe Fellow.
+              </p>
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed italic">
+              UK executive-education foundations with direct relevance to emerging-market supply chains.
+            </p>
+          </div>
+          <div>
+            <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest mb-3">Specialisms</p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                "Supply chain sustainability & ESG",
+                "Operations management & performance",
+                "Leadership in global supply chains",
+                "Pharmaceutical industry collaboration",
+                "Professional skills development"
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl text-xs text-muted-foreground font-medium">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))] shrink-0" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Flagship Content & Structure */}
       <section id="programmes" className="space-y-8">
