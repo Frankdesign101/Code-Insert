@@ -92,7 +92,7 @@ export default function CorporateEnquiry() {
 
         <section className="space-y-4 border-t border-white/10 pt-6">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            GICS will use this information to respond to your enquiry and develop an appropriate proposal. Please do not submit confidential, commercially sensitive or unnecessary personal information at this initial stage.
+            GICS will use this information to respond to your enquiry and develop an appropriate proposal. Please do not submit confidential, commercially sensitive or unnecessary personal information at this initial stage. Read our <Link href="/privacy" className="font-bold text-foreground underline underline-offset-2">Privacy Notice</Link>.
           </p>
           <label className="flex items-start gap-3 text-sm text-foreground">
             <input type="checkbox" name="declaration" required className="mt-1 accent-[hsl(var(--accent))]" />
