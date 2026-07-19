@@ -78,7 +78,7 @@ export default function Home() {
     <div className="max-w-[1160px] mx-auto px-6 py-8 space-y-12">
       {/* Header */}
       <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-white/10">
-        <a className="flex items-center gap-4 no-underline group" href="#" data-testid="link-home" aria-label="GICS home">
+        <a className="flex items-center gap-4 no-underline group" href="/" data-testid="link-home" aria-label="GICS home">
           <img
             src="/gics-crest.png"
             alt="GICS institutional crest"
@@ -155,7 +155,9 @@ export default function Home() {
                 { label: "Start", value: "September 2026" },
                 { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
                 { label: "Duration", value: "6–8 weeks • Live and/or recorded sessions" },
-                { label: "Assessment", value: "Integrated Capstone Project" }
+                { label: "Assessment", value: "Integrated Capstone Project" },
+                { label: "Delivery", value: "Online • Taught in English" },
+                { label: "Live schedule", value: "Session times and time-zone details confirmed before payment" }
               ].map((item) => (
                 <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
                   <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">{item.label}</span>
@@ -175,11 +177,11 @@ export default function Home() {
             <div>
               <h2 className="text-2xl font-black text-foreground">Dr Frank Donkor</h2>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium mt-2">
-                Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Module tutor on the University of Exeter Business School MBA programme, Fellow of The Higher Education Academy (UK), and an EduExe Fellow.
+                Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Module Convenor on the University of Exeter MBA programme, Fellow of The Higher Education Academy (UK), and an EduExe Fellow.
               </p>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed italic">
-              UK executive-education foundations with direct relevance to emerging-market supply chains.
+              UK executive-education foundations with direct relevance to emerging-market supply chains. GICS is an independent training provider; its programmes are not University of Exeter awards and are not delivered or endorsed by the University.
             </p>
           </div>
           <div>
@@ -380,7 +382,8 @@ export default function Home() {
                     "Applied weekly assignments",
                     "Facilitated cohort discussions",
                     "Structured assignment feedback",
-                    "CPD learning log guidance"
+                    "CPD learning log guidance",
+                    "GICS Certificate of Completion"
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
                       <div className="w-1 h-1 rounded-full bg-[hsl(var(--accent))] mt-1.5 shrink-0" />
@@ -467,7 +470,26 @@ export default function Home() {
       </section>
 
       {/* Corporate Section */}
-      <p className="text-sm text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">Registration is free and does not commit you to payment. Enrolment terms and cancellation rights are provided before payment.</p>
+      <section aria-labelledby="registration-steps-title" className="glass-panel space-y-6">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Simple, transparent admissions</p>
+          <h2 id="registration-steps-title" className="text-2xl font-black text-foreground mt-2">What happens after registration?</h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-4">
+          {[
+            ["1", "Register free", "Tell us about your experience, goals and preferred learning option. There is no payment commitment."],
+            ["2", "Receive a decision", "GICS reviews programme suitability and sends an offer or preparation guidance."],
+            ["3", "Choose whether to enrol", "Review the confirmed fee, schedule, terms and cancellation rights before making any payment."]
+          ].map(([number, title, description]) => (
+            <div key={number} className="p-5 bg-white/5 border border-white/10 rounded-2xl">
+              <span className="inline-flex w-8 h-8 items-center justify-center rounded-full bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] text-sm font-black">{number}</span>
+              <h3 className="font-bold text-foreground mt-4">{title}</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed mt-2">{description}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-muted-foreground leading-relaxed">Successful participants receive a GICS Certificate of Completion. GC-PSSO is a professional-development programme, not a university degree or UK-regulated qualification.</p>
+      </section>
 
       <section id="corporate" className="space-y-8">
         <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-10 border-dashed flex flex-col md:flex-row justify-between items-center gap-8">
@@ -492,7 +514,7 @@ export default function Home() {
           {[
             {
               title: "UK-Quality Leadership",
-              desc: "Programme design led by senior UK lecturers with deep industry roots.",
+              desc: "Programme design led by an experienced UK academic with extensive industry collaboration.",
               icon: <Award className="w-5 h-5" />
             },
             {
