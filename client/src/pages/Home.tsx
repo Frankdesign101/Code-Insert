@@ -466,6 +466,8 @@ export default function Home() {
       </section>
 
       {/* Corporate Section */}
+      <p className="text-sm text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">Registration is free and does not commit you to payment. Enrolment terms and cancellation rights are provided before payment.</p>
+
       <section id="corporate" className="space-y-8">
         <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-10 border-dashed flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="space-y-4 text-center md:text-left max-w-xl">
@@ -541,7 +543,7 @@ export default function Home() {
         </div>
         <div className="flex gap-10 font-black uppercase tracking-widest text-[10px] text-muted-foreground pt-2">
           <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-privacy">Privacy</a>
-          <a href="#" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-terms">Terms</a>
+          <a href="/terms-refunds" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-terms">Terms &amp; Refunds</a>
           <a href="mailto:gicsinstituteuk@gmail.com" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-contact">gicsinstituteuk@gmail.com</a>
         </div>
       </footer>
