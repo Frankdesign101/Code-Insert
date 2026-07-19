@@ -528,6 +528,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="scroll-mt-8">
+        <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden">
+          <CardContent className="p-8 md:p-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+            <div className="space-y-3 max-w-2xl">
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Contact GICS</p>
+              <h2 className="text-3xl font-black text-foreground">How can we help?</h2>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Ask about the September 2026 programme, learner eligibility, payment and enrolment, or tailored training for your organisation.
+              </p>
+              <a
+                href="mailto:gicsinstituteuk@gmail.com"
+                className="inline-block text-sm font-bold text-foreground hover:text-[hsl(var(--accent))] transition-colors"
+              >
+                gicsinstituteuk@gmail.com
+              </a>
+            </div>
+            <div className="flex flex-wrap gap-3 shrink-0">
+              <Button asChild className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black">
+                <a href="/register">Student registration</a>
+              </Button>
+              <Button asChild variant="outline" className="bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10">
+                <a href="/corporate-enquiry">Corporate enquiry</a>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
       {/* Footer */}
       <footer className="pt-12 pb-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-start gap-8 text-sm">
         <div className="space-y-4 text-left">
