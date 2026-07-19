@@ -57,7 +57,7 @@ export default function Register() {
         <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">September 2026 cohort</p>
         <h1 className="text-4xl font-black text-foreground">Student registration</h1>
         <p className="text-muted-foreground leading-relaxed max-w-3xl">
-          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. This is an initial registration, not a payment form. No advanced mathematics background is required.
+          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. This is an initial registration, not a payment form, confirmed enrolment or commitment to pay. If you are offered a place, GICS will provide the applicable fee, cancellation and refund terms before you decide whether to enrol. No advanced mathematics background is required.
         </p>
       </header>
 
@@ -110,7 +110,7 @@ export default function Register() {
 
         <section className="space-y-4 border-t border-white/10 pt-6">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            GICS will use the information provided to assess your registration, plan learner support and contact you about this programme. Please do not include confidential, sensitive or unnecessary personal information.
+            GICS will use the information provided to assess your registration, plan learner support and contact you about this programme. Submitting this form does not create an enrolment contract or payment obligation. Please do not include confidential, sensitive or unnecessary personal information.
           </p>
           <label className="flex items-start gap-3 text-sm text-foreground">
             <input type="checkbox" name="declaration" required className="mt-1 accent-[hsl(var(--accent))]" />
