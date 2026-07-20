@@ -73,6 +73,7 @@
   }
   body {
     @apply font-sans antialiased text-foreground;
+    margin: 0;
     min-height: 100vh;
     background: radial-gradient(1200px 700px at 18% -10%, hsla(151, 75%, 55%, 0.15), transparent 60%),
                 radial-gradient(900px 600px at 100% 0%, hsla(200, 85%, 65%, 0.12), transparent 55%),
