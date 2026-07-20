@@ -5,7 +5,7 @@ import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, Chevron
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Home() {
-  const modules = [
+  const learningThemes = [
     {
       id: "week-1",
       title: "Week 1: Global Supply Chain Foundations & Systems Thinking",
@@ -130,8 +130,8 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-2">
             {[
-              "Live cohort-based learning",
-              "Recordings included",
+              "Asynchronous-first learning",
+              "Optional Saturday practice labs",
               "Applied capstone projects",
               "Corporate training"
             ].map((text) => (
@@ -154,10 +154,10 @@ export default function Home() {
               {[
                 { label: "Start", value: "September 2026" },
                 { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
-                { label: "Duration", value: "6–8 weeks • Live and/or recorded sessions" },
+                { label: "Duration", value: "Six sequential weekly learning themes over 6–8 weeks" },
                 { label: "Assessment", value: "Integrated Capstone Project" },
                 { label: "Delivery", value: "Online • Taught in English" },
-                { label: "Live schedule", value: "Session times and time-zone details confirmed before payment" }
+                { label: "Practice labs", value: "Optional Saturday Applied Practice Labs; times and time-zone details confirmed before payment" }
               ].map((item) => (
                 <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
                   <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">{item.label}</span>
@@ -181,7 +181,7 @@ export default function Home() {
               </p>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed italic">
-              UK executive-education foundations with direct relevance to emerging-market supply chains. GICS is an independent training provider; its programmes are not University of Exeter awards and are not delivered or endorsed by the University.
+              UK executive-education foundations with direct relevance to emerging-market supply chains. GICS is an independent training provider. GC-PSSO is a GICS professional-development programme and is not a University of Exeter programme or award.
             </p>
           </div>
           <div>
@@ -221,7 +221,7 @@ export default function Home() {
                   Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
                 </CardTitle>
                 <p className="text-muted-foreground leading-relaxed max-w-3xl">
-                  A professional development programme designed to build practical, workplace-ready capability through weekly modules, applied assignments, and an integrated capstone project.
+                  An asynchronous-first professional-development programme designed to build practical, workplace-ready capability through six sequential weekly learning themes, applied activities and an integrated capstone project.
                 </p>
               </div>
               <div className="flex flex-col gap-3 shrink-0">
@@ -239,29 +239,29 @@ export default function Home() {
               <div className="lg:col-span-8 space-y-8">
                 <div className="space-y-4">
                   <h4 className="text-sm font-black uppercase tracking-widest text-foreground flex items-center gap-2">
-                    <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> 6-Week Curriculum
+                    <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Six Weekly Learning Themes
                   </h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Build practical capability across supply chain, operations, analytics and sustainability—then apply your learning to one integrated workplace project.
                   </p>
                   <Accordion type="single" collapsible className="w-full space-y-4">
-                    {modules.map((module) => (
-                      <AccordionItem key={module.id} value={module.id} className="border border-white/10 rounded-2xl bg-white/5 px-6 overflow-hidden">
+                    {learningThemes.map((theme) => (
+                      <AccordionItem key={theme.id} value={theme.id} className="border border-white/10 rounded-2xl bg-white/5 px-6 overflow-hidden">
                         <AccordionTrigger className="hover:no-underline py-5 group">
                           <span className="text-left font-bold text-foreground group-hover:text-[hsl(var(--accent))] transition-colors">
-                            {module.title}
+                            {theme.title}
                           </span>
                         </AccordionTrigger>
                         <AccordionContent className="pb-6 space-y-6">
                           <div className="space-y-2">
                             <p className="text-xs font-black uppercase text-muted-foreground tracking-widest">Focus</p>
-                            <p className="text-sm text-foreground leading-relaxed">{module.focus}</p>
+                            <p className="text-sm text-foreground leading-relaxed">{theme.focus}</p>
                           </div>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-3">
                               <p className="text-xs font-black uppercase text-muted-foreground tracking-widest">Key Topics</p>
                               <ul className="space-y-2">
-                                {module.topics.map((topic, i) => (
+                                {theme.topics.map((topic, i) => (
                                   <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
                                     <div className="w-1 h-1 rounded-full bg-[hsl(var(--accent))] mt-1.5 shrink-0" />
                                     {topic}
@@ -272,7 +272,7 @@ export default function Home() {
                             <div className="space-y-4">
                               <div className="p-4 bg-[hsl(var(--accent))]/5 border border-[hsl(var(--accent))]/20 rounded-xl space-y-2">
                                 <p className="text-[10px] font-black uppercase text-[hsl(var(--accent))] tracking-widest">Applied Project Activity</p>
-                                <p className="text-xs text-foreground font-medium leading-relaxed">{module.capstone}</p>
+                                <p className="text-xs text-foreground font-medium leading-relaxed">{theme.capstone}</p>
                               </div>
                             </div>
                           </div>
@@ -304,10 +304,10 @@ export default function Home() {
                   </h4>
                   <div className="space-y-4">
                     <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">
-                      The programme is structured around six integrated weekly modules, delivered sequentially over 6–8 weeks. Each week combines live or recorded teaching, original GICS learning notes, optional guided reading, practical exercises and a focused capstone-building activity.
+                      The programme is structured around six sequential weekly learning themes delivered over 6–8 weeks. Each theme contains recorded teaching, original GICS learning notes, optional guided reading, an applied simulation activity and a focused capstone-building task. The themes introduce selected practical capabilities; they are not intended to be comprehensive academic modules.
                     </p>
                     <p className="text-xs text-muted-foreground leading-relaxed italic bg-[hsl(var(--accent))]/5 p-4 rounded-xl border border-[hsl(var(--accent))]/20">
-                      Weekly assignments progressively build one coherent capstone project based on a single organisation and a single operational or supply chain challenge.
+                      Weekly activities progressively build one coherent capstone project based on a single organisation and a single operational or supply chain challenge.
                     </p>
                   </div>
                 </div>
@@ -342,31 +342,31 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="flex-1">
             <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Indicative Launch Fees</h2>
-            <p className="text-muted-foreground font-medium mt-2">Flexible formats tailored to your learning style.</p>
+            <p className="text-muted-foreground font-medium mt-2">The same asynchronous core, with a choice of independent or guided support.</p>
           </div>
           <Card className="flex-1 max-w-md p-5 bg-white/5 border border-white/10 rounded-2xl">
             <h4 className="text-xs font-black uppercase tracking-widest text-foreground mb-3 flex items-center gap-2">
               <Info className="w-4 h-4 text-[hsl(var(--accent))]" /> Selection Note
             </h4>
             <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-              Both options follow the same curriculum. Select the format that matches your availability and learning style.
+              Both pathways use the same asynchronous core and assessment standard. Choose Guided Cohort for optional Saturday practice labs, peer learning and live feedback, or Self-Paced for maximum flexibility.
             </p>
           </Card>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Option 1: Live Cohort */}
+          {/* Option 1: Guided Cohort */}
           <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden border-t-4 border-t-[hsl(var(--accent))] flex flex-col">
             <CardHeader className="p-8 pb-4">
               <div className="flex justify-between items-start">
                 <div className="space-y-1">
                   <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-3 py-1 mb-2">RECOMMENDED</Badge>
-                  <CardTitle className="text-2xl font-bold">Option 1: Live Cohort</CardTitle>
+                  <CardTitle className="text-2xl font-bold">Option 1: Guided Cohort</CardTitle>
                 </div>
               </div>
               <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10">
                 <p className="text-[10px] font-black uppercase text-muted-foreground mb-1 tracking-widest">Who it's for</p>
-                <p className="text-sm text-foreground font-medium">Professionals valuing interaction and structured pacing.</p>
+                <p className="text-sm text-foreground font-medium">Professionals wanting structured pacing, optional live practice and peer learning.</p>
               </div>
             </CardHeader>
 
@@ -377,10 +377,11 @@ export default function Home() {
                 </h4>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
                   {[
-                    "Live interactive sessions",
+                    "Complete asynchronous core",
+                    "Optional Saturday Applied Practice Labs",
                     "Guided weekly reading",
-                    "Applied weekly assignments",
-                    "Facilitated cohort discussions",
+                    "Applied weekly simulations",
+                    "Facilitated peer discussion",
                     "Structured assignment feedback",
                     "CPD learning log guidance",
                     "GICS Certificate of Completion"
@@ -431,12 +432,12 @@ export default function Home() {
                 </h4>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
                   {[
-                    "Recorded lectures access",
-                    "Guided self-study & reading",
-                    "Independent assignments",
+                    "Complete asynchronous core",
+                    "Recorded lessons and learning notes",
+                    "Independent simulation activities",
+                    "Model case debriefs",
                     "Capstone report guidance",
-                    "Certificate of Completion",
-                    "Independent learning approach"
+                    "Certificate of Completion"
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
                       <div className="w-1 h-1 rounded-full bg-white/30 mt-1.5 shrink-0" />
@@ -445,7 +446,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <p className="text-[10px] text-muted-foreground leading-relaxed italic border-l-2 border-white/10 pl-3 mt-4">
-                  Emphasises flexibility. Live interactive sessions not included. Optional coaching offered separately.
+                  Emphasises flexibility. Saturday Applied Practice Labs are not included; equivalent independent activities and model debriefs are provided. Optional coaching is available separately.
                 </p>
               </div>
 
