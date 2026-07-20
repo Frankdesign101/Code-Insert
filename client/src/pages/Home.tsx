@@ -75,9 +75,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="max-w-[1160px] mx-auto px-6 py-8 space-y-12">
+    <div className="max-w-[1160px] mx-auto px-5 md:px-6 pt-3 md:pt-4 pb-8 space-y-10">
       {/* Header */}
-      <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-white/10">
+      <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-4 border-b border-white/10">
         <a className="flex items-center gap-4 no-underline group" href="/" data-testid="link-home" aria-label="GICS home">
           <img
             src="/gics-crest.png"
@@ -154,7 +154,7 @@ export default function Home() {
               {[
                 { label: "Start", value: "September 2026" },
                 { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
-                { label: "Duration", value: "Six sequential weekly learning themes over 6–8 weeks" },
+                { label: "Duration", value: "Asynchronous core: six sequential weekly learning themes over 6–8 weeks" },
                 { label: "Assessment", value: "Integrated Capstone Project" },
                 { label: "Delivery", value: "Online • Taught in English" },
                 { label: "Practice labs", value: "Optional Saturday Applied Practice Labs; times and time-zone details confirmed before payment" }
@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       {/* Flagship Content & Structure */}
-      <section id="programmes" className="space-y-8">
+      <section id="programmes" className="space-y-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Flagship Programme Content & Structure</h2>
@@ -338,7 +338,7 @@ export default function Home() {
       </section>
 
       {/* Delivery Options & Fees Section */}
-      <section id="fees" className="space-y-10">
+      <section id="fees" className="space-y-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="flex-1">
             <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Indicative Launch Fees</h2>
@@ -489,10 +489,10 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-muted-foreground leading-relaxed">Successful participants receive a GICS Certificate of Completion. GC-PSSO is a professional-development programme delivered by Global Supply Chain & Sustainability Academy Ltd, a UK-registered education and training company (Company No. 16986058). It is not a university degree or UK-regulated qualification.</p>
+        <p className="text-xs text-muted-foreground leading-relaxed">Successful participants receive a GICS Certificate of Completion. GC-PSSO is a non-credit professional-development programme delivered by Global Supply Chain & Sustainability Academy Ltd, a UK-registered education and training company. It is not a university award.</p>
       </section>
 
-      <section id="corporate" className="space-y-8">
+      <section id="corporate" className="space-y-6">
         <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-10 border-dashed flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="space-y-4 text-center md:text-left max-w-xl">
             <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate & Team Training</h3>
@@ -506,7 +506,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose GICS? */}
-      <section id="about" className="space-y-8">
+      <section id="about" className="space-y-6">
         <div>
           <h2 className="text-3xl font-black text-foreground uppercase tracking-tight">Why Choose GICS?</h2>
           <p className="text-muted-foreground font-medium mt-2">UK-quality design with a focus on real-world impact.</p>
@@ -582,7 +582,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="pt-12 pb-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-start gap-8 text-sm">
+      <footer className="pt-8 pb-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-start gap-6 text-sm">
         <div className="space-y-4 text-left">
           <div className="flex items-center gap-3">
             <img src="/gics-crest.png" alt="GICS crest" className="w-10 h-10 object-contain" />
