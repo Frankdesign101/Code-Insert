@@ -489,7 +489,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-muted-foreground leading-relaxed">Successful participants receive a GICS Certificate of Completion. GC-PSSO is a professional-development programme, not a university degree or UK-regulated qualification.</p>
+        <p className="text-xs text-muted-foreground leading-relaxed">Successful participants receive a GICS Certificate of Completion. GC-PSSO is a professional-development programme delivered by Global Supply Chain & Sustainability Academy Ltd, a UK-registered education and training company (Company No. 16986058). It is not a university degree or UK-regulated qualification.</p>
       </section>
 
       <section id="corporate" className="space-y-8">
