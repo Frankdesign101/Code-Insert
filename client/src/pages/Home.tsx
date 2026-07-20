@@ -111,11 +111,14 @@ export default function Home() {
       <div className="hero-grid">
         <div className="glass-panel space-y-6 flex flex-col self-start">
           <div className="space-y-4">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">
+              Flagship programme: Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
+            </p>
             <h1 className="text-4xl md:text-5xl font-black leading-tight text-foreground tracking-tight">
               UK-quality, practical training delivered globally.
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-              GICS builds real workplace capability through applied learning and industry-aligned tools—designed by a UK Programme Director.
+              GICS builds practical workplace capability through applied simulations, industry-aligned tools and an integrated capstone—delivered by a UK-registered education and training company and led by an experienced UK higher-education Programme Director.
             </p>
           </div>
 
