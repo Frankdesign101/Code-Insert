@@ -150,7 +150,7 @@ export default function Home() {
         <div className="glass-panel self-start bg-[hsla(222,47%,16%,0.9)]">
           <section>
             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">First cohort</h3>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 { label: "Start", value: "September 2026" },
                 { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
@@ -159,7 +159,7 @@ export default function Home() {
                 { label: "Delivery", value: "Online • Taught in English" },
                 { label: "Practice labs", value: "Optional Saturday Applied Practice Labs; times and time-zone details confirmed before payment" }
               ].map((item) => (
-                <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
+                <div key={item.label} className="p-3 bg-white/5 border border-white/10 rounded-xl">
                   <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">{item.label}</span>
                   <span className="text-sm font-bold text-foreground">{item.value}</span>
                 </div>
