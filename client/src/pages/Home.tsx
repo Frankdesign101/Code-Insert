@@ -75,7 +75,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="max-w-[1160px] mx-auto px-5 md:px-6 pt-3 md:pt-4 pb-8 space-y-10">
+    <div className="max-w-[1160px] mx-auto px-5 md:px-6 pt-0 pb-8 space-y-10">
       {/* Header */}
       <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-4 border-b border-white/10">
         <a className="flex items-center gap-4 no-underline group" href="/" data-testid="link-home" aria-label="GICS home">
