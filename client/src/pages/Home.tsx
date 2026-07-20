@@ -154,7 +154,7 @@ export default function Home() {
               {[
                 { label: "Start", value: "September 2026" },
                 { label: "Duration", value: "6–8 weeks" },
-                { label: "Core", value: "Six asynchronous weekly learning themes" },
+                { label: "Asynchronous core", value: "Six sequential weekly learning themes" },
                 { label: "Assessment", value: "Integrated capstone project" },
                 { label: "Practice labs", value: "Optional Saturdays • schedule confirmed before payment" }
               ].map((item) => (
