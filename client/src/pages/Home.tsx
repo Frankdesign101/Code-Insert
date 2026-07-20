@@ -118,7 +118,7 @@ export default function Home() {
               UK-quality, practical training delivered globally.
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-              GICS builds practical workplace capability through applied simulations, industry-aligned tools and an integrated capstone—delivered by a UK-registered education and training company and led by Dr Frank Donkor, an experienced UK higher-education Programme Director and University of Exeter MBA Module Convenor.
+              GICS builds practical workplace capability through applied simulations, industry-aligned tools and an integrated capstone—delivered by a UK-registered education and training company and led by an experienced UK higher-education Programme Director.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export default function Home() {
         <div className="glass-panel h-full bg-[hsla(222,47%,16%,0.9)]">
           <section className="h-full flex flex-col">
             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">First cohort</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-1 content-center">
               {[
                 { label: "Start", value: "September 2026" },
                 { label: "Duration", value: "6–8 weeks" },
@@ -166,12 +166,6 @@ export default function Home() {
                   <span className="text-xs font-bold leading-snug text-foreground">{item.value}</span>
                 </div>
               ))}
-            </div>
-            <div className="mt-auto pt-4">
-              <div className="p-3 bg-[hsl(var(--accent))]/5 border border-[hsl(var(--accent))]/20 rounded-xl">
-                <span className="block text-[10px] font-black uppercase tracking-widest text-[hsl(var(--accent))] mb-1">Programme leadership</span>
-                <p className="text-xs font-bold leading-relaxed text-foreground">Dr Frank Donkor • UK higher-education Programme Director • University of Exeter MBA Module Convenor • Fellow of the Higher Education Academy (UK)</p>
-              </div>
             </div>
           </section>
         </div>
@@ -189,7 +183,7 @@ export default function Home() {
               </p>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed italic">
-              UK executive-education foundations with direct relevance to emerging-market supply chains. GICS is an independent training provider. GC-PSSO is a GICS professional-development programme and is not a University of Exeter programme or award.
+              UK executive-education foundations with direct relevance to emerging-market supply chains. GICS is an independent training provider. GC-PSSO is a GICS professional-development programme and is not a university award.
             </p>
           </div>
           <div>
