@@ -8,56 +8,56 @@ export default function Home() {
   const learningThemes = [
     {
       id: "week-1",
-      title: "Week 1: Global Supply Chain Foundations & Systems Thinking",
-      focus: "Understand how end-to-end supply chain decisions shape organisational performance.",
+      title: "Week 1: Operations, Global Supply Networks & Systems Thinking",
+      focus: "Understand how operations connect into global supply networks and shape system-wide performance.",
       topics: [
-        "Supply chain flows and system boundaries",
-        "Strategic fit and performance objectives",
-        "Disruption, resilience and trade-offs"
+        "Operations strategy, performance objectives and transformation",
+        "Supply-network flows, systems and interdependencies",
+        "Digital operating models, coordination and resilience"
       ],
       capstone: "Define one organisation or simulated case, its focal system and one bounded supply chain or operations challenge."
     },
     {
       id: "week-2",
-      title: "Week 2: Inventory, Warehousing & Procurement Essentials",
-      focus: "Diagnose how core supply chain functions support service, flow and operational control.",
+      title: "Week 2: Inventory, Warehousing & Purchasing Management",
+      focus: "Use inventory, warehousing and purchasing decisions to improve service, flow and operational control.",
       topics: [
-        "Inventory and stock-control fundamentals",
-        "Warehouse flow, accuracy and productivity",
-        "Supplier evaluation, sourcing and risk"
+        "Inventory, demand patterns and stock control",
+        "Warehouse flow, accuracy, safety and productivity",
+        "Purchasing, supplier selection and relationships"
       ],
-      capstone: "Analyse the inventory, warehousing or sourcing issue most relevant to the chosen challenge."
+      capstone: "Analyse the inventory, warehousing or purchasing issue most relevant to the chosen challenge."
     },
     {
       id: "week-3",
-      title: "Week 3: Operations Management, Process Excellence & Lean Fundamentals",
-      focus: "Improve operational performance through practical process analysis and Lean thinking.",
+      title: "Week 3: Process Design, Capacity, Flow & Lean Improvement",
+      focus: "Improve operational performance through process design, capacity analysis and Lean thinking.",
       topics: [
-        "Operations strategy and performance",
-        "Capacity, quality and process flow",
-        "Lean and root-cause improvement"
+        "Process types, mapping and layout",
+        "Capacity, flow, bottlenecks and quality",
+        "Push/pull, Lean waste and root-cause improvement"
       ],
       capstone: "Map a focal process, diagnose its main constraint or quality issue and propose realistic improvements."
     },
     {
       id: "week-4",
-      title: "Week 4: Data Analytics for Operations & Supply Chain Performance",
-      focus: "Use accessible analytics and KPIs to support better operational decisions.",
+      title: "Week 4: Data Analytics & Digital Tools for Operations and Supply Chain Performance",
+      focus: "Use accessible analytics and digital tools to support better operational decisions.",
       topics: [
-        "Excel analysis and introductory forecasting",
-        "Operational and supply chain KPIs",
-        "Charts and dashboards; optional Power BI"
+        "Excel/Sheets analysis and simple forecasting",
+        "Operational and supply-chain KPIs, charts and dashboards",
+        "Optional Power BI and responsible AI-assisted analysis"
       ],
       capstone: "Develop 3–5 relevant KPIs and create at least one appropriate Excel-based analytical output."
     },
     {
       id: "week-5",
-      title: "Week 5: Sustainable & Green Supply Chains",
-      focus: "Embed sustainability into practical supply chain and operational decisions.",
+      title: "Week 5: Sustainable Operations & Supply Networks",
+      focus: "Embed sustainability into practical operations and supply-network decisions.",
       topics: [
-        "ESG, circularity and resource efficiency",
-        "Green logistics and responsible sourcing",
-        "Sustainability hotspots and trade-offs"
+        "Environmental and social performance",
+        "Circularity, resource efficiency and green logistics",
+        "Responsible sourcing, hotspots and trade-offs"
       ],
       capstone: "Identify material sustainability risks or opportunities and propose feasible interventions."
     },
@@ -244,7 +244,7 @@ export default function Home() {
                     <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Six Weekly Learning Themes
                   </h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Build practical capability across supply chain, operations, analytics and sustainability—then apply your learning to one integrated workplace project.
+                    Build practical capability across operations, global supply networks, purchasing, analytics and sustainability—then apply your learning to one integrated workplace project.
                   </p>
                   <Accordion type="single" collapsible className="w-full space-y-4">
                     {learningThemes.map((theme) => (
