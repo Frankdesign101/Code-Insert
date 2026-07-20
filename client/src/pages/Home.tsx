@@ -153,15 +153,14 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 { label: "Start", value: "September 2026" },
-                { label: "Flagship", value: "Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" },
-                { label: "Duration", value: "Asynchronous core: six sequential weekly learning themes over 6–8 weeks" },
-                { label: "Assessment", value: "Integrated Capstone Project" },
-                { label: "Delivery", value: "Online • Taught in English" },
-                { label: "Practice labs", value: "Optional Saturday Applied Practice Labs; times and time-zone details confirmed before payment" }
+                { label: "Duration", value: "6–8 weeks" },
+                { label: "Core", value: "Six asynchronous weekly learning themes" },
+                { label: "Assessment", value: "Integrated capstone project" },
+                { label: "Practice labs", value: "Optional Saturdays • schedule confirmed before payment" }
               ].map((item) => (
-                <div key={item.label} className="p-3 bg-white/5 border border-white/10 rounded-xl">
+                <div key={item.label} className="p-2.5 bg-white/5 border border-white/10 rounded-xl">
                   <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">{item.label}</span>
-                  <span className="text-sm font-bold text-foreground">{item.value}</span>
+                  <span className="text-xs font-bold leading-snug text-foreground">{item.value}</span>
                 </div>
               ))}
             </div>
