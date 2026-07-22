@@ -55,22 +55,22 @@ export default function Home() {
       title: "Week 5: Sustainable Operations & Supply Networks",
       focus: "Embed sustainability into practical operations and supply-network decisions.",
       topics: [
-        "Environmental and social performance",
-        "Circularity, resource efficiency and green logistics",
-        "Responsible sourcing, hotspots and trade-offs"
+        "Triple bottom line and sustainable performance",
+        "Circularity, resource efficiency and operational trade-offs",
+        "Responsible sourcing, transparency and sustainability hotspots"
       ],
       capstone: "Identify material sustainability risks or opportunities and propose feasible interventions."
     },
     {
       id: "week-6",
       title: "Week 6: Professional Practice & Global Supply Chain Careers",
-      focus: "Turn analysis into implementable recommendations and credible professional evidence.",
+      focus: "Convert programme outputs into credible career evidence, ethical professional practice and a practical CPD action plan.",
       topics: [
-        "Implementation and benefits realisation",
-        "Executive and stakeholder communication",
-        "Supply chain, operations and sustainability careers"
+        "Professional practice, ethics and reflective judgement",
+        "CV, LinkedIn, interview evidence and career positioning",
+        "CPD planning and global supply chain career pathways"
       ],
-      capstone: "Finalise the recommendations, implementation plan, executive summary and professional reflection."
+      capstone: "Finalise a professional evidence pack, career-positioning statement, CPD plan and capstone reflection."
     }
   ];
 
@@ -134,7 +134,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-2">
             {[
               "Asynchronous-first learning",
-              "Optional Saturday practice labs",
+              "Optional Saturday labs & clinics",
               "Applied capstone projects",
               "Corporate training"
             ].map((text) => (
@@ -159,7 +159,7 @@ export default function Home() {
                 { label: "Duration", value: "6–8 weeks" },
                 { label: "Asynchronous core", value: "Six sequential weekly learning themes" },
                 { label: "Assessment", value: "Integrated capstone project" },
-                { label: "Practice labs", value: "Optional Saturdays • schedule confirmed before payment" }
+                { label: "Labs & clinics", value: "Optional Saturdays • schedule confirmed before payment" }
               ].map((item) => (
                 <div key={item.label} className="p-2.5 bg-white/5 border border-white/10 rounded-xl">
                   <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">{item.label}</span>
@@ -306,7 +306,7 @@ export default function Home() {
                   </h4>
                   <div className="space-y-4">
                     <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">
-                      The programme is structured around six sequential weekly learning themes delivered over 6–8 weeks. Each theme contains recorded teaching, original GICS learning notes, optional guided reading, an applied simulation activity and a focused capstone-building task. The themes introduce selected practical capabilities; they are not intended to be comprehensive academic modules.
+                      The programme is structured around six sequential weekly learning themes delivered over 6–8 weeks. Each theme contains recorded teaching, original GICS learning notes, optional guided reading, an applied practice activity, case lab or career clinic, and a focused capstone-building task. The themes introduce selected practical capabilities; they are not intended to be comprehensive academic modules.
                     </p>
                     <p className="text-xs text-muted-foreground leading-relaxed italic bg-[hsl(var(--accent))]/5 p-4 rounded-xl border border-[hsl(var(--accent))]/20">
                       Weekly activities progressively build one coherent capstone project based on a single organisation and a single operational or supply chain challenge.
@@ -351,7 +351,7 @@ export default function Home() {
               <Info className="w-4 h-4 text-[hsl(var(--accent))]" /> Selection Note
             </h4>
             <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-              Both pathways use the same asynchronous core and assessment standard. Choose Guided Cohort for optional Saturday practice labs, peer learning and live feedback, or Self-Paced for maximum flexibility.
+              Both pathways use the same asynchronous core and assessment standard. Choose Guided Cohort for optional Saturday practice labs, the career clinic, peer learning and live feedback, or Self-Paced for maximum flexibility.
             </p>
           </Card>
         </div>
@@ -380,7 +380,7 @@ export default function Home() {
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
                   {[
                     "Complete asynchronous core",
-                    "Optional Saturday Applied Practice Labs",
+                    "Optional Saturday practice labs and career clinic",
                     "Guided weekly reading",
                     "Applied weekly simulations",
                     "Facilitated peer discussion",
@@ -448,7 +448,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <p className="text-[10px] text-muted-foreground leading-relaxed italic border-l-2 border-white/10 pl-3 mt-4">
-                  Emphasises flexibility. Saturday Applied Practice Labs are not included; equivalent independent activities and model debriefs are provided. Optional coaching is available separately.
+                  Emphasises flexibility. Live practice labs and the career clinic are not included; equivalent independent activities and model debriefs are provided. Optional coaching is available separately.
                 </p>
               </div>
 
