@@ -195,14 +195,29 @@ export default function Home() {
 
       {/* Programme Lead */}
       <section className="glass-panel">
-        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-10 items-center">
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5">
-            <img
-              src="/dr-frank-donkor-academic-lead.webp"
-              alt="Dr Frank Donkor, Academic Lead at GICS"
-              className="w-full h-full max-h-[620px] object-cover object-[center_top]"
-              loading="lazy"
-            />
+        <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-10 items-start">
+          <div className="space-y-5">
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5">
+              <img
+                src="/dr-frank-donkor-academic-lead.webp"
+                alt="Dr Frank Donkor, Academic Lead at GICS"
+                className="w-full aspect-[5/6] object-cover object-[center_top]"
+                loading="lazy"
+              />
+            </div>
+
+            <div className="grid sm:grid-cols-3 lg:grid-cols-1 gap-3">
+              {[
+                { label: "UK higher education", value: "Programme Director" },
+                { label: "Academic discipline", value: "Operations & Supply Chain Management" },
+                { label: "Recognition", value: "FHEA | PhD Management Science" }
+              ].map((item) => (
+                <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
+                  <span className="block text-[10px] font-black uppercase tracking-widest text-[hsl(var(--accent))]">{item.label}</span>
+                  <span className="block text-sm font-bold text-foreground leading-snug mt-1">{item.value}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="space-y-6">
@@ -221,19 +236,6 @@ export default function Home() {
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
                 At GICS, Frank leads the academic vision for GC-PSSO and ensures the learning experience remains practical, globally relevant and grounded in credible operations and supply chain thinking.
               </p>
-            </div>
-
-            <div className="grid sm:grid-cols-3 gap-3">
-              {[
-                { label: "PhD", value: "Management Science" },
-                { label: "FHEA", value: "Fellow of the Higher Education Academy" },
-                { label: "Programme Director", value: "UK higher education" }
-              ].map((item) => (
-                <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
-                  <span className="block text-xs font-black text-foreground">{item.label}</span>
-                  <span className="block text-[11px] text-muted-foreground leading-snug mt-1">{item.value}</span>
-                </div>
-              ))}
             </div>
 
             <div>
