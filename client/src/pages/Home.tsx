@@ -206,15 +206,16 @@ export default function Home() {
               />
             </div>
 
-            <div className="grid sm:grid-cols-3 lg:grid-cols-1 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
               {[
                 { label: "UK higher education", value: "Programme Director" },
                 { label: "Academic discipline", value: "Operations & Supply Chain Management" },
-                { label: "Recognition", value: "FHEA | PhD Management Science" }
+                { label: "Academic qualification", value: "PhD Management Science, focus on Operations & Supply Chain Management" },
+                { label: "Professional recognition", value: "Fellow of the Higher Education Academy" }
               ].map((item) => (
-                <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
+                <div key={item.label} className="p-3 bg-white/5 border border-white/10 rounded-xl">
                   <span className="block text-[10px] font-black uppercase tracking-widest text-[hsl(var(--accent))]">{item.label}</span>
-                  <span className="block text-sm font-bold text-foreground leading-snug mt-1">{item.value}</span>
+                  <span className="block text-xs font-bold text-foreground leading-snug mt-1">{item.value}</span>
                 </div>
               ))}
             </div>
@@ -228,13 +229,13 @@ export default function Home() {
                 <p className="text-lg md:text-xl text-[hsl(var(--accent))] font-extrabold mt-2">Academic Lead, GICS</p>
               </div>
               <p className="text-sm text-foreground/90 leading-relaxed font-semibold">
-                Led by Dr Frank Donkor, UK higher-education Programme Director and Lecturer in Operations and Supply Chain Management.
+                UK higher-education Programme Director and Lecturer in Operations and Supply Chain Management, leading the academic design of GC-PSSO.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                Dr Frank Donkor brings academic leadership, applied operations expertise and global supply chain insight to GICS. His work bridges theory and practice across operations management, supply chain sustainability, analytics, professional learning and real organisational problem-solving.
+                Frank brings academic leadership, applied operations expertise and global supply chain insight to GICS. His work bridges theory and practice across operations management, supply chain sustainability, analytics and real organisational problem-solving.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                At GICS, Frank leads the academic vision for GC-PSSO and ensures the learning experience remains practical, globally relevant and grounded in credible operations and supply chain thinking.
+                At GICS, he ensures the learning experience remains practical, globally relevant and grounded in credible operations and supply chain thinking.
               </p>
             </div>
 
