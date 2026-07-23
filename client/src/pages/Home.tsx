@@ -108,68 +108,90 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <div className="hero-grid">
-        <div className="glass-panel space-y-6 flex flex-col self-start">
-          <div className="space-y-4">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">
-              Flagship programme: Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
-            </p>
-            <h1 className="text-4xl md:text-5xl font-black leading-tight text-foreground tracking-tight">
-              UK-quality, practical training delivered globally.
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed font-medium">
-              GICS builds practical workplace capability through applied simulations, industry-aligned tools and an integrated capstone—delivered by a UK-registered education and training company and led by an experienced UK higher-education Programme Director.
-            </p>
-          </div>
+      <section className="relative overflow-hidden rounded-[2rem] min-h-[680px] md:min-h-[720px] border border-white/10 shadow-2xl">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/gics-hero-global-supply-chain.webp')" }}
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(4,18,37,0.96) 0%, rgba(4,18,37,0.86) 32%, rgba(4,18,37,0.45) 56%, rgba(4,18,37,0.12) 100%)"
+          }}
+          aria-hidden="true"
+        />
 
-          <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black border-none h-12 px-8 rounded-xl shadow-lg hover:brightness-110 hover:translate-y-[-2px] transition-all" data-testid="button-register">
-              <a href="/register">Register for Sept 2026</a>
-            </Button>
-            <Button asChild variant="outline" className="h-12 px-8 rounded-xl bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10 hover:translate-y-[-2px] transition-all" data-testid="button-view-programmes">
-              <a href="#programmes">View programmes</a>
-            </Button>
-          </div>
+        <div className="relative z-10 flex min-h-[680px] md:min-h-[720px] items-center px-6 py-14 md:px-12 lg:px-16">
+          <div className="max-w-2xl space-y-6">
+            <div className="space-y-4">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">
+                Flagship programme: Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
+              </p>
+              <h1 className="text-4xl md:text-6xl font-black leading-tight text-white tracking-tight">
+                UK-quality, practical training delivered globally.
+              </h1>
+              <p className="text-lg md:text-xl text-white/80 leading-relaxed font-medium">
+                GICS builds practical workplace capability through applied simulations, industry-aligned tools and an integrated capstone - delivered by a UK-registered education and training company and led by an experienced UK higher-education Programme Director.
+              </p>
+            </div>
 
-          <div className="flex flex-wrap gap-2">
-            {[
-              "Asynchronous-first learning",
-              "Optional Saturday labs & clinics",
-              "Applied capstone projects",
-              "Corporate training"
-            ].map((text) => (
-              <Badge key={text} variant="outline" className="px-4 py-1.5 bg-white/5 border-white/20 rounded-full font-bold text-xs uppercase tracking-wide text-foreground">
-                {text}
-              </Badge>
-            ))}
-          </div>
+            <div className="flex flex-wrap gap-4">
+              <Button asChild className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black border-none h-12 px-8 rounded-xl shadow-lg hover:brightness-110 hover:translate-y-[-2px] transition-all" data-testid="button-register">
+                <a href="/register">Register for Sept 2026</a>
+              </Button>
+              <Button asChild variant="outline" className="h-12 px-8 rounded-xl bg-white/10 border-white/25 text-white font-bold hover:bg-white/15 hover:translate-y-[-2px] transition-all" data-testid="button-view-programmes">
+                <a href="#programmes">View programmes</a>
+              </Button>
+            </div>
 
-          <p className="text-xs text-muted-foreground/80 italic font-medium pt-4 border-t border-white/5">
-            *Professional training and career readiness support. We do not offer job placement or visa sponsorship.
-          </p>
-        </div>
-
-        {/* Hero Sidebar */}
-        <div className="glass-panel h-full bg-[hsla(222,47%,16%,0.9)]">
-          <section className="h-full flex flex-col">
-            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))] mb-4">First cohort</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-1 content-center">
+            <div className="flex flex-wrap gap-2">
               {[
-                { label: "Start", value: "September 2026" },
-                { label: "Duration", value: "6–8 weeks" },
-                { label: "Asynchronous core", value: "Six sequential weekly learning themes" },
-                { label: "Assessment", value: "Integrated capstone project" },
-                { label: "Labs & clinics", value: "Optional Saturdays • schedule confirmed before payment" }
-              ].map((item) => (
-                <div key={item.label} className="p-2.5 bg-white/5 border border-white/10 rounded-xl">
-                  <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">{item.label}</span>
-                  <span className="text-xs font-bold leading-snug text-foreground">{item.value}</span>
-                </div>
+                "Asynchronous-first learning",
+                "Optional Saturday labs & clinics",
+                "Applied capstone projects",
+                "Corporate training"
+              ].map((text) => (
+                <Badge key={text} variant="outline" className="px-4 py-1.5 bg-white/10 border-white/25 rounded-full font-bold text-xs uppercase tracking-wide text-white">
+                  {text}
+                </Badge>
               ))}
             </div>
-          </section>
+
+            <p className="text-xs text-white/70 italic font-medium pt-4 border-t border-white/10">
+              *Professional training and career readiness support. We do not offer job placement or visa sponsorship.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* First Cohort Strip */}
+      <section className="glass-panel p-5 md:p-6">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">
+            First cohort
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 flex-1 lg:ml-8">
+            {[
+              { label: "Start", value: "September 2026" },
+              { label: "Duration", value: "6-8 weeks" },
+              { label: "Asynchronous core", value: "Six sequential weekly learning themes" },
+              { label: "Assessment", value: "Integrated capstone project" },
+              { label: "Labs & clinics", value: "Optional Saturdays - schedule confirmed before payment" }
+            ].map((item) => (
+              <div key={item.label} className="p-3 bg-white/5 border border-white/10 rounded-xl">
+                <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">
+                  {item.label}
+                </span>
+                <span className="text-xs font-bold leading-snug text-foreground">
+                  {item.value}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Programme Lead */}
       <section className="glass-panel">
