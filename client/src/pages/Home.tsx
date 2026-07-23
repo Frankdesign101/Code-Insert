@@ -195,35 +195,68 @@ export default function Home() {
 
       {/* Programme Lead */}
       <section className="glass-panel">
-        <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-8 items-start">
-          <div className="space-y-3">
-            <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Programme Lead Profile</p>
-            <div>
-              <h2 className="text-2xl font-black text-foreground">Dr Frank Donkor</h2>
-              <p className="text-sm text-muted-foreground leading-relaxed font-medium mt-2">
-                Lecturer in Operations and Supply Chain Management and a Programme Director at the University of Exeter Business School. Module Convenor on the University of Exeter MBA programme, Fellow of The Higher Education Academy (UK), and an EduExe Fellow.
+        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-10 items-center">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5">
+            <img
+              src="/dr-frank-donkor-academic-lead.webp"
+              alt="Dr Frank Donkor, Academic Lead at GICS"
+              className="w-full h-full max-h-[620px] object-cover object-[center_top]"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="space-y-6">
+            <div className="space-y-3">
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Meet the Academic Lead</p>
+              <div>
+                <h2 className="text-3xl md:text-4xl font-black text-foreground">Dr Frank Donkor</h2>
+                <p className="text-lg md:text-xl text-[hsl(var(--accent))] font-extrabold mt-2">Academic Lead, GICS</p>
+              </div>
+              <p className="text-sm text-foreground/90 leading-relaxed font-semibold">
+                Led by Dr Frank Donkor, UK higher-education Programme Director and Lecturer in Operations and Supply Chain Management.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed font-medium">
+                Dr Frank Donkor brings academic leadership, applied operations expertise and global supply chain insight to GICS. His work bridges theory and practice across operations management, supply chain sustainability, analytics, professional learning and real organisational problem-solving.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed font-medium">
+                At GICS, Frank leads the academic vision for GC-PSSO and ensures the learning experience remains practical, globally relevant and grounded in credible operations and supply chain thinking.
               </p>
             </div>
-            <p className="text-xs text-muted-foreground leading-relaxed italic">
-              UK executive-education foundations with direct relevance to emerging-market supply chains. GICS is an independent training provider. GC-PSSO is a GICS professional-development programme and is not a university award.
-            </p>
-          </div>
-          <div>
-            <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest mb-3">Specialisms</p>
-            <div className="grid sm:grid-cols-2 gap-3">
+
+            <div className="grid sm:grid-cols-3 gap-3">
               {[
-                "Supply chain sustainability & ESG",
-                "Operations management & performance",
-                "Leadership in global supply chains",
-                "Pharmaceutical industry collaboration",
-                "Professional skills development"
+                { label: "PhD", value: "Management Science" },
+                { label: "FHEA", value: "Fellow of the Higher Education Academy" },
+                { label: "Programme Director", value: "UK higher education" }
               ].map((item) => (
-                <div key={item} className="flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl text-xs text-muted-foreground font-medium">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))] shrink-0" />
-                  {item}
+                <div key={item.label} className="p-4 bg-white/5 border border-white/10 rounded-xl">
+                  <span className="block text-xs font-black text-foreground">{item.label}</span>
+                  <span className="block text-[11px] text-muted-foreground leading-snug mt-1">{item.value}</span>
                 </div>
               ))}
             </div>
+
+            <div>
+              <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest mb-3">Specialisms</p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  "Supply chain sustainability & ESG",
+                  "Operations management & performance",
+                  "Leadership in global supply chains",
+                  "Pharmaceutical industry collaboration",
+                  "Professional skills development"
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl text-xs text-foreground/85 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))] shrink-0" />
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <p className="text-xs text-muted-foreground leading-relaxed italic border-t border-white/10 pt-4">
+              GICS is an independent training provider. GC-PSSO is a GICS professional-development programme and is not a university award.
+            </p>
           </div>
         </div>
       </section>
