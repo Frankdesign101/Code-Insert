@@ -659,8 +659,8 @@ export default function Home() {
           </div>
           <div className="space-y-1 text-muted-foreground font-medium text-xs leading-relaxed">
             <p>© 2026 Global Supply Chain & Sustainability Academy Ltd. All rights reserved.</p>
-            <p>Registered in England and Wales. Company No. 16986058.</p>
-            <p>Trading as Global Institute for Supply Chain & Sustainability (GICS).</p>
+            <p>Registered in England and Wales, United Kingdom. Company No. 16986058.</p>
+            <p>Global Institute for Supply Chain & Sustainability (GICS) is the trading name of Global Supply Chain & Sustainability Academy Ltd.</p>
           </div>
         </div>
         <div className="flex gap-10 font-black uppercase tracking-widest text-[10px] text-muted-foreground pt-2">
