@@ -8,6 +8,7 @@ import Register from "@/pages/Register";
 import CorporateEnquiry from "@/pages/CorporateEnquiry";
 import TermsRefunds from "@/pages/TermsRefunds";
 import Privacy from "@/pages/Privacy";
+import VerifyCertificate from "@/pages/VerifyCertificate";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/corporate-enquiry" component={CorporateEnquiry}/>
       <Route path="/terms-refunds" component={TermsRefunds}/>
       <Route path="/privacy" component={Privacy}/>
+      <Route path="/verify" component={VerifyCertificate}/>
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

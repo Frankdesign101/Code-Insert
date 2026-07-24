@@ -666,6 +666,7 @@ export default function Home() {
         <div className="flex gap-10 font-black uppercase tracking-widest text-[10px] text-muted-foreground pt-2">
           <a href="/privacy" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-privacy">Privacy</a>
           <a href="/terms-refunds" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-terms">Terms &amp; Refunds</a>
+          <a href="/verify" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-verify">Verify Certificate</a>
           <a href="mailto:gicsinstituteuk@gmail.com" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-contact">gicsinstituteuk@gmail.com</a>
         </div>
       </footer>
