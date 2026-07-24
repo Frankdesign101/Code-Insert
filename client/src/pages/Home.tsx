@@ -82,7 +82,7 @@ export default function Home() {
           <img
             src="/gics-crest.png"
             alt="GICS institutional crest"
-            className="h-24 w-24 md:h-28 md:w-28 object-contain shrink-0"
+            className="h-28 w-28 md:h-32 md:w-32 object-contain shrink-0"
           />
           <div>
             <strong className="block text-3xl md:text-4xl tracking-tight font-black text-foreground leading-none">GICS</strong>
@@ -169,9 +169,14 @@ export default function Home() {
       {/* First Cohort Strip */}
       <section className="glass-panel p-5 md:p-6">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">
-            Founding cohort - applications now open
-          </h3>
+          <div className="shrink-0">
+            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">
+              Founding cohort
+            </h3>
+            <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+              Applications now open
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 flex-1 lg:ml-8">
             {[
               { label: "Start", value: "1 November 2026" },
@@ -196,7 +201,7 @@ export default function Home() {
       {/* Programme Lead */}
       <section className="glass-panel">
         <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-10 items-start">
-          <div className="space-y-5">
+          <div className="space-y-5 order-2 lg:order-1">
             <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5">
               <img
                 src="/dr-frank-donkor-academic-lead.webp"
@@ -221,7 +226,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 order-1 lg:order-2">
             <div className="space-y-3">
               <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Meet the Academic Lead</p>
               <div>
