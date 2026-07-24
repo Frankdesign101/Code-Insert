@@ -409,19 +409,19 @@ export default function Home() {
               <Info className="w-4 h-4 text-[hsl(var(--accent))]" /> Selection Note
             </h4>
             <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-              Both pathways use the same asynchronous core and assessment standard. Choose Guided Cohort for optional Saturday practice labs, the career clinic, peer learning and live feedback, or Self-Paced for maximum flexibility.
+              Both pathways use the same asynchronous core and assessment standard. Choose Executive Guided Cohort for optional Saturday practice labs, the career clinic, peer learning and live feedback, or Professional Self-Paced for maximum flexibility.
             </p>
           </Card>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Option 1: Guided Cohort */}
+          {/* Option 1: Executive Guided Cohort */}
           <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden border-t-4 border-t-[hsl(var(--accent))] flex flex-col">
             <CardHeader className="p-8 pb-4">
               <div className="flex justify-between items-start">
                 <div className="space-y-1">
                   <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-3 py-1 mb-2">RECOMMENDED</Badge>
-                  <CardTitle className="text-2xl font-bold">Option 1: Guided Cohort</CardTitle>
+                  <CardTitle className="text-2xl font-bold">Option 1: Executive Guided Cohort</CardTitle>
                 </div>
               </div>
               <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10">
@@ -444,7 +444,7 @@ export default function Home() {
                     "Facilitated peer discussion",
                     "Structured assignment feedback",
                     "CPD learning log guidance",
-                    "GICS Certificate of Completion"
+                    "GICS Professional Certificate of Completion"
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
                       <div className="w-1 h-1 rounded-full bg-[hsl(var(--accent))] mt-1.5 shrink-0" />
@@ -463,8 +463,8 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Early Bird: £180</p>
-                    <p className="text-sm font-bold text-foreground">Standard: £250</p>
+                    <p className="text-sm font-bold text-foreground">Early Bird: £250</p>
+                    <p className="text-sm font-bold text-foreground">Standard: £325</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -472,12 +472,12 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          {/* Option 2: Self-Paced */}
+          {/* Option 2: Professional Self-Paced */}
           <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden flex flex-col">
             <CardHeader className="p-8 pb-4">
               <div className="space-y-1">
                 <Badge className="bg-white/10 text-foreground font-black px-3 py-1 mb-2">MAX FLEXIBILITY</Badge>
-                <CardTitle className="text-2xl font-bold">Option 2: Self-Paced</CardTitle>
+                <CardTitle className="text-2xl font-bold">Option 2: Professional Self-Paced</CardTitle>
               </div>
               <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10">
                 <p className="text-[10px] font-black uppercase text-muted-foreground mb-1 tracking-widest">Who it's for</p>
@@ -497,7 +497,7 @@ export default function Home() {
                     "Independent simulation activities",
                     "Model case debriefs",
                     "Capstone report guidance",
-                    "Certificate of Completion"
+                    "GICS Professional Certificate of Completion"
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
                       <div className="w-1 h-1 rounded-full bg-white/30 mt-1.5 shrink-0" />
@@ -519,8 +519,8 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Standard: £150</p>
-                    <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +£75</p>
+                    <p className="text-sm font-bold text-foreground">Standard: £195</p>
+                    <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +£125</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -549,7 +549,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-muted-foreground leading-relaxed">Successful participants receive a GICS Certificate of Completion. GC-PSSO is a non-credit professional-development programme delivered by Global Supply Chain & Sustainability Academy Ltd, a UK-registered education and training company. It is not a university award.</p>
+        <p className="text-xs text-muted-foreground leading-relaxed">Successful participants receive a GICS Professional Certificate of Completion. GC-PSSO is a non-credit professional-development programme delivered by Global Supply Chain & Sustainability Academy Ltd, a UK-registered education and training company. It is not a university award.</p>
       </section>
 
       <section id="corporate" className="space-y-6">
