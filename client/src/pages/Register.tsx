@@ -6,8 +6,62 @@ import { CheckCircle2, ArrowLeft } from "lucide-react";
 const fieldClass = "w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-[hsl(var(--accent))] focus:ring-2 focus:ring-[hsl(var(--accent))]/20 [&>option]:bg-white [&>option]:text-slate-900";
 const labelClass = "mb-2 block text-sm font-bold text-foreground";
 
+function getGuidedCohortStatus() {
+  const today = new Date();
+  const earlyBirdEnds = new Date("2026-09-21T00:00:00+01:00");
+  const standardEnds = new Date("2026-10-26T00:00:00+00:00");
+  const programmeStarts = new Date("2026-11-01T00:00:00+00:00");
+
+  if (today < earlyBirdEnds) {
+    return {
+      stage: "early-bird",
+      title: "Executive Guided Cohort",
+      price: "Early Bird: £250 until 20 September 2026",
+      description: "Founding Cohort applications are open. Places are limited to 25 participants.",
+      dateNote: "Starts 1 November 2026 | Limited to 25 participants",
+      optionLabel: "Executive Guided Cohort - Early Bird (£250)",
+      buttonLabel: "Submit registration"
+    };
+  }
+
+  if (today < standardEnds) {
+    return {
+      stage: "standard",
+      title: "Executive Guided Cohort",
+      price: "Standard: £325 until 25 October 2026",
+      description: "Founding Cohort applications remain open, subject to availability.",
+      dateNote: "Starts 1 November 2026 | Limited to 25 participants",
+      optionLabel: "Executive Guided Cohort - Standard (£325)",
+      buttonLabel: "Submit registration"
+    };
+  }
+
+  if (today < programmeStarts) {
+    return {
+      stage: "waiting-list",
+      title: "Executive Guided Cohort",
+      price: "Guided Cohort registration has closed",
+      description: "Join the waiting list for the next guided cohort.",
+      dateNote: "Founding Cohort starts 1 November 2026",
+      optionLabel: "Join Guided Cohort waiting list",
+      buttonLabel: "Submit registration"
+    };
+  }
+
+  return {
+    stage: "programme-in-progress",
+    title: "Executive Guided Cohort",
+    price: "Programme in progress",
+    description: "Please join the waiting list for the next guided cohort.",
+    dateNote: "Founding Cohort in progress",
+    optionLabel: "Join Guided Cohort waiting list",
+    buttonLabel: "Submit registration"
+  };
+}
+
 export default function Register() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const guidedStatus = getGuidedCohortStatus();
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -39,7 +93,7 @@ export default function Register() {
           <CheckCircle2 className="w-14 h-14 text-[hsl(var(--accent))] mx-auto" />
           <h1 className="text-3xl font-black text-foreground">Registration received</h1>
           <p className="text-muted-foreground leading-relaxed">
-            Thank you for registering your interest in the September 2026 GC-PSSO cohort. GICS will review your information and contact you about the next steps.
+            Thank you for registering your interest in GC-PSSO. GICS will review your information and contact you about the next steps.
           </p>
           <Button asChild><Link href="/">Return to the GICS website</Link></Button>
         </div>
@@ -54,15 +108,31 @@ export default function Register() {
       </Link>
 
       <header className="space-y-3">
-        <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">September 2026 cohort</p>
+        <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Founding Cohort - applications now open</p>
         <h1 className="text-4xl font-black text-foreground">Student registration</h1>
         <p className="text-muted-foreground leading-relaxed max-w-3xl">
-          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. This is an initial registration, not a payment form, confirmed enrolment or commitment to pay. If you are offered a place, GICS will provide the applicable fee, cancellation and refund terms before you decide whether to enrol. No advanced mathematics background is required.
+          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. The Executive Guided Cohort begins on 1 November 2026 and is limited to 25 participants. Professional Self-Paced enrolment remains open on a rolling basis. This is an initial registration, not a payment form, confirmed enrolment or commitment to pay. If you are offered a place, GICS will provide the applicable fee, cancellation and refund terms before you decide whether to enrol. No advanced mathematics background is required.
         </p>
       </header>
 
+      <section className="grid md:grid-cols-2 gap-5">
+        <div className="glass-panel space-y-3">
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">{guidedStatus.title}</p>
+          <h2 className="text-xl font-black text-foreground">{guidedStatus.price}</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">{guidedStatus.description}</p>
+          <p className="text-xs text-muted-foreground">{guidedStatus.dateNote}</p>
+        </div>
+        <div className="glass-panel space-y-3">
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Professional Self-Paced</p>
+          <h2 className="text-xl font-black text-foreground">£195 | Rolling enrolment</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">Open for rolling enrolment. Start anytime and work through the asynchronous learning materials at your own pace.</p>
+          <p className="text-xs text-muted-foreground">Optional 1:1 coaching add-on: £125</p>
+        </div>
+      </section>
+
       <form name="student-registration" method="POST" data-netlify="true" onSubmit={handleSubmit} className="glass-panel space-y-10">
         <input type="hidden" name="form-name" value="student-registration" />
+        <input type="hidden" name="cohortStage" value={guidedStatus.stage} />
 
         <section className="space-y-5">
           <h2 className="text-xl font-black text-foreground">Contact details</h2>
@@ -101,7 +171,7 @@ export default function Register() {
         <section className="space-y-5">
           <h2 className="text-xl font-black text-foreground">Programme preferences</h2>
           <div className="grid md:grid-cols-2 gap-5">
-            <label><span className={labelClass}>Preferred learning option *</span><select className={fieldClass} name="learningOption" required defaultValue=""><option value="" disabled>Select one</option><option>Live cohort</option><option>Self-paced</option><option>Not sure yet</option></select></label>
+            <label><span className={labelClass}>Preferred learning option *</span><select className={fieldClass} name="learningOption" required defaultValue=""><option value="" disabled>Select one</option><option>{guidedStatus.optionLabel}</option><option>Professional Self-Paced - rolling enrolment (£195)</option><option>Not sure yet</option></select></label>
             <label><span className={labelClass}>How did you hear about GICS?</span><select className={fieldClass} name="referralSource" defaultValue=""><option value="">Select one</option><option>LinkedIn</option><option>Google or another search engine</option><option>Colleague or friend</option><option>Employer or professional network</option><option>Social media</option><option>Other</option></select></label>
           </div>
           <label><span className={labelClass}>Why would you like to join this programme? * <span className="font-normal text-muted-foreground">(approximately 100–150 words)</span></span><textarea className={fieldClass} name="motivation" rows={5} required /></label>
@@ -123,7 +193,7 @@ export default function Register() {
         </section>
 
         <Button type="submit" disabled={status === "sending"} className="h-12 px-8 bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black">
-          {status === "sending" ? "Submitting…" : "Submit registration"}
+          {status === "sending" ? "Submitting..." : guidedStatus.buttonLabel}
         </Button>
         {status === "error" && <p role="alert" className="text-sm text-red-300">Your registration could not be submitted. Please try again or email gicsinstituteuk@gmail.com.</p>}
       </form>

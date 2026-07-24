@@ -139,7 +139,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black border-none h-12 px-8 rounded-xl shadow-lg hover:brightness-110 hover:translate-y-[-2px] transition-all" data-testid="button-register">
-                <a href="/register">Register for Sept 2026</a>
+                <a href="/register">Apply for Founding Cohort</a>
               </Button>
               <Button asChild variant="outline" className="h-12 px-8 rounded-xl bg-white/10 border-white/25 text-white font-bold hover:bg-white/15 hover:translate-y-[-2px] transition-all" data-testid="button-view-programmes">
                 <a href="#programmes">View programmes</a>
@@ -170,15 +170,15 @@ export default function Home() {
       <section className="glass-panel p-5 md:p-6">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">
-            First cohort
+            Founding cohort - applications now open
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 flex-1 lg:ml-8">
             {[
-              { label: "Start", value: "September 2026" },
+              { label: "Start", value: "1 November 2026" },
               { label: "Duration", value: "6-8 weeks" },
               { label: "Asynchronous core", value: "Six sequential weekly learning themes" },
               { label: "Assessment", value: "Integrated capstone project" },
-              { label: "Labs & clinics", value: "Optional Saturdays - schedule confirmed before payment" }
+              { label: "Guided cohort", value: "Limited to 25 participants" }
             ].map((item) => (
               <div key={item.label} className="p-3 bg-white/5 border border-white/10 rounded-xl">
                 <span className="block text-[10px] font-black uppercase text-muted-foreground mb-1">
@@ -229,13 +229,16 @@ export default function Home() {
                 <p className="text-lg md:text-xl text-[hsl(var(--accent))] font-extrabold mt-2">Academic Lead, GICS</p>
               </div>
               <p className="text-sm text-foreground/90 leading-relaxed font-semibold">
-                UK higher-education Programme Director and Lecturer in Operations and Supply Chain Management, leading the academic design of GC-PSSO.
+                UK higher-education Programme Director and Lecturer in Operations and Supply Chain Management, leading the academic design of the Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO).
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                Frank brings academic leadership, applied operations expertise and global supply chain insight to GICS. His work bridges theory and practice across operations management, supply chain sustainability, analytics and real organisational problem-solving.
+                Frank teaches at a leading UK university and has extensive experience designing and delivering executive, postgraduate and undergraduate programmes in operations, procurement and supply chain management. His teaching combines academic rigour with practical, industry-focused application.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                At GICS, he ensures the learning experience remains practical, globally relevant and grounded in credible operations and supply chain thinking.
+                His research has been published in internationally recognised journals, including Transportation Research Part E and Production Planning & Control, and he regularly reviews for leading journals in operations and supply chain management.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed font-medium">
+                At GICS, he leads practical, globally relevant programme development that helps professionals strengthen organisational performance through credible operations and supply chain thinking.
               </p>
             </div>
 
@@ -463,8 +466,8 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Early Bird: £250</p>
-                    <p className="text-sm font-bold text-foreground">Standard: £325</p>
+                    <p className="text-sm font-bold text-foreground">Early Bird: £250 until 20 Sept 2026</p>
+                    <p className="text-sm font-bold text-foreground">Standard: £325 from 21 Sept to 25 Oct 2026</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -519,7 +522,8 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Standard: £195</p>
+                    <p className="text-sm font-bold text-foreground">£195 rolling enrolment</p>
+                    <p className="text-xs text-muted-foreground">Start anytime</p>
                     <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +£125</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
@@ -620,7 +624,7 @@ export default function Home() {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Contact GICS</p>
               <h2 className="text-3xl font-black text-foreground">How can we help?</h2>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Ask about the September 2026 programme, learner eligibility, payment and enrolment, or tailored training for your organisation.
+                Ask about the 1 November 2026 Founding Cohort, learner eligibility, payment and enrolment, or tailored training for your organisation.
               </p>
               <a
                 href="mailto:gicsinstituteuk@gmail.com"
