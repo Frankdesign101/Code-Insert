@@ -37,9 +37,9 @@ export default function CorporateEnquiry() {
       <main className="max-w-3xl mx-auto px-6 py-16">
         <div className="glass-panel text-center space-y-6">
           <CheckCircle2 className="w-14 h-14 text-[hsl(var(--accent))] mx-auto" />
-          <h1 className="text-3xl font-black text-foreground">Proposal request received</h1>
+          <h1 className="text-3xl font-black text-foreground">Corporate enquiry received</h1>
           <p className="text-muted-foreground leading-relaxed">
-            Thank you. GICS will review your organisation's requirements and contact you to discuss a suitable training proposal.
+            Thank you. GICS will review your organisation's requirements and contact you about a suitable corporate learning route.
           </p>
           <Button asChild><Link href="/">Return to the GICS website</Link></Button>
         </div>
@@ -54,10 +54,10 @@ export default function CorporateEnquiry() {
       </Link>
 
       <header className="space-y-3">
-        <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Corporate and team training</p>
-        <h1 className="text-4xl font-black text-foreground">Request a training proposal</h1>
+        <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Corporate Learning</p>
+        <h1 className="text-4xl font-black text-foreground">Start your organisation enquiry</h1>
         <p className="text-muted-foreground leading-relaxed max-w-3xl">
-          Tell us about your organisation, team and capability priorities. GICS will use this information to prepare an initial discussion and tailored proposal.
+          Tell us about your organisation, team and capability priorities. GICS will use this information to understand your needs and recommend a suitable learning solution.
         </p>
       </header>
 
@@ -92,7 +92,7 @@ export default function CorporateEnquiry() {
 
         <section className="space-y-4 border-t border-white/10 pt-6">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            GICS will use this information to respond to your enquiry and develop an appropriate proposal. Please do not submit confidential, commercially sensitive or unnecessary personal information at this initial stage. Read our <Link href="/privacy" className="font-bold text-foreground underline underline-offset-2">Privacy Notice</Link>.
+            GICS will use this information to respond to your enquiry and recommend an appropriate corporate learning route. Please do not submit confidential, commercially sensitive or unnecessary personal information at this initial stage. Read our <Link href="/privacy" className="font-bold text-foreground underline underline-offset-2">Privacy Notice</Link>.
           </p>
           <label className="flex items-start gap-3 text-sm text-foreground">
             <input type="checkbox" name="declaration" required className="mt-1 accent-[hsl(var(--accent))]" />
@@ -105,7 +105,7 @@ export default function CorporateEnquiry() {
         </section>
 
         <Button type="submit" disabled={status === "sending"} className="h-12 px-8 bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black">
-          {status === "sending" ? "Submitting…" : "Request proposal"}
+          {status === "sending" ? "Submitting..." : "Start Your Enquiry"}
         </Button>
         {status === "error" && <p role="alert" className="text-sm text-red-300">Your request could not be submitted. Please try again or email gicsinstituteuk@gmail.com.</p>}
       </form>

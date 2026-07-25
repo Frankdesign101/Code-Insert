@@ -9,6 +9,9 @@ import CorporateEnquiry from "@/pages/CorporateEnquiry";
 import TermsRefunds from "@/pages/TermsRefunds";
 import Privacy from "@/pages/Privacy";
 import VerifyCertificate from "@/pages/VerifyCertificate";
+import HigherEducationPathways from "@/pages/HigherEducationPathways";
+import StudentSuccess from "@/pages/StudentSuccess";
+import CorporateLearning from "@/pages/CorporateLearning";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -20,6 +23,9 @@ function Router() {
       <Route path="/terms-refunds" component={TermsRefunds}/>
       <Route path="/privacy" component={Privacy}/>
       <Route path="/verify" component={VerifyCertificate}/>
+      <Route path="/higher-education-pathways" component={HigherEducationPathways}/>
+      <Route path="/student-success" component={StudentSuccess}/>
+      <Route path="/corporate-learning" component={CorporateLearning}/>
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

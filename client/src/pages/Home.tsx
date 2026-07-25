@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight, Info, Presentation } from "lucide-react";
+import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight, Info, Presentation, GraduationCap, PlaneTakeoff, BriefcaseBusiness } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Home() {
@@ -93,15 +93,23 @@ export default function Home() {
             <span className="block text-xs text-muted-foreground font-medium uppercase tracking-wider">Supply Chain • Operations • Sustainability</span>
           </div>
         </a>
-        <nav className="flex gap-6 flex-wrap">
-          {["Programmes", "Fees", "Corporate", "About", "Contact"].map((item) => (
+        <nav className="flex gap-5 flex-wrap">
+          {[
+            { label: "Home", href: "/" },
+            { label: "GC-PSSO", href: "#programmes" },
+            { label: "Higher Education Pathways", href: "/higher-education-pathways" },
+            { label: "Student Success", href: "/student-success" },
+            { label: "Corporate Learning", href: "/corporate-learning" },
+            { label: "About GICS", href: "#about" },
+            { label: "Contact", href: "#contact" }
+          ].map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors"
-              data-testid={`nav-${item.toLowerCase()}`}
+              data-testid={`nav-${item.label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>
@@ -151,7 +159,7 @@ export default function Home() {
                 "Asynchronous-first learning",
                 "Optional Saturday labs & clinics",
                 "Applied capstone projects",
-                "Corporate training"
+                "Corporate learning"
               ].map((text) => (
                 <Badge key={text} variant="outline" className="px-4 py-1.5 bg-white/10 border-white/25 rounded-full font-bold text-xs uppercase tracking-wide text-white">
                   {text}
@@ -564,12 +572,12 @@ export default function Home() {
       <section id="corporate" className="space-y-6">
         <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden p-10 border-dashed flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="space-y-4 text-center md:text-left max-w-xl">
-            <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate & Team Training</h3>
-            <p className="text-2xl font-bold text-foreground leading-tight">Customised delivery for organisations seeking structured team development.</p>
+            <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate Learning</h3>
+            <p className="text-2xl font-bold text-foreground leading-tight">Executive education, bespoke organisational training and team capability development for organisations.</p>
             <p className="text-sm text-muted-foreground">Bespoke pricing based on cohort size and requirements (typically £900 – £2,500).</p>
           </div>
           <Button asChild className="bg-foreground text-background font-black uppercase text-xs px-10 py-6 hover:brightness-110 shrink-0">
-            <a href="/corporate-enquiry">Request Proposal</a>
+            <a href="/corporate-learning">Explore Corporate Learning</a>
           </Button>
         </Card>
       </section>
@@ -621,6 +629,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Additional GICS Services */}
+      <section className="space-y-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Additional GICS Services</p>
+            <h2 className="text-3xl font-black text-foreground uppercase tracking-tight mt-2">Education & Professional Support</h2>
+            <p className="text-muted-foreground font-medium mt-2 max-w-3xl">
+              Supporting learners, professionals and organisations through practical education, academic guidance and capability development.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Higher Education Pathways",
+              desc: "Academic guidance for prospective undergraduate, postgraduate and PhD applicants seeking admission to UK Business School programmes and related disciplines.",
+              href: "/higher-education-pathways",
+              button: "Explore Higher Education Pathways",
+              icon: <GraduationCap className="w-5 h-5" />
+            },
+            {
+              title: "Student Success",
+              desc: "Pre-departure preparation and UK study-transition support designed to help international students confidently prepare for university life in the United Kingdom.",
+              href: "/student-success",
+              button: "Explore Student Success",
+              icon: <PlaneTakeoff className="w-5 h-5" />
+            },
+            {
+              title: "Corporate Learning",
+              desc: "Executive education, bespoke organisational training and team capability development designed to strengthen professional capability and organisational performance.",
+              href: "/corporate-learning",
+              button: "Explore Corporate Learning",
+              icon: <BriefcaseBusiness className="w-5 h-5" />
+            }
+          ].map((service) => (
+            <Card key={service.title} className="bg-white/5 border-white/10 rounded-2xl p-6 space-y-5 hover:bg-white/10 transition-colors">
+              <div className="w-10 h-10 rounded-xl bg-[hsl(var(--accent))]/10 flex items-center justify-center text-[hsl(var(--accent))]">
+                {service.icon}
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-lg font-black text-foreground">{service.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
+              </div>
+              <Button asChild variant="outline" className="bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10 w-full">
+                <a href={service.href}>{service.button}</a>
+              </Button>
+            </Card>
+          ))}
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="scroll-mt-8">
         <Card className="bg-white/5 border-white/10 rounded-3xl overflow-hidden">
@@ -643,7 +703,7 @@ export default function Home() {
                 <a href="/register">Student registration</a>
               </Button>
               <Button asChild variant="outline" className="bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10">
-                <a href="/corporate-enquiry">Corporate enquiry</a>
+                <a href="/corporate-learning">Corporate enquiry</a>
               </Button>
             </div>
           </CardContent>
