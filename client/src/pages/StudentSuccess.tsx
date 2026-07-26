@@ -105,6 +105,9 @@ export default function StudentSuccess() {
               <p className="text-sm text-white/90 leading-relaxed font-semibold">
                 The programme helps learners understand UK academic expectations, practical preparation and early transition into university study. GICS does not provide legal or immigration advice.
               </p>
+              <Button asChild className="h-12 bg-[hsl(var(--accent))] px-7 font-black text-[hsl(var(--primary-foreground))] shadow-lg hover:brightness-110">
+                <a href="#enquiry">Start Your Enquiry</a>
+              </Button>
             </div>
           </div>
         </div>
