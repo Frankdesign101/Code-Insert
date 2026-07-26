@@ -90,7 +90,7 @@ export default function StudentSuccess() {
 
       <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 bg-[hsl(var(--primary))] shadow-2xl">
         <img src="/gics-student-success-hero.webp" alt="" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.90)] via-[rgba(4,18,37,0.62)] to-[rgba(4,18,37,0.08)]" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.92)] via-[rgba(4,18,37,0.42)] to-[rgba(4,18,37,0.00)]" aria-hidden="true" />
         <div className="relative z-10 flex min-h-[420px] items-center px-6 py-12 md:px-10 lg:px-14">
           <div className="max-w-3xl space-y-5">
             <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-[hsl(var(--accent))]">
@@ -110,7 +110,7 @@ export default function StudentSuccess() {
         </div>
       </header>
 
-      <section className="space-y-5">
+      <section id="personalised-support" className="space-y-5 scroll-mt-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Personalised Student Support</p>
           <h2 className="text-2xl font-black text-foreground mt-2">Flexible One-to-One Guidance</h2>
@@ -141,7 +141,7 @@ export default function StudentSuccess() {
         </div>
       </section>
 
-      <section className="glass-panel space-y-5">
+      <section id="bootcamp" className="glass-panel space-y-5 scroll-mt-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">GICS UK Student Success Bootcamp</p>
           <h2 className="text-2xl font-black text-foreground mt-2">Live Online Pre-Departure Programme</h2>
@@ -214,7 +214,7 @@ export default function StudentSuccess() {
         {status === "error" && <p role="alert" className="text-sm text-red-300">Your enquiry could not be submitted. Please try again or email gicsinstituteuk@gmail.com.</p>}
       </form>
       <a href="#enquiry" className="fixed bottom-20 right-5 z-40 hidden rounded-full bg-[hsl(var(--primary))] px-5 py-3 text-sm font-black text-white shadow-xl transition hover:brightness-110 md:inline-flex">Enquire Now</a>
-      <GicsConcierge />
+      <GicsConcierge context="student-success" />
     </main>
   );
 }
