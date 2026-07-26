@@ -36,7 +36,7 @@ export default function CorporateLearning() {
 
       <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 bg-[hsl(var(--primary))] shadow-2xl">
         <img src="/gics-corporate-learning-hero.webp" alt="" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.90)] via-[rgba(4,18,37,0.62)] to-[rgba(4,18,37,0.08)]" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.92)] via-[rgba(4,18,37,0.42)] to-[rgba(4,18,37,0.00)]" aria-hidden="true" />
         <div className="relative z-10 flex min-h-[420px] items-center px-6 py-12 md:px-10 lg:px-14">
           <div className="max-w-3xl space-y-5">
             <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-[hsl(var(--accent))]">
@@ -56,7 +56,7 @@ export default function CorporateLearning() {
         </div>
       </header>
 
-      <section className="space-y-5">
+      <section id="learning-routes" className="space-y-5 scroll-mt-8">
         <div>
           <h2 className="text-2xl font-black text-foreground">Corporate Learning Routes</h2>
           <p className="text-sm text-muted-foreground mt-2">Corporate Learning remains consultative. Pricing is confirmed after understanding your objectives, learner needs and preferred delivery format.</p>
@@ -74,7 +74,7 @@ export default function CorporateLearning() {
         </div>
       </section>
 
-      <section className="glass-panel space-y-5">
+      <section id="training-areas" className="glass-panel space-y-5 scroll-mt-8">
         <h2 className="text-2xl font-black text-foreground">Potential Training Areas</h2>
         <div className="grid md:grid-cols-2 gap-3">
           {[
@@ -106,7 +106,7 @@ export default function CorporateLearning() {
         </Button>
       </section>
       <Link href="/corporate-enquiry" className="fixed bottom-20 right-5 z-40 hidden rounded-full bg-[hsl(var(--primary))] px-5 py-3 text-sm font-black text-white shadow-xl transition hover:brightness-110 md:inline-flex">Start Your Enquiry</Link>
-      <GicsConcierge />
+      <GicsConcierge context="corporate-learning" />
     </main>
   );
 }
