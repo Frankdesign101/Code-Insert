@@ -683,6 +683,17 @@ export default function Home() {
             </Card>
           ))}
         </div>
+        <div className="rounded-2xl border border-[hsl(var(--accent))]/25 bg-[hsl(var(--primary))]/50 p-5 md:flex md:items-center md:justify-between md:gap-6">
+          <div className="space-y-1">
+            <p className="text-sm font-black text-foreground">Not sure where to start?</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Tell us what you are looking for and GICS will point you to the right route.
+            </p>
+          </div>
+          <Button asChild className="mt-4 bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black md:mt-0">
+            <a href="mailto:gicsinstituteuk@gmail.com">Contact GICS</a>
+          </Button>
+        </div>
         </div>
       </section>
 
