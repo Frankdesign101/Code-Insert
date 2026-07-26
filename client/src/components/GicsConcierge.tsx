@@ -26,23 +26,23 @@ export default function GicsConcierge({ context = "home" }: { context?: Concierg
   const contextLinks: Record<ConciergeContext, ConciergeLink[]> = {
     home: generalLinks,
     "higher-education": [
-      { label: "Start Your Enquiry", href: "#enquiry", icon: <MessageCircle className="w-4 h-4" /> },
       { label: "Compare Support Options", href: "#support-options", icon: <ListChecks className="w-4 h-4" /> },
       { label: "View Programmes We Support", href: "#programmes-supported", icon: <GraduationCap className="w-4 h-4" /> },
+      { label: "Go to Enquiry Form", href: "#enquiry", icon: <MessageCircle className="w-4 h-4" /> },
       { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
       { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
     ],
     "student-success": [
-      { label: "Start Your Enquiry", href: "#enquiry", icon: <MessageCircle className="w-4 h-4" /> },
       { label: "View Personalised Support", href: "#personalised-support", icon: <ListChecks className="w-4 h-4" /> },
       { label: "Register Bootcamp Interest", href: "#bootcamp", icon: <PlaneTakeoff className="w-4 h-4" /> },
+      { label: "Go to Enquiry Form", href: "#enquiry", icon: <MessageCircle className="w-4 h-4" /> },
       { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
       { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
     ],
     "corporate-learning": [
-      { label: "Start Corporate Enquiry", href: "/corporate-enquiry", icon: <MessageCircle className="w-4 h-4" /> },
       { label: "View Learning Routes", href: "#learning-routes", icon: <ListChecks className="w-4 h-4" /> },
       { label: "View Training Areas", href: "#training-areas", icon: <BriefcaseBusiness className="w-4 h-4" /> },
+      { label: "Organisation Enquiry Form", href: "/corporate-enquiry", icon: <MessageCircle className="w-4 h-4" /> },
       { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
       { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
     ]
