@@ -110,7 +110,7 @@ export default function HigherEducationPathways() {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">GICS Higher Education Advisory Service</p>
               <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight">Higher Education Pathways</h1>
               <p className="text-white/82 leading-relaxed text-base md:text-lg">
-                Academic guidance for prospective undergraduate, postgraduate, MBA and PhD applicants seeking admission to UK Business School programmes and related disciplines.
+                Academic guidance for prospective undergraduate, postgraduate, MBA, PhD and degree apprenticeship applicants seeking admission to UK Business Schools and selected applied social science programmes.
               </p>
               <p className="text-sm text-white/90 leading-relaxed font-semibold">
                 GICS helps applicants make informed choices and submit stronger applications. We do not guarantee admission, secure offers, control university decisions or represent any university unless a formal agreement exists.
@@ -255,7 +255,7 @@ export default function HigherEducationPathways() {
           <label><span className={labelClass}>Email address *</span><input className={fieldClass} type="email" name="email" required /></label>
           <label><span className={labelClass}>Country of residence *</span><input className={fieldClass} name="country" required /></label>
           <label><span className={labelClass}>Highest qualification *</span><input className={fieldClass} name="highestQualification" required /></label>
-          <label><span className={labelClass}>Intended level of study *</span><select className={fieldClass} name="intendedLevel" required defaultValue=""><option value="" disabled>Select one</option><option>Undergraduate</option><option>Master's</option><option>MBA</option><option>PhD</option><option>Not sure yet</option></select></label>
+          <label><span className={labelClass}>Intended level of study *</span><select className={fieldClass} name="intendedLevel" required defaultValue=""><option value="" disabled>Select one</option><option>Undergraduate</option><option>Master's</option><option>MBA</option><option>PhD</option><option>Degree apprenticeship</option><option>Not sure yet</option></select></label>
           <label><span className={labelClass}>Intended intake</span><input className={fieldClass} name="intendedIntake" placeholder="For example: September 2027" /></label>
           <label className="md:col-span-2"><span className={labelClass}>Preferred support option</span><select className={fieldClass} name="supportOption" defaultValue=""><option value="">Not sure yet</option>{supportOptions.map((option) => <option key={option.title}>{option.title}</option>)}</select></label>
           <label className="md:col-span-2"><span className={labelClass}>Programme(s), subject area or universities of interest</span><textarea className={fieldClass} name="programmesOfInterest" rows={3} /></label>
