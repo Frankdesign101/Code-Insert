@@ -16,10 +16,10 @@ export default function GicsConcierge({ context = "home" }: { context?: Concierg
   const [open, setOpen] = useState(false);
 
   const generalLinks: ConciergeLink[] = [
-    { label: "Register for GC-PSSO", href: "/register", icon: <GraduationCap className="w-4 h-4" /> },
-    { label: "Higher Education Pathways", href: "/higher-education-pathways", icon: <GraduationCap className="w-4 h-4" /> },
-    { label: "Student Success", href: "/student-success", icon: <PlaneTakeoff className="w-4 h-4" /> },
-    { label: "Corporate Learning", href: "/corporate-learning", icon: <BriefcaseBusiness className="w-4 h-4" /> },
+    { label: "Apply for GC-PSSO", href: "/register", icon: <GraduationCap className="w-4 h-4" /> },
+    { label: "Explore Higher Education Pathways", href: "/higher-education-pathways", icon: <GraduationCap className="w-4 h-4" /> },
+    { label: "Start Student Success Enquiry", href: "/student-success#enquiry", icon: <PlaneTakeoff className="w-4 h-4" /> },
+    { label: "Start Corporate Enquiry", href: "/corporate-enquiry", icon: <BriefcaseBusiness className="w-4 h-4" /> },
     { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
   ];
 
@@ -78,7 +78,7 @@ export default function GicsConcierge({ context = "home" }: { context?: Concierg
                 </>
               );
 
-              return item.href.startsWith("mailto:") || item.href.startsWith("#") ? (
+              return item.href.startsWith("mailto:") || item.href.includes("#") ? (
                 <a key={item.label} href={item.href} className={className} onClick={() => setOpen(false)}>
                   {content}
                 </a>
