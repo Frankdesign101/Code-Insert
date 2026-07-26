@@ -110,7 +110,7 @@ export default function HigherEducationPathways() {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">GICS Higher Education Advisory Service</p>
               <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight">Higher Education Pathways</h1>
               <p className="text-white/82 leading-relaxed text-base md:text-lg">
-                Academic guidance for prospective undergraduate, postgraduate, MBA and PhD applicants seeking admission to UK Business School programmes and related disciplines.
+                Academic guidance for prospective undergraduate, postgraduate, MBA, PhD and degree apprenticeship applicants seeking admission to UK Business Schools and selected applied social science programmes.
               </p>
               <p className="text-sm text-white/90 leading-relaxed font-semibold">
                 GICS helps applicants make informed choices and submit stronger applications. We do not guarantee admission, secure offers, control university decisions or represent any university unless a formal agreement exists.
@@ -119,6 +119,46 @@ export default function HigherEducationPathways() {
           </div>
         </div>
       </header>
+
+      <section className="grid lg:grid-cols-2 gap-5">
+        <Card className="bg-white/5 border-white/10 rounded-2xl p-6 space-y-4">
+          <h2 className="text-xl font-black text-foreground">Who This Is For</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              "Undergraduate applicants",
+              "Postgraduate applicants",
+              "MBA applicants",
+              "PhD applicants",
+              "Degree apprenticeship applicants",
+              "Applicants exploring UK Business School routes"
+            ].map((item) => (
+              <div key={item} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] mt-0.5 shrink-0" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Card className="bg-white/5 border-white/10 rounded-2xl p-6 space-y-4">
+          <h2 className="text-xl font-black text-foreground">How GICS Helps</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              "Course and university-fit guidance",
+              "Application strategy",
+              "Personal statement review",
+              "CV and document review",
+              "Interview preparation where required",
+              "PhD research-fit discussion"
+            ].map((item) => (
+              <div key={item} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] mt-0.5 shrink-0" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </section>
 
       <section className="space-y-5">
         <div>
@@ -144,6 +184,37 @@ export default function HigherEducationPathways() {
                 <a href="#enquiry">Enquire Now</a>
               </Button>
             </Card>
+          ))}
+        </div>
+      </section>
+
+      <section className="glass-panel space-y-5">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Programme Areas</p>
+          <h2 className="text-2xl font-black text-foreground mt-2">Programmes We Support</h2>
+          <p className="text-sm text-muted-foreground mt-2 max-w-3xl">
+            GICS focuses on UK Business School pathways and selected applied social science programmes where academic fit, curriculum choice and career direction need careful consideration.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {[
+            "Business and Management",
+            "Operations and Supply Chain Management",
+            "Logistics and Supply Chain Management",
+            "Business Analytics and Data Analytics",
+            "Marketing",
+            "Finance and Accounting",
+            "Human Resource Management",
+            "International Business",
+            "Economics",
+            "Entrepreneurship",
+            "Business and Management Degree Apprenticeships",
+            "Selected Applied Social Science Programmes"
+          ].map((item) => (
+            <div key={item} className="flex gap-3 rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-muted-foreground leading-relaxed">
+              <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] mt-0.5 shrink-0" />
+              <span>{item}</span>
+            </div>
           ))}
         </div>
       </section>
