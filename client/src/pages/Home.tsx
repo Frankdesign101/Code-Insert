@@ -683,14 +683,15 @@ export default function Home() {
             </Card>
           ))}
         </div>
-        <div className="rounded-2xl border border-[hsl(var(--accent))]/25 bg-[hsl(var(--primary))]/50 p-5 md:flex md:items-center md:justify-between md:gap-6">
+        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[hsl(var(--primary))]/85 p-5 shadow-xl md:flex md:items-center md:justify-between md:gap-6">
+          <div className="absolute inset-x-0 top-0 h-px bg-[hsl(var(--accent))]/70" aria-hidden="true" />
           <div className="space-y-1">
-            <p className="text-sm font-black text-foreground">Not sure where to start?</p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">Not sure where to start?</p>
+            <p className="text-sm font-semibold text-white leading-relaxed">
               Tell us what you are looking for and GICS will point you to the right route.
             </p>
           </div>
-          <Button asChild className="mt-4 bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black md:mt-0">
+          <Button asChild className="mt-4 bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black shadow-lg md:mt-0">
             <a href="mailto:gicsinstituteuk@gmail.com">Contact GICS</a>
           </Button>
         </div>
