@@ -1,18 +1,54 @@
 import { useState } from "react";
+import type { ReactNode } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { BriefcaseBusiness, GraduationCap, Mail, MessageCircle, PlaneTakeoff, X } from "lucide-react";
+import { BriefcaseBusiness, GraduationCap, Home, ListChecks, Mail, MessageCircle, PlaneTakeoff, X } from "lucide-react";
 
-export default function GicsConcierge() {
+type ConciergeContext = "home" | "higher-education" | "student-success" | "corporate-learning";
+
+type ConciergeLink = {
+  label: string;
+  href: string;
+  icon: ReactNode;
+};
+
+export default function GicsConcierge({ context = "home" }: { context?: ConciergeContext }) {
   const [open, setOpen] = useState(false);
 
-  const links = [
+  const generalLinks: ConciergeLink[] = [
     { label: "Register for GC-PSSO", href: "/register", icon: <GraduationCap className="w-4 h-4" /> },
     { label: "Higher Education Pathways", href: "/higher-education-pathways", icon: <GraduationCap className="w-4 h-4" /> },
     { label: "Student Success", href: "/student-success", icon: <PlaneTakeoff className="w-4 h-4" /> },
     { label: "Corporate Learning", href: "/corporate-learning", icon: <BriefcaseBusiness className="w-4 h-4" /> },
     { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
   ];
+
+  const contextLinks: Record<ConciergeContext, ConciergeLink[]> = {
+    home: generalLinks,
+    "higher-education": [
+      { label: "Start Your Enquiry", href: "#enquiry", icon: <MessageCircle className="w-4 h-4" /> },
+      { label: "Compare Support Options", href: "#support-options", icon: <ListChecks className="w-4 h-4" /> },
+      { label: "View Programmes We Support", href: "#programmes-supported", icon: <GraduationCap className="w-4 h-4" /> },
+      { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
+      { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
+    ],
+    "student-success": [
+      { label: "Start Your Enquiry", href: "#enquiry", icon: <MessageCircle className="w-4 h-4" /> },
+      { label: "View Personalised Support", href: "#personalised-support", icon: <ListChecks className="w-4 h-4" /> },
+      { label: "Register Bootcamp Interest", href: "#bootcamp", icon: <PlaneTakeoff className="w-4 h-4" /> },
+      { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
+      { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
+    ],
+    "corporate-learning": [
+      { label: "Start Corporate Enquiry", href: "/corporate-enquiry", icon: <MessageCircle className="w-4 h-4" /> },
+      { label: "View Learning Routes", href: "#learning-routes", icon: <ListChecks className="w-4 h-4" /> },
+      { label: "View Training Areas", href: "#training-areas", icon: <BriefcaseBusiness className="w-4 h-4" /> },
+      { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
+      { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
+    ]
+  };
+
+  const links = contextLinks[context];
 
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
@@ -42,7 +78,7 @@ export default function GicsConcierge() {
                 </>
               );
 
-              return item.href.startsWith("mailto:") ? (
+              return item.href.startsWith("mailto:") || item.href.startsWith("#") ? (
                 <a key={item.label} href={item.href} className={className} onClick={() => setOpen(false)}>
                   {content}
                 </a>
