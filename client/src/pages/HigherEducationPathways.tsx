@@ -100,7 +100,7 @@ export default function HigherEducationPathways() {
 
       <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 bg-[hsl(var(--primary))] shadow-2xl">
         <img src="/gics-higher-education-pathways-hero.webp" alt="" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.90)] via-[rgba(4,18,37,0.62)] to-[rgba(4,18,37,0.08)]" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.92)] via-[rgba(4,18,37,0.42)] to-[rgba(4,18,37,0.00)]" aria-hidden="true" />
         <div className="relative z-10 flex min-h-[420px] items-center px-6 py-12 md:px-10 lg:px-14">
           <div className="max-w-3xl space-y-5">
             <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-[hsl(var(--accent))]">
@@ -110,7 +110,7 @@ export default function HigherEducationPathways() {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">GICS Higher Education Advisory Service</p>
               <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight">Higher Education Pathways</h1>
               <p className="text-white/82 leading-relaxed text-base md:text-lg">
-                Academic guidance for prospective undergraduate, postgraduate, MBA, PhD and degree apprenticeship applicants seeking admission to UK Business Schools and selected applied social science programmes.
+                Academic guidance for prospective undergraduate, postgraduate, MBA and PhD applicants seeking admission to UK Business School programmes and related disciplines.
               </p>
               <p className="text-sm text-white/90 leading-relaxed font-semibold">
                 GICS helps applicants make informed choices and submit stronger applications. We do not guarantee admission, secure offers, control university decisions or represent any university unless a formal agreement exists.
@@ -130,7 +130,7 @@ export default function HigherEducationPathways() {
               "MBA applicants",
               "PhD applicants",
               "Degree apprenticeship applicants",
-              "Applicants exploring UK Business School routes"
+              "Applicants exploring UK Business School and selected applied social science routes"
             ].map((item) => (
               <div key={item} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
                 <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] mt-0.5 shrink-0" />
@@ -160,7 +160,7 @@ export default function HigherEducationPathways() {
         </Card>
       </section>
 
-      <section className="space-y-5">
+      <section id="support-options" className="space-y-5 scroll-mt-8">
         <div>
           <h2 className="text-2xl font-black text-foreground">Support Options</h2>
           <p className="text-sm text-muted-foreground mt-2">Transparent launch pricing for academic application guidance. Use the enquiry form below so GICS can confirm the right support route before payment.</p>
@@ -188,12 +188,16 @@ export default function HigherEducationPathways() {
         </div>
       </section>
 
-      <section className="glass-panel space-y-5">
+      <section id="programmes-supported" className="glass-panel space-y-6 scroll-mt-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Programme Areas</p>
           <h2 className="text-2xl font-black text-foreground mt-2">Programmes We Support</h2>
-          <p className="text-sm text-muted-foreground mt-2 max-w-3xl">
-            GICS focuses on UK Business School pathways and selected applied social science programmes where academic fit, curriculum choice and career direction need careful consideration.
+        </div>
+        <div className="relative overflow-hidden rounded-2xl border border-[hsl(var(--accent))]/30 bg-gradient-to-br from-[hsl(var(--primary))]/80 via-white/[0.07] to-[hsl(var(--accent))]/10 p-5 shadow-xl">
+          <div className="absolute left-0 top-0 h-full w-1 bg-[hsl(var(--accent))]" aria-hidden="true" />
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">Academic fit matters</p>
+          <p className="mt-2 text-sm md:text-base font-semibold leading-relaxed text-foreground">
+            Choosing the right UK programme is not just about the title. GICS helps applicants think carefully about academic fit, curriculum content, career direction and the evidence needed to submit a stronger application.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -275,7 +279,7 @@ export default function HigherEducationPathways() {
         {status === "error" && <p role="alert" className="text-sm text-red-300">Your enquiry could not be submitted. Please try again or email gicsinstituteuk@gmail.com.</p>}
       </form>
       <a href="#enquiry" className="fixed bottom-20 right-5 z-40 hidden rounded-full bg-[hsl(var(--primary))] px-5 py-3 text-sm font-black text-white shadow-xl transition hover:brightness-110 md:inline-flex">Enquire Now</a>
-      <GicsConcierge />
+      <GicsConcierge context="higher-education" />
     </main>
   );
 }
