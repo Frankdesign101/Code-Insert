@@ -51,6 +51,9 @@ export default function CorporateLearning() {
               <p className="text-sm text-white/90 leading-relaxed font-semibold">
                 Every organisation has different learning needs. Tell us about your objectives and GICS will recommend a suitable learning route with a tailored quotation.
               </p>
+              <Button asChild className="h-12 bg-[hsl(var(--accent))] px-7 font-black text-[hsl(var(--primary-foreground))] shadow-lg hover:brightness-110">
+                <Link href="/corporate-enquiry">Start Your Enquiry</Link>
+              </Button>
             </div>
           </div>
         </div>
