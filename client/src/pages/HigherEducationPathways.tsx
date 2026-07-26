@@ -115,6 +115,9 @@ export default function HigherEducationPathways() {
               <p className="text-sm text-white/90 leading-relaxed font-semibold">
                 GICS helps applicants make informed choices and submit stronger applications. We do not guarantee admission, secure offers, control university decisions or represent any university unless a formal agreement exists.
               </p>
+              <Button asChild className="h-12 bg-[hsl(var(--accent))] px-7 font-black text-[hsl(var(--primary-foreground))] shadow-lg hover:brightness-110">
+                <a href="#enquiry">Start Your Enquiry</a>
+              </Button>
             </div>
           </div>
         </div>
