@@ -281,7 +281,6 @@ export default function HigherEducationPathways() {
         </Button>
         {status === "error" && <p role="alert" className="text-sm text-red-300">Your enquiry could not be submitted. Please try again or email gicsinstituteuk@gmail.com.</p>}
       </form>
-      <a href="#enquiry" className="fixed bottom-20 right-5 z-40 hidden rounded-full bg-[hsl(var(--primary))] px-5 py-3 text-sm font-black text-white shadow-xl transition hover:brightness-110 md:inline-flex">Enquire Now</a>
       <GicsConcierge context="higher-education" />
     </main>
   );
