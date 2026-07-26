@@ -108,7 +108,6 @@ export default function CorporateLearning() {
           <Link href="/corporate-enquiry">Start Your Enquiry</Link>
         </Button>
       </section>
-      <Link href="/corporate-enquiry" className="fixed bottom-20 right-5 z-40 hidden rounded-full bg-[hsl(var(--primary))] px-5 py-3 text-sm font-black text-white shadow-xl transition hover:brightness-110 md:inline-flex">Start Your Enquiry</Link>
       <GicsConcierge context="corporate-learning" />
     </main>
   );
