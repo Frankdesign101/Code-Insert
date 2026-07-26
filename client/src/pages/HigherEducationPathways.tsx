@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, ArrowLeft, GraduationCap } from "lucide-react";
+import GicsConcierge from "@/components/GicsConcierge";
 
 const fieldClass = "w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-foreground outline-none transition focus:border-[hsl(var(--accent))] focus:ring-2 focus:ring-[hsl(var(--accent))]/20 [&>option]:bg-white [&>option]:text-slate-900";
 const labelClass = "mb-2 block text-sm font-bold text-foreground";
@@ -48,43 +49,100 @@ export default function HigherEducationPathways() {
     );
   }
 
+  const supportOptions = [
+    {
+      title: "Application Planning",
+      price: "Â£95",
+      points: [
+        "One personalised planning session",
+        "Course and programme fit discussion",
+        "Initial application strategy",
+        "Follow-up summary email"
+      ]
+    },
+    {
+      title: "Application Review",
+      price: "Â£175",
+      points: [
+        "Personal statement or statement of purpose review",
+        "CV review where relevant",
+        "Written feedback on application strength",
+        "Improvement recommendations"
+      ]
+    },
+    {
+      title: "Complete Application Support",
+      price: "Â£395",
+      points: [
+        "Course and programme fit guidance",
+        "Application strategy",
+        "Document review and feedback",
+        "Interview preparation where applicable"
+      ]
+    },
+    {
+      title: "PhD Pathway Support",
+      price: "Â£495",
+      points: [
+        "Research-fit guidance",
+        "Proposal positioning feedback",
+        "Supervisor or programme suitability discussion",
+        "Application document review"
+      ]
+    }
+  ];
+
   return (
-    <main className="max-w-5xl mx-auto px-6 py-10 space-y-10">
+    <main className="max-w-[1160px] mx-auto px-5 md:px-6 py-8 space-y-10">
       <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-foreground">
         <ArrowLeft className="w-4 h-4" /> Back to GICS
       </Link>
 
-      <header className="glass-panel space-y-5">
-        <div className="w-12 h-12 rounded-2xl bg-[hsl(var(--accent))]/10 flex items-center justify-center text-[hsl(var(--accent))]">
-          <GraduationCap className="w-6 h-6" />
-        </div>
-        <div className="space-y-3">
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">GICS Higher Education Advisory Service</p>
-          <h1 className="text-4xl md:text-5xl font-black text-foreground">Higher Education Pathways</h1>
-          <p className="text-muted-foreground leading-relaxed max-w-4xl">
-            Academic guidance for prospective undergraduate, postgraduate, MBA and PhD applicants seeking admission to UK Business School programmes, including Business, Management, Operations, Supply Chain, Business Analytics, Marketing, Finance, Human Resource Management, International Business, Entrepreneurship and related disciplines.
-          </p>
-          <p className="text-sm text-foreground/90 leading-relaxed font-semibold">
-            GICS helps applicants make informed choices and submit stronger applications. We do not guarantee admission, secure offers, control university decisions or represent any university unless a formal agreement exists.
-          </p>
+      <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 shadow-2xl">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/gics-higher-education-pathways-hero.webp')" }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.90)] via-[rgba(4,18,37,0.62)] to-[rgba(4,18,37,0.08)]" aria-hidden="true" />
+        <div className="relative z-10 flex min-h-[420px] items-center px-6 py-12 md:px-10 lg:px-14">
+          <div className="max-w-3xl space-y-5">
+            <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-[hsl(var(--accent))]">
+              <GraduationCap className="w-6 h-6" />
+            </div>
+            <div className="space-y-3">
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">GICS Higher Education Advisory Service</p>
+              <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight">Higher Education Pathways</h1>
+              <p className="text-white/82 leading-relaxed text-base md:text-lg">
+                Academic guidance for prospective undergraduate, postgraduate, MBA and PhD applicants seeking admission to UK Business School programmes and related disciplines.
+              </p>
+              <p className="text-sm text-white/90 leading-relaxed font-semibold">
+                GICS helps applicants make informed choices and submit stronger applications. We do not guarantee admission, secure offers, control university decisions or represent any university unless a formal agreement exists.
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
       <section className="space-y-5">
         <div>
           <h2 className="text-2xl font-black text-foreground">Support Options</h2>
-          <p className="text-sm text-muted-foreground mt-2">Pricing is provided after enquiry review, based on scope, learner needs and delivery format.</p>
+          <p className="text-sm text-muted-foreground mt-2">Transparent launch pricing for academic application guidance. Use the enquiry form below so GICS can confirm the right support route before payment.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
-          {[
-            ["Application Planning", "Programme/course-fit guidance and initial application strategy."],
-            ["Application Review", "Review of personal statement, CV and supporting application documents."],
-            ["Complete Application Support", "Course selection guidance, application strategy, document review and interview preparation where applicable."],
-            ["PhD Pathway Support", "Research-fit guidance, proposal positioning, supervisor/programme suitability and application document review."]
-          ].map(([title, desc]) => (
-            <Card key={title} className="bg-white/5 border-white/10 rounded-2xl p-6 space-y-2">
-              <h3 className="font-black text-foreground">{title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+          {supportOptions.map((option) => (
+            <Card key={option.title} className="bg-white/5 border-white/10 rounded-2xl p-6 space-y-5 hover:border-[hsl(var(--accent))]/40 transition-colors">
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="font-black text-foreground text-lg">{option.title}</h3>
+                <span className="text-2xl font-black text-[hsl(var(--accent))]">{option.price}</span>
+              </div>
+              <ul className="space-y-3">
+                {option.points.map((point) => (
+                  <li key={point} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[hsl(var(--accent))] mt-0.5 shrink-0" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button asChild variant="outline" className="w-full bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10">
+                <a href="#enquiry">Enquire Now</a>
+              </Button>
             </Card>
           ))}
         </div>
@@ -109,7 +167,7 @@ export default function HigherEducationPathways() {
         </div>
       </section>
 
-      <form name="higher-education-pathways" method="POST" data-netlify="true" onSubmit={handleSubmit} className="glass-panel space-y-8">
+      <form id="enquiry" name="higher-education-pathways" method="POST" data-netlify="true" onSubmit={handleSubmit} className="glass-panel scroll-mt-8 space-y-8">
         <input type="hidden" name="form-name" value="higher-education-pathways" />
         <div>
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Step 1</p>
@@ -124,6 +182,7 @@ export default function HigherEducationPathways() {
           <label><span className={labelClass}>Highest qualification *</span><input className={fieldClass} name="highestQualification" required /></label>
           <label><span className={labelClass}>Intended level of study *</span><select className={fieldClass} name="intendedLevel" required defaultValue=""><option value="" disabled>Select one</option><option>Undergraduate</option><option>Master's</option><option>MBA</option><option>PhD</option><option>Not sure yet</option></select></label>
           <label><span className={labelClass}>Intended intake</span><input className={fieldClass} name="intendedIntake" placeholder="For example: September 2027" /></label>
+          <label className="md:col-span-2"><span className={labelClass}>Preferred support option</span><select className={fieldClass} name="supportOption" defaultValue=""><option value="">Not sure yet</option>{supportOptions.map((option) => <option key={option.title}>{option.title}</option>)}</select></label>
           <label className="md:col-span-2"><span className={labelClass}>Programme(s), subject area or universities of interest</span><textarea className={fieldClass} name="programmesOfInterest" rows={3} /></label>
           <label className="md:col-span-2"><span className={labelClass}>What support do you need? *</span><textarea className={fieldClass} name="supportNeeded" rows={4} required /></label>
           <label className="md:col-span-2"><span className={labelClass}>Anything else you would like us to know?</span><textarea className={fieldClass} name="additionalInfo" rows={3} /></label>
@@ -144,6 +203,8 @@ export default function HigherEducationPathways() {
         </Button>
         {status === "error" && <p role="alert" className="text-sm text-red-300">Your enquiry could not be submitted. Please try again or email gicsinstituteuk@gmail.com.</p>}
       </form>
+      <a href="#enquiry" className="fixed bottom-20 right-5 z-40 hidden rounded-full bg-[hsl(var(--primary))] px-5 py-3 text-sm font-black text-white shadow-xl transition hover:brightness-110 md:inline-flex">Enquire Now</a>
+      <GicsConcierge />
     </main>
   );
 }

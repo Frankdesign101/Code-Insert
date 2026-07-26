@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Target, Users, BookOpen, Award, Building2, Timer, ChevronRight, Info, Presentation, GraduationCap, PlaneTakeoff, BriefcaseBusiness } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import GicsConcierge from "@/components/GicsConcierge";
 
 export default function Home() {
   const learningThemes = [
@@ -48,7 +49,7 @@ export default function Home() {
         "Operational and supply-chain KPIs, charts and dashboards",
         "Optional Power BI and responsible AI-assisted analysis"
       ],
-      capstone: "Develop 3–5 relevant KPIs and create at least one appropriate Excel-based analytical output."
+      capstone: "Develop 3â5 relevant KPIs and create at least one appropriate Excel-based analytical output."
     },
     {
       id: "week-5",
@@ -90,7 +91,7 @@ export default function Home() {
               Global Institute for Supply Chain & Sustainability
             </span>
             <p className="mt-2 text-sm text-muted-foreground italic">Advancing Professional Capability and Industry Outcomes Through Education.</p>
-            <span className="block text-xs text-muted-foreground font-medium uppercase tracking-wider">Supply Chain • Operations • Sustainability</span>
+            <span className="block text-xs text-muted-foreground font-medium uppercase tracking-wider">Supply Chain â¢ Operations â¢ Sustainability</span>
           </div>
         </a>
         <nav className="flex gap-5 flex-wrap">
@@ -126,13 +127,13 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(4,18,37,0.96) 0%, rgba(4,18,37,0.86) 32%, rgba(4,18,37,0.45) 56%, rgba(4,18,37,0.12) 100%)"
+              "linear-gradient(90deg, rgba(4,18,37,0.97) 0%, rgba(4,18,37,0.9) 38%, rgba(4,18,37,0.56) 64%, rgba(4,18,37,0.14) 100%)"
           }}
           aria-hidden="true"
         />
 
         <div className="relative z-10 flex min-h-[680px] md:min-h-[720px] items-center px-6 py-14 md:px-12 lg:px-16">
-          <div className="max-w-2xl space-y-6">
+          <div className="max-w-3xl lg:max-w-[760px] space-y-6">
             <div className="space-y-4">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">
                 Flagship programme: Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)
@@ -301,10 +302,10 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-3 shrink-0">
-                <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-4 py-2 text-sm justify-center">6–8 WEEKS</Badge>
+                <Badge className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black px-4 py-2 text-sm justify-center">6â8 WEEKS</Badge>
                 <div className="text-right">
                   <p className="text-[10px] font-black uppercase text-muted-foreground">Capstone Output</p>
-                  <p className="text-sm font-bold text-foreground">2,500–3,000 Word Report</p>
+                  <p className="text-sm font-bold text-foreground">2,500â3,000 Word Report</p>
                 </div>
               </div>
             </div>
@@ -318,7 +319,7 @@ export default function Home() {
                     <BookOpen className="w-4 h-4 text-[hsl(var(--accent))]" /> Six Weekly Learning Themes
                   </h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Build practical capability across operations, global supply networks, purchasing, analytics and sustainability—then apply your learning to one integrated workplace project.
+                    Build practical capability across operations, global supply networks, purchasing, analytics and sustainabilityâthen apply your learning to one integrated workplace project.
                   </p>
                   <Accordion type="single" collapsible className="w-full space-y-4">
                     {learningThemes.map((theme) => (
@@ -365,7 +366,7 @@ export default function Home() {
                 <div className="p-6 bg-white/5 border border-white/10 rounded-3xl space-y-4">
                   <div className="flex items-center gap-3">
                     <Presentation className="w-5 h-5 text-[hsl(var(--accent))]" />
-                    <h4 className="text-lg font-bold text-foreground">Optional Weeks 7–8: Capstone Extension</h4>
+                    <h4 className="text-lg font-bold text-foreground">Optional Weeks 7â8: Capstone Extension</h4>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Participants may join an extended enrichment period to present and refine their projects, including peer learning, improvement coaching, and final CPD reflection.
@@ -380,7 +381,7 @@ export default function Home() {
                   </h4>
                   <div className="space-y-4">
                     <p className="text-xs text-muted-foreground leading-relaxed bg-white/5 p-4 rounded-xl border border-white/10">
-                      The programme is structured around six sequential weekly learning themes delivered over 6–8 weeks. Each theme contains recorded teaching, original GICS learning notes, optional guided reading, an applied practice activity, case lab or career clinic, and a focused capstone-building task. The themes introduce selected practical capabilities; they are not intended to be comprehensive academic modules.
+                      The programme is structured around six sequential weekly learning themes delivered over 6â8 weeks. Each theme contains recorded teaching, original GICS learning notes, optional guided reading, an applied practice activity, case lab or career clinic, and a focused capstone-building task. The themes introduce selected practical capabilities; they are not intended to be comprehensive academic modules.
                     </p>
                     <p className="text-xs text-muted-foreground leading-relaxed italic bg-[hsl(var(--accent))]/5 p-4 rounded-xl border border-[hsl(var(--accent))]/20">
                       Weekly activities progressively build one coherent capstone project based on a single organisation and a single operational or supply chain challenge.
@@ -473,14 +474,14 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl">
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Time Commitment</p>
-                  <p className="text-sm font-bold text-foreground">6–8 hours / week</p>
-                  <p className="text-[10px] text-muted-foreground">Total: ~45–55 hours</p>
+                  <p className="text-sm font-bold text-foreground">6â8 hours / week</p>
+                  <p className="text-[10px] text-muted-foreground">Total: ~45â55 hours</p>
                 </div>
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Early Bird: £250 until 20 Sept 2026</p>
-                    <p className="text-sm font-bold text-foreground">Standard: £325 from 21 Sept to 25 Oct 2026</p>
+                    <p className="text-sm font-bold text-foreground">Early Bird: Â£250 until 20 Sept 2026</p>
+                    <p className="text-sm font-bold text-foreground">Standard: Â£325 from 21 Sept to 25 Oct 2026</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -529,15 +530,15 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl">
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Time Commitment</p>
-                  <p className="text-sm font-bold text-foreground">4–6 hours / week</p>
-                  <p className="text-[10px] text-muted-foreground">Total: ~30–40 hours</p>
+                  <p className="text-sm font-bold text-foreground">4â6 hours / week</p>
+                  <p className="text-[10px] text-muted-foreground">Total: ~30â40 hours</p>
                 </div>
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">£195 rolling enrolment</p>
+                    <p className="text-sm font-bold text-foreground">Â£195 rolling enrolment</p>
                     <p className="text-xs text-muted-foreground">Start anytime</p>
-                    <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +£125</p>
+                    <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +Â£125</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -574,7 +575,7 @@ export default function Home() {
           <div className="space-y-4 text-center md:text-left max-w-xl">
             <h3 className="text-sm font-black uppercase tracking-widest text-[hsl(var(--accent))]">Corporate Learning</h3>
             <p className="text-2xl font-bold text-foreground leading-tight">Executive education, bespoke organisational training and team capability development for organisations.</p>
-            <p className="text-sm text-muted-foreground">Bespoke pricing based on cohort size and requirements (typically £900 – £2,500).</p>
+            <p className="text-sm text-muted-foreground">Bespoke pricing based on cohort size and requirements (typically Â£900 â Â£2,500).</p>
           </div>
           <Button asChild className="bg-foreground text-background font-black uppercase text-xs px-10 py-6 hover:brightness-110 shrink-0">
             <a href="/corporate-learning">Explore Corporate Learning</a>
@@ -630,7 +631,10 @@ export default function Home() {
       </section>
 
       {/* Additional GICS Services */}
-      <section className="space-y-6">
+      <section className="relative overflow-hidden rounded-[2rem] border border-[hsl(var(--accent))]/25 bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-[hsl(var(--accent))]/[0.08] p-6 md:p-8 shadow-2xl">
+        <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[hsl(var(--accent))] via-[hsl(var(--primary))] to-[hsl(var(--accent))]" aria-hidden="true" />
+        <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-[hsl(var(--accent))]/10 blur-3xl" aria-hidden="true" />
+        <div className="relative z-10 space-y-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Additional GICS Services</p>
@@ -665,7 +669,7 @@ export default function Home() {
               icon: <BriefcaseBusiness className="w-5 h-5" />
             }
           ].map((service) => (
-            <Card key={service.title} className="bg-white/5 border-white/10 rounded-2xl p-6 space-y-5 hover:bg-white/10 transition-colors">
+            <Card key={service.title} className="group bg-[hsl(var(--background))]/70 border-white/10 rounded-2xl p-6 space-y-5 shadow-xl transition-all hover:-translate-y-1 hover:border-[hsl(var(--accent))]/40 hover:bg-white/10">
               <div className="w-10 h-10 rounded-xl bg-[hsl(var(--accent))]/10 flex items-center justify-center text-[hsl(var(--accent))]">
                 {service.icon}
               </div>
@@ -678,6 +682,7 @@ export default function Home() {
               </Button>
             </Card>
           ))}
+        </div>
         </div>
       </section>
 
@@ -718,7 +723,7 @@ export default function Home() {
             <p className="text-foreground font-bold text-lg">GICS</p>
           </div>
           <div className="space-y-1 text-muted-foreground font-medium text-xs leading-relaxed">
-            <p>© 2026 Global Supply Chain & Sustainability Academy Ltd. All rights reserved.</p>
+            <p>Â© 2026 Global Supply Chain & Sustainability Academy Ltd. All rights reserved.</p>
             <p>Registered in England and Wales, United Kingdom. Company No. 16986058.</p>
             <p>Global Institute for Supply Chain & Sustainability (GICS) is the trading name of Global Supply Chain & Sustainability Academy Ltd.</p>
           </div>
@@ -730,6 +735,7 @@ export default function Home() {
           <a href="mailto:gicsinstituteuk@gmail.com" className="hover:text-[hsl(var(--accent))] transition-colors" data-testid="link-contact">gicsinstituteuk@gmail.com</a>
         </div>
       </footer>
+      <GicsConcierge />
     </div>
   );
 }
