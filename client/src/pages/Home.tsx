@@ -649,7 +649,7 @@ export default function Home() {
           {[
             {
               title: "Higher Education Pathways",
-              desc: "Academic guidance for prospective undergraduate, postgraduate and PhD applicants seeking admission to UK Business School programmes and related disciplines.",
+              desc: "Academic guidance for prospective undergraduate, postgraduate, MBA, PhD and degree apprenticeship applicants seeking admission to UK Business Schools and selected applied social science programmes.",
               href: "/higher-education-pathways",
               button: "Explore Higher Education Pathways",
               icon: <GraduationCap className="w-5 h-5" />
