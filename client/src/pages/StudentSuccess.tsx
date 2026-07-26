@@ -52,7 +52,7 @@ export default function StudentSuccess() {
   const supportOptions = [
     {
       title: "Pre-Departure Essentials",
-      price: "Â£75",
+      price: "\u00a375",
       points: [
         "One focused pre-departure session",
         "UK academic expectations",
@@ -62,7 +62,7 @@ export default function StudentSuccess() {
     },
     {
       title: "Complete Transition",
-      price: "Â£195",
+      price: "\u00a3195",
       points: [
         "Pre-departure guidance",
         "Academic readiness support",
@@ -72,7 +72,7 @@ export default function StudentSuccess() {
     },
     {
       title: "Premium Transition",
-      price: "Â£325",
+      price: "\u00a3325",
       points: [
         "Personalised pre-departure support",
         "Academic readiness guidance",
@@ -88,8 +88,8 @@ export default function StudentSuccess() {
         <ArrowLeft className="w-4 h-4" /> Back to GICS
       </Link>
 
-      <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 shadow-2xl">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/gics-student-success-hero.webp')" }} aria-hidden="true" />
+      <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 bg-[hsl(var(--primary))] shadow-2xl">
+        <img src="/gics-student-success-hero.webp" alt="" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.90)] via-[rgba(4,18,37,0.62)] to-[rgba(4,18,37,0.08)]" aria-hidden="true" />
         <div className="relative z-10 flex min-h-[420px] items-center px-6 py-12 md:px-10 lg:px-14">
           <div className="max-w-3xl space-y-5">
@@ -171,7 +171,7 @@ export default function StudentSuccess() {
           <p className="text-sm text-muted-foreground leading-relaxed">
             Guest contributors may include UK university lecturers, academic skills or student support professionals, careers professionals, industry guests, and current or recent international students.
           </p>
-          <Button asChild variant="outline" className="bg-white/5 border-white/20 text-foreground font-bold hover:bg-white/10">
+          <Button asChild className="h-12 bg-[hsl(var(--accent))] px-7 font-black text-[hsl(var(--primary-foreground))] shadow-lg hover:brightness-110">
             <a href="#enquiry">Register Your Interest</a>
           </Button>
         </div>

@@ -52,7 +52,7 @@ export default function HigherEducationPathways() {
   const supportOptions = [
     {
       title: "Application Planning",
-      price: "Â£95",
+      price: "\u00a395",
       points: [
         "One personalised planning session",
         "Course and programme fit discussion",
@@ -62,7 +62,7 @@ export default function HigherEducationPathways() {
     },
     {
       title: "Application Review",
-      price: "Â£175",
+      price: "\u00a3175",
       points: [
         "Personal statement or statement of purpose review",
         "CV review where relevant",
@@ -72,7 +72,7 @@ export default function HigherEducationPathways() {
     },
     {
       title: "Complete Application Support",
-      price: "Â£395",
+      price: "\u00a3395",
       points: [
         "Course and programme fit guidance",
         "Application strategy",
@@ -82,7 +82,7 @@ export default function HigherEducationPathways() {
     },
     {
       title: "PhD Pathway Support",
-      price: "Â£495",
+      price: "\u00a3495",
       points: [
         "Research-fit guidance",
         "Proposal positioning feedback",
@@ -98,8 +98,8 @@ export default function HigherEducationPathways() {
         <ArrowLeft className="w-4 h-4" /> Back to GICS
       </Link>
 
-      <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 shadow-2xl">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/gics-higher-education-pathways-hero.webp')" }} aria-hidden="true" />
+      <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 bg-[hsl(var(--primary))] shadow-2xl">
+        <img src="/gics-higher-education-pathways-hero.webp" alt="" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-r from-[rgba(4,18,37,0.90)] via-[rgba(4,18,37,0.62)] to-[rgba(4,18,37,0.08)]" aria-hidden="true" />
         <div className="relative z-10 flex min-h-[420px] items-center px-6 py-12 md:px-10 lg:px-14">
           <div className="max-w-3xl space-y-5">
