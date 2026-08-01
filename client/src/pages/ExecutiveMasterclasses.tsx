@@ -76,7 +76,7 @@ export default function ExecutiveMasterclasses() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(4,18,37,0.98) 0%, rgba(4,18,37,0.92) 38%, rgba(4,18,37,0.58) 66%, rgba(4,18,37,0.2) 100%)"
+              "linear-gradient(90deg, rgba(4,18,37,0.98) 0%, rgba(4,18,37,0.9) 38%, rgba(4,18,37,0.38) 66%, rgba(4,18,37,0.04) 100%)"
           }}
           aria-hidden="true"
         />

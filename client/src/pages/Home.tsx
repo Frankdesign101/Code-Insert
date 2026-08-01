@@ -151,7 +151,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] font-black border-none h-12 px-8 rounded-xl shadow-lg hover:brightness-110 hover:translate-y-[-2px] transition-all" data-testid="button-register">
-                <a href="/register">Apply for Founding Cohort</a>
+                <a href="/register">Apply for GC-PSSO Founding Cohort</a>
               </Button>
               <Button asChild variant="outline" className="h-12 px-8 rounded-xl bg-white/10 border-white/25 text-white font-bold hover:bg-white/15 hover:translate-y-[-2px] transition-all" data-testid="button-view-programmes">
                 <a href="#programmes">View programmes</a>
@@ -160,11 +160,11 @@ export default function Home() {
 
             <a
               href="#additional-services"
-              className="group inline-flex max-w-full flex-wrap items-center gap-2 rounded-2xl border border-[hsl(var(--accent))]/55 bg-[hsl(var(--primary))]/82 px-4 py-3 text-sm font-bold text-white shadow-2xl backdrop-blur transition hover:-translate-y-0.5 hover:border-[hsl(var(--accent))] hover:bg-[hsl(var(--primary))]/92"
+              className="group inline-flex max-w-full flex-wrap items-center gap-2 rounded-2xl border border-white/20 bg-white/12 px-4 py-3 text-sm font-bold text-white shadow-lg backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[hsl(var(--accent))]/55 hover:bg-white/16"
             >
               <span className="rounded-full bg-[hsl(var(--accent))] px-3 py-1 text-xs font-black uppercase tracking-wide text-[hsl(var(--primary-foreground))]">Launching Soon</span>
               <span>Executive Masterclasses in Applied AI, Operations, Supply Chain and Strategy</span>
-              <span className="inline-flex items-center gap-1 text-[hsl(var(--accent))]">
+              <span className="inline-flex items-center gap-1 text-white underline decoration-[hsl(var(--accent))]/70 underline-offset-4">
                 Explore Masterclasses <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
               </span>
             </a>
