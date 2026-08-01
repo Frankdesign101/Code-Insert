@@ -196,11 +196,11 @@ export default function HigherEducationPathways() {
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Programme Areas</p>
           <h2 className="text-2xl font-black text-foreground mt-2">Programmes We Support</h2>
         </div>
-        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[hsl(var(--primary))]/88 p-5 shadow-xl">
-          <div className="absolute inset-x-0 top-0 h-px bg-[hsl(var(--accent))]/70" aria-hidden="true" />
-          <div className="absolute left-0 top-0 h-full w-1 bg-[hsl(var(--accent))]/80" aria-hidden="true" />
-          <p className="pl-2 text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">Academic fit matters</p>
-          <p className="mt-2 pl-2 text-sm md:text-base font-semibold leading-relaxed text-white">
+        <div className="relative overflow-hidden rounded-2xl border border-[hsl(var(--accent))]/30 bg-gradient-to-br from-[hsl(var(--primary))] via-[#082b2b] to-[#0b4a34] p-5 shadow-xl">
+          <div className="absolute inset-x-0 top-0 h-1 bg-[hsl(var(--accent))]" aria-hidden="true" />
+          <div className="absolute -right-12 -top-16 h-44 w-44 rounded-full bg-[hsl(var(--accent))]/15 blur-3xl" aria-hidden="true" />
+          <p className="relative pl-2 text-xs font-black uppercase tracking-[0.18em] text-white">Academic fit matters</p>
+          <p className="relative mt-2 pl-2 text-sm md:text-base font-semibold leading-relaxed text-white/92">
             Choosing the right UK programme is not just about the title. GICS helps applicants think carefully about academic fit, curriculum content, career direction and the evidence needed to submit a stronger application.
           </p>
         </div>

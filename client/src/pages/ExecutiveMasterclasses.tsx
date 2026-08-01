@@ -66,9 +66,20 @@ export default function ExecutiveMasterclasses() {
         <ArrowLeft className="w-4 h-4" /> Back to GICS
       </Link>
 
-      <header className="relative overflow-hidden rounded-[2rem] min-h-[420px] border border-white/10 bg-[hsl(var(--primary))] shadow-2xl">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_20%,rgba(9,112,70,0.38),transparent_32%),linear-gradient(135deg,rgba(4,18,37,0.98),rgba(4,18,37,0.88)_48%,rgba(9,112,70,0.42))]" aria-hidden="true" />
-        <div className="absolute right-8 top-8 hidden h-56 w-56 rounded-full border border-[hsl(var(--accent))]/25 bg-white/5 blur-[1px] md:block" aria-hidden="true" />
+      <header className="relative overflow-hidden rounded-[2rem] min-h-[460px] border border-white/10 bg-[hsl(var(--primary))] shadow-2xl">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/gics-executive-masterclasses-hero.webp')" }}
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(4,18,37,0.98) 0%, rgba(4,18,37,0.92) 38%, rgba(4,18,37,0.58) 66%, rgba(4,18,37,0.2) 100%)"
+          }}
+          aria-hidden="true"
+        />
         <div className="relative z-10 flex min-h-[420px] items-center px-6 py-12 md:px-10 lg:px-14">
           <div className="max-w-3xl space-y-5">
             <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-[hsl(var(--accent))]">

@@ -52,7 +52,7 @@ export default function StudentSuccess() {
   const supportOptions = [
     {
       title: "Pre-Departure Essentials",
-      price: "\u00a375",
+      price: "\u00a395",
       points: [
         "One focused pre-departure session",
         "UK academic expectations",

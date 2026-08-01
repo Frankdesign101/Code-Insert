@@ -96,13 +96,14 @@ export default function Home() {
             <span className="block text-xs text-muted-foreground font-medium uppercase tracking-wider">Supply Chain &bull; Operations &bull; Sustainability</span>
           </div>
         </a>
-        <nav className="flex flex-wrap gap-x-5 gap-y-3 lg:max-w-[520px] lg:justify-end">
+        <nav className="flex flex-wrap gap-x-4 gap-y-3 lg:max-w-[620px] lg:justify-end">
           {[
             { label: "Home", href: "/" },
             { label: "GC-PSSO", href: "#programmes" },
             { label: "Higher Education Pathways", href: "/higher-education-pathways" },
             { label: "Student Success", href: "/student-success" },
             { label: "Corporate Learning", href: "/corporate-learning" },
+            { label: "Masterclasses", href: "/executive-masterclasses" },
             { label: "About GICS", href: "#about" },
             { label: "Contact", href: "#contact" }
           ].map((item) => (
@@ -159,11 +160,13 @@ export default function Home() {
 
             <a
               href="#additional-services"
-              className="inline-flex max-w-full items-center gap-2 rounded-full border border-[hsl(var(--accent))]/40 bg-white/10 px-4 py-2 text-sm font-bold text-white shadow-lg backdrop-blur transition hover:bg-white/15"
+              className="group inline-flex max-w-full flex-wrap items-center gap-2 rounded-2xl border border-[hsl(var(--accent))]/55 bg-[hsl(var(--primary))]/82 px-4 py-3 text-sm font-bold text-white shadow-2xl backdrop-blur transition hover:-translate-y-0.5 hover:border-[hsl(var(--accent))] hover:bg-[hsl(var(--primary))]/92"
             >
-              <span className="text-[hsl(var(--accent))]">New</span>
-              <span>Executive Masterclasses launching soon - explore upcoming GICS services</span>
-              <ChevronRight className="h-4 w-4 shrink-0" />
+              <span className="rounded-full bg-[hsl(var(--accent))] px-3 py-1 text-xs font-black uppercase tracking-wide text-[hsl(var(--primary-foreground))]">Launching Soon</span>
+              <span>Executive Masterclasses in Applied AI, Operations, Supply Chain and Strategy</span>
+              <span className="inline-flex items-center gap-1 text-[hsl(var(--accent))]">
+                Explore Masterclasses <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
+              </span>
             </a>
 
             <div className="flex flex-wrap gap-2">
@@ -701,11 +704,11 @@ export default function Home() {
             </Card>
           ))}
         </div>
-        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[hsl(var(--primary))]/85 p-5 shadow-xl md:flex md:items-center md:justify-between md:gap-6">
-          <div className="absolute inset-x-0 top-0 h-px bg-[hsl(var(--accent))]/70" aria-hidden="true" />
+        <div className="relative overflow-hidden rounded-2xl border border-[hsl(var(--accent))]/30 bg-gradient-to-br from-[hsl(var(--primary))] via-[#082b2b] to-[#0b4a34] p-5 shadow-xl md:flex md:items-center md:justify-between md:gap-6">
+          <div className="absolute inset-x-0 top-0 h-1 bg-[hsl(var(--accent))]" aria-hidden="true" />
           <div className="space-y-1">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[hsl(var(--accent))]">Not sure where to start?</p>
-            <p className="text-sm font-semibold text-white leading-relaxed">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-white">Not sure where to start?</p>
+            <p className="text-sm font-semibold text-white/92 leading-relaxed">
               Tell us what you are looking for and GICS will point you to the right route.
             </p>
           </div>
