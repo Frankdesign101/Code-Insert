@@ -42,12 +42,14 @@ export default function Home() {
     },
     {
       id: "week-4",
-      title: "Week 4: Data Analytics & Digital Tools for Operations and Supply Chain Performance",
+      title: "Week 4: Data Analytics, AI & Digital Tools for Operations and Supply Chain Performance",
       focus: "Use accessible analytics and digital tools to support better operational decisions.",
       topics: [
-        "Excel/Sheets analysis and simple forecasting",
-        "Operational and supply-chain KPIs, charts and dashboards",
-        "Optional Power BI and responsible AI-assisted analysis"
+        "Data quality, KPIs and operational performance analysis",
+        "Excel-based analysis, dashboards and decision support",
+        "Responsible AI support for operational decision-making",
+        "Using AI responsibly: effective prompting, output verification, data limitations and human accountability",
+        "Digital operations overview: ERP, WMS, TMS and integrated enterprise systems"
       ],
       capstone: "Develop 3-5 relevant KPIs and create at least one appropriate Excel-based analytical output."
     },
@@ -154,6 +156,15 @@ export default function Home() {
                 <a href="#programmes">View programmes</a>
               </Button>
             </div>
+
+            <a
+              href="#additional-services"
+              className="inline-flex max-w-full items-center gap-2 rounded-full border border-[hsl(var(--accent))]/40 bg-white/10 px-4 py-2 text-sm font-bold text-white shadow-lg backdrop-blur transition hover:bg-white/15"
+            >
+              <span className="text-[hsl(var(--accent))]">New</span>
+              <span>Executive Masterclasses launching soon - explore upcoming GICS services</span>
+              <ChevronRight className="h-4 w-4 shrink-0" />
+            </a>
 
             <div className="flex flex-wrap gap-2">
               {[
@@ -631,7 +642,7 @@ export default function Home() {
       </section>
 
       {/* Additional GICS Services */}
-      <section className="relative overflow-hidden rounded-[2rem] border border-[hsl(var(--accent))]/25 bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-[hsl(var(--accent))]/[0.08] p-6 md:p-8 shadow-2xl">
+      <section id="additional-services" className="scroll-mt-8 relative overflow-hidden rounded-[2rem] border border-[hsl(var(--accent))]/25 bg-gradient-to-br from-white/[0.08] via-white/[0.04] to-[hsl(var(--accent))]/[0.08] p-6 md:p-8 shadow-2xl">
         <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[hsl(var(--accent))] via-[hsl(var(--primary))] to-[hsl(var(--accent))]" aria-hidden="true" />
         <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-[hsl(var(--accent))]/10 blur-3xl" aria-hidden="true" />
         <div className="relative z-10 space-y-6">
@@ -645,7 +656,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {[
             {
               title: "Higher Education Pathways",
@@ -667,6 +678,13 @@ export default function Home() {
               href: "/corporate-learning",
               button: "Explore Corporate Learning",
               icon: <BriefcaseBusiness className="w-5 h-5" />
+            },
+            {
+              title: "Executive Masterclasses",
+              desc: "Short, focused professional learning experiences in applied AI, operations, supply chain and strategy.",
+              href: "/executive-masterclasses",
+              button: "Register Interest",
+              icon: <Presentation className="w-5 h-5" />
             }
           ].map((service) => (
             <Card key={service.title} className="group bg-[hsl(var(--background))]/70 border-white/10 rounded-2xl p-6 space-y-5 shadow-xl transition-all hover:-translate-y-1 hover:border-[hsl(var(--accent))]/40 hover:bg-white/10">

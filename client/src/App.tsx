@@ -12,6 +12,7 @@ import VerifyCertificate from "@/pages/VerifyCertificate";
 import HigherEducationPathways from "@/pages/HigherEducationPathways";
 import StudentSuccess from "@/pages/StudentSuccess";
 import CorporateLearning from "@/pages/CorporateLearning";
+import ExecutiveMasterclasses from "@/pages/ExecutiveMasterclasses";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/higher-education-pathways" component={HigherEducationPathways}/>
       <Route path="/student-success" component={StudentSuccess}/>
       <Route path="/corporate-learning" component={CorporateLearning}/>
+      <Route path="/executive-masterclasses" component={ExecutiveMasterclasses}/>
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

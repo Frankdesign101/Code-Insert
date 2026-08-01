@@ -2,9 +2,9 @@ import { useState } from "react";
 import type { ReactNode } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { BriefcaseBusiness, GraduationCap, Home, ListChecks, Mail, MessageCircle, PlaneTakeoff, X } from "lucide-react";
+import { BriefcaseBusiness, GraduationCap, Home, ListChecks, Mail, MessageCircle, PlaneTakeoff, Presentation, X } from "lucide-react";
 
-type ConciergeContext = "home" | "higher-education" | "student-success" | "corporate-learning";
+type ConciergeContext = "home" | "higher-education" | "student-success" | "corporate-learning" | "executive-masterclasses";
 
 type ConciergeLink = {
   label: string;
@@ -20,6 +20,7 @@ export default function GicsConcierge({ context = "home" }: { context?: Concierg
     { label: "Explore Higher Education Pathways", href: "/higher-education-pathways", icon: <GraduationCap className="w-4 h-4" /> },
     { label: "Start Student Success Enquiry", href: "/student-success#enquiry", icon: <PlaneTakeoff className="w-4 h-4" /> },
     { label: "Start Corporate Enquiry", href: "/corporate-enquiry", icon: <BriefcaseBusiness className="w-4 h-4" /> },
+    { label: "Explore Executive Masterclasses", href: "/executive-masterclasses", icon: <Presentation className="w-4 h-4" /> },
     { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
   ];
 
@@ -43,6 +44,12 @@ export default function GicsConcierge({ context = "home" }: { context?: Concierg
       { label: "View Learning Routes", href: "#learning-routes", icon: <ListChecks className="w-4 h-4" /> },
       { label: "View Training Areas", href: "#training-areas", icon: <BriefcaseBusiness className="w-4 h-4" /> },
       { label: "Organisation Enquiry Form", href: "/corporate-enquiry", icon: <MessageCircle className="w-4 h-4" /> },
+      { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
+      { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
+    ],
+    "executive-masterclasses": [
+      { label: "View Upcoming Masterclasses", href: "#upcoming-masterclasses", icon: <Presentation className="w-4 h-4" /> },
+      { label: "Join Waiting List", href: "#waiting-list", icon: <MessageCircle className="w-4 h-4" /> },
       { label: "Back to GICS Home", href: "/", icon: <Home className="w-4 h-4" /> },
       { label: "Contact GICS", href: "mailto:gicsinstituteuk@gmail.com", icon: <Mail className="w-4 h-4" /> }
     ]
