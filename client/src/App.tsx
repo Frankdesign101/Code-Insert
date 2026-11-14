@@ -30,8 +30,22 @@ function PublicIntroduction() {
           <p className="text-sm font-black uppercase tracking-[.2em] text-[hsl(var(--accent))]">Introducing GICS · Launching Soon</p>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight text-white">Advancing practical capability in supply chains, operations and sustainability.</h1>
           <p className="text-lg md:text-xl text-white/85 leading-relaxed">The Global Institute for Supply Chain &amp; Sustainability is developing professionally focused learning opportunities that connect rigorous thinking with real-world organisational challenges.</p>
-          <a href="#about" className="inline-block rounded-xl bg-[hsl(var(--accent))] px-7 py-3 font-black text-[hsl(var(--primary-foreground))]">Discover GICS</a>
+          <div className="flex flex-wrap gap-3 items-center">
+            <a href="#flagship" className="inline-block rounded-xl bg-[hsl(var(--accent))] px-7 py-3 font-black text-[hsl(var(--primary-foreground))] shadow-lg">Explore Our Flagship Programme</a>
+            <a href="#about" className="inline-block rounded-xl border border-white/40 px-7 py-3 font-bold text-white">About GICS</a>
+          </div>
+          <p className="text-sm font-semibold text-white/90">Coming Soon: Global Certificate in Practical Supply Chain &amp; Sustainable Operations (GC-PSSO)</p>
         </div>
+      </section>
+
+      <section id="flagship" className="relative overflow-hidden rounded-[2rem] border-2 border-[hsl(var(--accent))]/70 bg-gradient-to-br from-[hsl(var(--primary))] via-[hsl(var(--primary))] to-[hsl(var(--accent))]/15 p-7 md:p-12 space-y-6 shadow-2xl">
+        <p className="inline-flex rounded-full bg-[hsl(var(--accent))] px-4 py-2 text-xs font-black uppercase tracking-widest text-[hsl(var(--primary-foreground))]">GICS Flagship Programme · Coming Soon</p>
+        <h2 className="max-w-4xl text-3xl md:text-5xl font-black leading-tight">Global Certificate in Practical Supply Chain &amp; Sustainable Operations</h2>
+        <p className="text-xl md:text-2xl font-black text-[hsl(var(--accent))]">GC-PSSO</p>
+        <p className="max-w-3xl text-lg text-foreground/90 leading-relaxed">A forthcoming professional-development programme designed to strengthen practical capability in supply chain management, operations, analytics and sustainability.</p>
+        <p className="text-sm text-muted-foreground">Further information about the programme structure, delivery arrangements and registration will be announced in due course.</p>
+        <p className="inline-block rounded-xl border-2 border-[hsl(var(--accent))]/70 bg-white/10 px-6 py-3 text-sm font-black text-foreground">Register Your Interest — Coming Soon</p>
+        <p className="text-xs text-muted-foreground">GC-PSSO is a proposed GICS professional-development programme, not a university award. No applications or expressions of interest are being collected at this stage.</p>
       </section>
 
       <section id="about" className="glass-panel space-y-4">
@@ -39,16 +53,6 @@ function PublicIntroduction() {
         <h2 className="text-3xl font-black">Knowledge that connects with practice</h2>
         <p className="max-w-4xl text-muted-foreground leading-relaxed">GICS is an independent UK-registered education and professional training initiative with a focus on supply chain management, operations and sustainability. Our ambition is to support the development of practical, globally relevant professional capability through applied learning and evidence-informed approaches.</p>
         <p className="text-sm text-muted-foreground">Further information about programmes, delivery arrangements and registration will be announced in due course.</p>
-      </section>
-
-      <section id="flagship" className="glass-panel space-y-4">
-        <p className="text-xs font-black uppercase tracking-widest text-[hsl(var(--accent))]">GICS Flagship Programme · Coming Soon</p>
-        <h2 className="text-3xl font-black">Global Certificate in Practical Supply Chain &amp; Sustainable Operations</h2>
-        <p className="text-lg font-bold text-[hsl(var(--accent))]">GC-PSSO</p>
-        <p className="max-w-4xl text-muted-foreground leading-relaxed">A forthcoming professional-development programme designed to strengthen practical capability in supply chain management, operations, analytics and sustainability.</p>
-        <p className="text-sm text-muted-foreground">Further information about the programme structure, delivery arrangements and registration will be announced in due course.</p>
-        <p className="inline-block rounded-lg border border-white/15 px-4 py-2 text-sm font-semibold text-muted-foreground">Register Your Interest — Coming Soon</p>
-        <p className="text-xs text-muted-foreground">GC-PSSO is a proposed GICS professional-development programme, not a university award. No applications or expressions of interest are being collected at this stage.</p>
       </section>
 
       <section id="focus" className="space-y-5">
