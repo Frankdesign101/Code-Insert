@@ -79,7 +79,7 @@ export default function VerifyCertificate() {
           <input type="hidden" name="form-name" value="certificate-verification" />
 
           <div className="grid md:grid-cols-2 gap-5">
-            <label><span className={labelClass}>Certificate number *</span><input className={fieldClass} name="certificateNumber" placeholder="GC-PSSO-2026-0001" required /></label>
+            <label><span className={labelClass}>Certificate number *</span><input className={fieldClass} name="certificateNumber" placeholder="GC-PSSO-2027-0001" required /></label>
             <label><span className={labelClass}>Date of issue</span><input className={fieldClass} type="date" name="dateOfIssue" /></label>
             <label><span className={labelClass}>Recipient name *</span><input className={fieldClass} name="recipientName" required /></label>
             <label><span className={labelClass}>Programme title *</span><input className={fieldClass} name="programmeTitle" defaultValue="Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO)" required /></label>
