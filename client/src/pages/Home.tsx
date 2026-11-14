@@ -260,7 +260,7 @@ export default function Home() {
                 UK higher-education Programme Director and Lecturer in Operations and Supply Chain Management, leading the academic design of the Global Certificate in Practical Supply Chain & Sustainable Operations (GC-PSSO).
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                Frank teaches at a leading UK Russell Group university and has extensive experience designing and delivering MBA-level, postgraduate and undergraduate teaching in operations, procurement and supply chain management. He also serves as an External Examiner and an Independent Assessor for a university-based supply chain degree apprenticeship programme.
+                Frank teaches at a leading UK Russell Group university and has extensive experience designing and delivering teaching across MBA, postgraduate and undergraduate programmes in operations, procurement and supply chain management. He also serves as an External Examiner and an Independent Assessor for a university-based supply chain degree apprenticeship programme.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
                 His research has been published in internationally recognised journals, including Transportation Research Part E and Production Planning & Control, and he regularly reviews for leading journals in operations and supply chain management.
