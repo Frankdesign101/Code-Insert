@@ -38,13 +38,13 @@ function PublicIntroduction() {
         </div>
       </section>
 
-      <section id="flagship" className="relative overflow-hidden rounded-[2rem] border-2 border-[hsl(var(--accent))]/70 bg-gradient-to-br from-[hsl(var(--primary))] via-[hsl(var(--primary))] to-[hsl(var(--accent))]/15 p-7 md:p-12 space-y-6 shadow-2xl">
-        <p className="inline-flex rounded-full bg-[hsl(var(--accent))] px-4 py-2 text-xs font-black uppercase tracking-widest text-[hsl(var(--primary-foreground))]">GICS Flagship Programme · Coming Soon</p>
+      <section id="flagship" className="glass-panel rounded-[2rem] border border-white/15 p-7 md:p-10 space-y-5 shadow-lg">
+        <p className="text-xs font-black uppercase tracking-widest text-[hsl(var(--accent))]">GICS Flagship Programme · Coming Soon</p>
         <h2 className="max-w-4xl text-3xl md:text-5xl font-black leading-tight">Global Certificate in Practical Supply Chain &amp; Sustainable Operations</h2>
         <p className="text-xl md:text-2xl font-black text-[hsl(var(--accent))]">GC-PSSO</p>
         <p className="max-w-3xl text-lg text-foreground/90 leading-relaxed">A forthcoming professional-development programme designed to strengthen practical capability in supply chain management, operations, analytics and sustainability.</p>
         <p className="text-sm text-muted-foreground">Further information about the programme structure, delivery arrangements and registration will be announced in due course.</p>
-        <p className="inline-block rounded-xl border-2 border-[hsl(var(--accent))]/70 bg-white/10 px-6 py-3 text-sm font-black text-foreground">Register Your Interest — Coming Soon</p>
+        <p className="inline-block rounded-xl border border-white/20 px-5 py-3 text-sm font-semibold text-muted-foreground">Register Your Interest — Coming Soon</p>
         <p className="text-xs text-muted-foreground">GC-PSSO is a proposed GICS professional-development programme, not a university award. No applications or expressions of interest are being collected at this stage.</p>
       </section>
 
