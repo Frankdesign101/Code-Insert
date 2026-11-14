@@ -8,17 +8,17 @@ const labelClass = "mb-2 block text-sm font-bold text-foreground";
 
 function getGuidedCohortStatus() {
   const today = new Date();
-  const earlyBirdEnds = new Date("2026-09-21T00:00:00+01:00");
-  const standardEnds = new Date("2026-10-26T00:00:00+00:00");
-  const programmeStarts = new Date("2026-11-01T00:00:00+00:00");
+  const earlyBirdEnds = new Date("2027-02-01T00:00:00+00:00");
+  const standardEnds = new Date("2027-02-22T00:00:00+00:00");
+  const programmeStarts = new Date("2027-03-01T00:00:00+00:00");
 
   if (today < earlyBirdEnds) {
     return {
       stage: "early-bird",
       title: "Executive Guided Cohort",
-      price: "Early Bird: £250 until 20 September 2026",
+      price: "Early Bird: £250 until 31 January 2027",
       description: "Founding Cohort applications are open. Places are limited to 25 participants.",
-      dateNote: "Starts 1 November 2026 | Limited to 25 participants",
+      dateNote: "Starts 1 March 2027 | Limited to 25 participants",
       optionLabel: "Executive Guided Cohort - Early Bird (£250)",
       buttonLabel: "Submit registration"
     };
@@ -28,9 +28,9 @@ function getGuidedCohortStatus() {
     return {
       stage: "standard",
       title: "Executive Guided Cohort",
-      price: "Standard: £325 until 25 October 2026",
+      price: "Standard: £325 until 21 February 2027",
       description: "Founding Cohort applications remain open, subject to availability.",
-      dateNote: "Starts 1 November 2026 | Limited to 25 participants",
+      dateNote: "Starts 1 March 2027 | Limited to 25 participants",
       optionLabel: "Executive Guided Cohort - Standard (£325)",
       buttonLabel: "Submit registration"
     };
@@ -42,7 +42,7 @@ function getGuidedCohortStatus() {
       title: "Executive Guided Cohort",
       price: "Guided Cohort registration has closed",
       description: "Join the waiting list for the next guided cohort.",
-      dateNote: "Founding Cohort starts 1 November 2026",
+      dateNote: "Founding Cohort starts 1 March 2027",
       optionLabel: "Join Guided Cohort waiting list",
       buttonLabel: "Submit registration"
     };
@@ -111,7 +111,7 @@ export default function Register() {
         <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Founding Cohort - applications now open</p>
         <h1 className="text-4xl font-black text-foreground">Student registration</h1>
         <p className="text-muted-foreground leading-relaxed max-w-3xl">
-          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. The Executive Guided Cohort begins on 1 November 2026 and is limited to 25 participants. Professional Self-Paced enrolment remains open on a rolling basis. This is an initial registration, not a payment form, confirmed enrolment or commitment to pay. If you are offered a place, GICS will provide the applicable fee, cancellation and refund terms before you decide whether to enrol. No advanced mathematics background is required.
+          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. The Executive Guided Cohort begins on 1 March 2027 and is limited to 25 participants. Professional Self-Paced enrolment remains open on a rolling basis. This is an initial registration, not a payment form, confirmed enrolment or commitment to pay. If you are offered a place, GICS will provide the applicable fee, cancellation and refund terms before you decide whether to enrol. No advanced mathematics background is required.
         </p>
       </header>
 
