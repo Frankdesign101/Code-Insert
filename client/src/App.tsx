@@ -19,7 +19,7 @@ function PublicIntroduction() {
           </div>
         </a>
         <nav className="flex gap-5 text-sm font-semibold">
-          <a href="#about">About GICS</a><a href="#focus">Our focus</a><a href="#contact">Contact</a>
+          <a href="#about">About GICS</a><a href="#flagship">GC-PSSO</a><a href="#focus">Our focus</a><a href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -39,6 +39,16 @@ function PublicIntroduction() {
         <h2 className="text-3xl font-black">Knowledge that connects with practice</h2>
         <p className="max-w-4xl text-muted-foreground leading-relaxed">GICS is an independent UK-registered education and professional training initiative with a focus on supply chain management, operations and sustainability. Our ambition is to support the development of practical, globally relevant professional capability through applied learning and evidence-informed approaches.</p>
         <p className="text-sm text-muted-foreground">Further information about programmes, delivery arrangements and registration will be announced in due course.</p>
+      </section>
+
+      <section id="flagship" className="glass-panel space-y-4">
+        <p className="text-xs font-black uppercase tracking-widest text-[hsl(var(--accent))]">GICS Flagship Programme · Coming Soon</p>
+        <h2 className="text-3xl font-black">Global Certificate in Practical Supply Chain &amp; Sustainable Operations</h2>
+        <p className="text-lg font-bold text-[hsl(var(--accent))]">GC-PSSO</p>
+        <p className="max-w-4xl text-muted-foreground leading-relaxed">A forthcoming professional-development programme designed to strengthen practical capability in supply chain management, operations, analytics and sustainability.</p>
+        <p className="text-sm text-muted-foreground">Further information about the programme structure, delivery arrangements and registration will be announced in due course.</p>
+        <p className="inline-block rounded-lg border border-white/15 px-4 py-2 text-sm font-semibold text-muted-foreground">Register Your Interest — Coming Soon</p>
+        <p className="text-xs text-muted-foreground">GC-PSSO is a proposed GICS professional-development programme, not a university award. No applications or expressions of interest are being collected at this stage.</p>
       </section>
 
       <section id="focus" className="space-y-5">
