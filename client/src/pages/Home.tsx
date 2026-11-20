@@ -578,6 +578,9 @@ export default function Home() {
               <span className="inline-flex w-8 h-8 items-center justify-center rounded-full bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] text-sm font-black">{number}</span>
               <h3 className="font-bold text-foreground mt-4">{title}</h3>
               <p className="text-xs text-muted-foreground leading-relaxed mt-2">{description}</p>
+              {number === "1" && (
+                <a href="/register" className="inline-flex mt-4 text-sm font-bold text-[hsl(var(--accent))] underline underline-offset-4 hover:opacity-80">Apply for GC-PSSO Founding Cohort →</a>
+              )}
             </div>
           ))}
         </div>
