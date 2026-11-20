@@ -461,7 +461,7 @@ export default function Home() {
               </div>
             </CardHeader>
 
-            <CardContent className="p-8 pt-4 space-y-8 flex-1">
+            <CardContent className="p-8 pt-4 flex flex-col gap-8 flex-1">
               <div className="space-y-4">
                 <h4 className="text-xs font-black uppercase tracking-widest text-[hsl(var(--accent))] flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4" /> What's Included
@@ -485,7 +485,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="grid grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl mt-auto">
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Time Commitment</p>
                   <p className="text-sm font-bold text-foreground">6-8 hours / week</p>
@@ -516,7 +516,7 @@ export default function Home() {
               </div>
             </CardHeader>
 
-            <CardContent className="p-8 pt-4 space-y-8 flex-1">
+            <CardContent className="p-8 pt-4 flex flex-col gap-8 flex-1">
               <div className="space-y-4">
                 <h4 className="text-xs font-black uppercase tracking-widest text-foreground flex items-center gap-2 opacity-60">
                   <CheckCircle2 className="w-4 h-4" /> What's Included
@@ -541,7 +541,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-5 bg-white/5 border border-white/10 rounded-2xl mt-auto">
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Time Commitment</p>
                   <p className="text-sm font-bold text-foreground">4-6 hours / week</p>
@@ -551,10 +551,10 @@ export default function Home() {
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
                     <p className="text-sm font-bold text-foreground">&pound;195 rolling enrolment</p>
-                    <p className="text-xs text-muted-foreground">Learning access from 17 May 2027; thereafter, start on a rolling basis</p>
+                    <p className="text-xs text-muted-foreground">Learning access from 17 May 2027; flexible starts thereafter.</p>
                     <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +&pound;125</p>
                   </div>
-                  <p className="text-[9px] text-muted-foreground mt-2 italic">Registration open now; learning access from 17 May 2027. Optional coaching is priced separately.</p>
+                  <p className="text-[9px] text-muted-foreground mt-2 italic">Registration open now. Optional coaching is priced separately.</p>
                 </div>
               </div>
             </CardContent>
@@ -568,18 +568,18 @@ export default function Home() {
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Simple, transparent admissions</p>
           <h2 id="registration-steps-title" className="text-2xl font-black text-foreground mt-2">What happens after registration?</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4 items-stretch">
           {[
             ["1", "Register free", "Tell us about your experience, goals and preferred learning option. There is no payment commitment."],
             ["2", "Receive a decision", "GICS reviews programme suitability and sends an offer or preparation guidance."],
             ["3", "Choose whether to enrol", "Review the confirmed fee, schedule, terms and cancellation rights before making any payment."]
           ].map(([number, title, description]) => (
-            <div key={number} className="p-5 bg-white/5 border border-white/10 rounded-2xl">
+            <div key={number} className="p-5 bg-white/5 border border-white/10 rounded-2xl flex flex-col h-full">
               <span className="inline-flex w-8 h-8 items-center justify-center rounded-full bg-[hsl(var(--accent))] text-[hsl(var(--primary-foreground))] text-sm font-black">{number}</span>
               <h3 className="font-bold text-foreground mt-4">{title}</h3>
               <p className="text-xs text-muted-foreground leading-relaxed mt-2">{description}</p>
               {number === "1" && (
-                <a href="/register" className="inline-flex mt-4 text-sm font-bold text-[hsl(var(--accent))] underline underline-offset-4 hover:opacity-80">Apply for GC-PSSO Founding Cohort →</a>
+                <a href="/register" className="inline-flex mt-auto pt-4 text-sm font-bold text-[hsl(var(--accent))] underline underline-offset-4 hover:opacity-80">Apply for GC-PSSO Founding Cohort →</a>
               )}
             </div>
           ))}
