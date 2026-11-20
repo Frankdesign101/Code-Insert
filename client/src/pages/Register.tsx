@@ -116,17 +116,17 @@ export default function Register() {
       </header>
 
       <section className="grid md:grid-cols-2 gap-5">
-        <div className="glass-panel space-y-3">
+        <div className="glass-panel flex flex-col gap-3 h-full">
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">{guidedStatus.title}</p>
           <h2 className="text-xl font-black text-foreground">{guidedStatus.price}</h2>
           <p className="text-sm text-muted-foreground leading-relaxed">{guidedStatus.description}</p>
-          <p className="text-xs text-muted-foreground">{guidedStatus.dateNote}</p>
+          <p className="text-xs text-muted-foreground mt-auto pt-2">{guidedStatus.dateNote}</p>
         </div>
-        <div className="glass-panel space-y-3">
+        <div className="glass-panel flex flex-col gap-3 h-full">
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Professional Self-Paced</p>
           <h2 className="text-xl font-black text-foreground">£195 | Rolling enrolment</h2>
-          <p className="text-sm text-muted-foreground leading-relaxed">Registration is open now. Learning access begins from 17 May 2027; after that date, learners can start on a rolling basis and work through the asynchronous materials at their own pace.</p>
-          <p className="text-xs text-muted-foreground">Optional 1:1 coaching add-on: £125</p>
+          <p className="text-sm text-muted-foreground leading-relaxed">Registration is open now. Learning access begins on 17 May 2027. Thereafter, learners can enrol and study at their own pace.</p>
+          <p className="text-xs text-muted-foreground mt-auto pt-2">Optional 1:1 coaching add-on: £125</p>
         </div>
       </section>
 
