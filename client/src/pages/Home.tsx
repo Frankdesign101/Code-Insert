@@ -202,7 +202,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 flex-1 lg:ml-8">
             {[
-              { label: "Start", value: "1 March 2027" },
+              { label: "Start", value: "17 May 2027" },
               { label: "Duration", value: "6-8 weeks" },
               { label: "Asynchronous core", value: "Six sequential weekly learning themes" },
               { label: "Assessment", value: "Integrated capstone project" },
@@ -494,8 +494,8 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
-                    <p className="text-sm font-bold text-foreground">Early Bird: &pound;250 until 31 January 2027</p>
-                    <p className="text-sm font-bold text-foreground">Standard: &pound;325 from 1 to 21 February 2027</p>
+                    <p className="text-sm font-bold text-foreground">Early Bird: &pound;250 until 31 March 2027</p>
+                    <p className="text-sm font-bold text-foreground">Standard: &pound;325 from 1 April to 9 May 2027</p>
                   </div>
                   <p className="text-[9px] text-muted-foreground mt-2 italic">Fees set by registration window.</p>
                 </div>
@@ -727,7 +727,7 @@ export default function Home() {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Contact GICS</p>
               <h2 className="text-3xl font-black text-foreground">How can we help?</h2>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Ask about the 1 March 2027 Founding Cohort, learner eligibility, payment and enrolment, or tailored training for your organisation.
+                Ask about the 17 May 2027 Founding Cohort, learner eligibility, payment and enrolment, or tailored training for your organisation.
               </p>
               <a
                 href="mailto:gicsinstituteuk@gmail.com"
