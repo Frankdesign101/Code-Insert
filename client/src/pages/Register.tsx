@@ -16,7 +16,7 @@ function getGuidedCohortStatus() {
     return {
       stage: "early-bird",
       title: "Executive Guided Cohort",
-      price: "Early Bird: £250 until 317 May 2027",
+      price: "Early Bird: £250 until 31 March 2027",
       description: "Founding Cohort applications are open. Places are limited to 25 participants.",
       dateNote: "Starts 17 May 2027 | Limited to 25 participants",
       optionLabel: "Executive Guided Cohort - Early Bird (£250)",
@@ -111,7 +111,7 @@ export default function Register() {
         <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Founding Cohort - applications now open</p>
         <h1 className="text-4xl font-black text-foreground">Student registration</h1>
         <p className="text-muted-foreground leading-relaxed max-w-3xl">
-          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. The Executive Guided Cohort begins on 17 May 2027 and is limited to 25 participants. Professional Self-Paced enrolment remains open on a rolling basis. This is an initial registration, not a payment form, confirmed enrolment or commitment to pay. If you are offered a place, GICS will provide the applicable fee, cancellation and refund terms before you decide whether to enrol. No advanced mathematics background is required.
+          Register your interest in the Global Certificate in Practical Supply Chain & Sustainable Operations. The Executive Guided Cohort begins on 17 May 2027 and is limited to 25 participants. Professional Self-Paced registration is open now, with learning access available from 17 May 2027. Thereafter, learners may start on a rolling basis. This is an initial registration, not a payment form, confirmed enrolment or commitment to pay. If you are offered a place, GICS will provide the applicable fee, cancellation and refund terms before you decide whether to enrol. No advanced mathematics background is required.
         </p>
       </header>
 
@@ -125,7 +125,7 @@ export default function Register() {
         <div className="glass-panel space-y-3">
           <p className="text-xs font-black uppercase tracking-[0.2em] text-[hsl(var(--accent))]">Professional Self-Paced</p>
           <h2 className="text-xl font-black text-foreground">£195 | Rolling enrolment</h2>
-          <p className="text-sm text-muted-foreground leading-relaxed">Open for rolling enrolment. Start anytime and work through the asynchronous learning materials at your own pace.</p>
+          <p className="text-sm text-muted-foreground leading-relaxed">Registration is open now. Learning access begins from 17 May 2027; after that date, learners can start on a rolling basis and work through the asynchronous materials at their own pace.</p>
           <p className="text-xs text-muted-foreground">Optional 1:1 coaching add-on: £125</p>
         </div>
       </section>
