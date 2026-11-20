@@ -551,10 +551,10 @@ export default function Home() {
                   <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest">Fees (GBP)</p>
                   <div className="space-y-1">
                     <p className="text-sm font-bold text-foreground">&pound;195 rolling enrolment</p>
-                    <p className="text-xs text-muted-foreground">Start anytime</p>
+                    <p className="text-xs text-muted-foreground">Learning access from 17 May 2027; thereafter, start on a rolling basis</p>
                     <p className="text-xs text-muted-foreground">Coaching Add-On (Optional): +&pound;125</p>
                   </div>
-                  <p className="text-[9px] text-muted-foreground mt-2 italic">Rolling enrolment; optional coaching is priced separately.</p>
+                  <p className="text-[9px] text-muted-foreground mt-2 italic">Registration open now; learning access from 17 May 2027. Optional coaching is priced separately.</p>
                 </div>
               </div>
             </CardContent>
